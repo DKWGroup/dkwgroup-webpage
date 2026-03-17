@@ -32,8 +32,7 @@ const SERVICE_DROPDOWN_PL = {
         {
             title: "Marketing & Web",
             items: [
-                { label: "Tworzenie treści marketingowych", href: "/uslugi/marketing-content" as const },
-                { label: "Social Media", href: "/uslugi/marketing-content" as const },
+                { label: "Prowadzenie mediów społecznościowych", href: "/uslugi/social-media-management" as const },
                 { label: "Strony internetowe i SEO", href: "/uslugi/strony-internetowe" as const },
             ],
         },
@@ -64,8 +63,7 @@ const SERVICE_DROPDOWN_EN = {
         {
             title: "Marketing & Web",
             items: [
-                { label: "Marketing content creation", href: "/uslugi/marketing-content" as const },
-                { label: "Social Media", href: "/uslugi/marketing-content" as const },
+                { label: "Social Media Management", href: "/uslugi/social-media-management" as const },
                 { label: "Websites & SEO", href: "/uslugi/strony-internetowe" as const },
             ],
         },

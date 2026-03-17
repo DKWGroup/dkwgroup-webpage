@@ -3,8 +3,8 @@ import { ArrowRight, Play } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const LINKS = [
-    "#case-study-ip",
-    "#case-study-kokpit"
+    "/case-studies/kampania-reklamowa-dla-investment-partners",
+    "/case-studies/obsluga-kanalu-youtube-dla-eksperta-lotniczego"
 ];
 
 export default function ServicePortfolio() {
@@ -15,10 +15,10 @@ export default function ServicePortfolio() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl font-bold font-sans tracking-tight uppercase text-white mb-4">
+                    <h2 className="text-3xl font-bold font-sans tracking-tight uppercase text-white mb-4">
                         {t("heading_1")} <span className="text-[var(--color-brand-orange)]">{t("heading_2")}</span>
                     </h2>
-                    <p className="text-gray-400 font-mono text-sm leading-relaxed max-w-2xl mx-auto">
+                    <p className="text-gray-400 font-mono text-xs leading-relaxed max-w-2xl mx-auto">
                         {t("description")}
                     </p>
                 </div>
@@ -37,20 +37,20 @@ export default function ServicePortfolio() {
                                 </div>
                             </div>
 
-                            <h3 className="text-2xl font-bold font-sans tracking-tight text-white mb-4 group-hover:text-[var(--color-brand-orange)] transition-colors">
+                            <h3 className="text-xl font-bold font-sans tracking-tight text-white mb-4 group-hover:text-[var(--color-brand-orange)] transition-colors">
                                 {t(`items.${index}.title`)}
                             </h3>
-                            <span className="text-[var(--color-brand-orange)] font-mono text-xs font-bold uppercase tracking-widest mb-4">
+                            <span className="text-[var(--color-brand-orange)] font-mono text-[10px] font-bold uppercase tracking-widest mb-4">
                                 {t(`items.${index}.category`)}
                             </span>
-                            <p className="text-gray-400 font-mono text-sm leading-relaxed mb-8 flex-grow">
+                            <p className="text-gray-400 font-mono text-xs leading-relaxed mb-8 flex-grow">
                                 {t(`items.${index}.description`)}
                             </p>
 
                             <div className="mt-auto border-t border-[#333] pt-4">
                                 <Link
                                     href={LINKS[index]}
-                                    className="inline-flex items-center text-gray-400 font-mono text-xs font-bold uppercase tracking-widest group-hover:text-[var(--color-brand-orange)] transition-colors"
+                                    className="inline-flex items-center text-gray-400 font-mono text-[10px] font-bold uppercase tracking-widest group-hover:text-[var(--color-brand-orange)] transition-colors"
                                 >
                                     {t("viewCaseStudy")}
                                     <ArrowRight className="ml-2 w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />

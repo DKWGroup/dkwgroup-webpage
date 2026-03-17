@@ -25,8 +25,7 @@ const CATEGORY_1_WIDEO_AUDIO: ServiceMeta[] = [
 ];
 
 const CATEGORY_2_MARKETING_WEB: ServiceMeta[] = [
-    { icon: <Megaphone className="w-8 h-8 text-[var(--color-brand-orange)]" />, href: "/uslugi/marketing-content", id: 4 },
-    { icon: <Share2 className="w-8 h-8 text-[var(--color-brand-orange)]" />, href: "#usluga-szczegoly-5", id: 5 },
+    { icon: <Megaphone className="w-8 h-8 text-[var(--color-brand-orange)]" />, href: "/uslugi/social-media-management", id: 4 },
     { icon: <Code className="w-8 h-8 text-[var(--color-brand-orange)]" />, href: "/uslugi/strony-internetowe", id: 6 },
 ];
 
@@ -53,11 +52,11 @@ export default function ServicesPageGrid() {
                         {meta.icon}
                     </div>
 
-                    <h3 className="text-xl font-bold font-sans tracking-wide uppercase text-white mb-4 group-hover:text-[var(--color-brand-orange)] transition-colors">
+                    <h3 className="text-lg font-bold font-sans tracking-wide uppercase text-white mb-4 group-hover:text-[var(--color-brand-orange)] transition-colors">
                         {t(`items.${meta.id}.title`)}
                     </h3>
 
-                    <p className="text-gray-400 font-mono text-sm leading-relaxed mb-8 flex-grow">
+                    <p className="text-gray-400 font-mono text-[13px] leading-relaxed mb-8 flex-grow">
                         {t(`items.${meta.id}.description`)}
                     </p>
 

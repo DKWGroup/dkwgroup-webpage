@@ -48,11 +48,11 @@ export default function WebsitesServicePage() {
                 {t("hero_badge")}
               </span>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold font-sans tracking-tight text-white mb-6 uppercase">
+            <h1 className="text-4xl md:text-5xl font-bold font-sans tracking-tight text-white mb-6 uppercase leading-tight">
               {t("hero_title_1")} <br />
               <span className="text-[var(--color-brand-orange)]">{t("hero_title_2")}</span>
             </h1>
-            <p className="text-gray-400 font-mono text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-10">
+            <p className="text-gray-400 font-mono text-base md:text-lg leading-relaxed max-w-3xl mx-auto mb-10">
               {t("hero_description")}
             </p>
             <Link
@@ -71,13 +71,13 @@ export default function WebsitesServicePage() {
         <AnimatedSection animation="fade-right" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="border-l-4 border-[var(--color-brand-orange)] bg-[#0a0a0a] p-8 md:p-12 brutal-shadow flex flex-col md:flex-row items-center justify-between gap-8 group">
             <div className="max-w-2xl">
-              <h2 className="text-2xl md:text-3xl font-bold uppercase tracking-tight text-white mb-2">
+              <h2 className="text-xl md:text-2xl font-bold uppercase tracking-tight text-white mb-2">
                 {t("webdkw_title_1")} <br />
                 <span className="text-[var(--color-brand-orange)]">
                   {t("webdkw_title_2")}
                 </span>
               </h2>
-              <p className="text-gray-400 font-mono text-sm mt-4">
+              <p className="text-gray-400 font-mono text-xs mt-4">
                 {t("webdkw_desc")}
               </p>
             </div>
@@ -98,13 +98,13 @@ export default function WebsitesServicePage() {
       <section className="py-24 bg-[#050505] border-b border-[#333]">
         <AnimatedSection animation="fade-up" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold font-sans text-white mb-4 tracking-tight uppercase">
+            <h2 className="text-2xl md:text-3xl font-bold font-sans text-white mb-4 tracking-tight uppercase">
               {t("process_title_1")}{" "}
               <span className="text-[var(--color-brand-orange)]">
                 {t("process_title_2")}
               </span>
             </h2>
-            <p className="text-gray-400 font-mono text-sm leading-relaxed max-w-2xl mx-auto">
+            <p className="text-gray-400 font-mono text-xs leading-relaxed max-w-2xl mx-auto">
               {t("process_desc")}
             </p>
           </div>
@@ -134,13 +134,13 @@ export default function WebsitesServicePage() {
       <section className="py-24 bg-[#0a0a0a] border-b border-[#333]">
         <AnimatedSection animation="fade-left" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold font-sans text-white mb-4 tracking-tight uppercase">
+            <h2 className="text-2xl md:text-3xl font-bold font-sans text-white mb-4 tracking-tight uppercase">
               {t("projects_title_1")}{" "}
               <span className="text-[var(--color-brand-orange)]">
                 {t("projects_title_2")}
               </span>
             </h2>
-            <p className="text-gray-400 font-mono text-sm leading-relaxed max-w-2xl">
+            <p className="text-gray-400 font-mono text-xs leading-relaxed max-w-2xl">
               {t("projects_desc")}
             </p>
           </div>
@@ -156,13 +156,13 @@ export default function WebsitesServicePage() {
                     {t(`projects_items.${idx}.badge`)}
                   </span>
                 </div>
-                <h3 className="text-2xl font-bold font-sans text-white uppercase tracking-tight mb-2">
+                <h3 className="text-xl font-bold font-sans text-white uppercase tracking-tight mb-2">
                   {t(`projects_items.${idx}.title`)}
                 </h3>
                 <p className="text-[var(--color-brand-orange)] font-mono text-xs uppercase tracking-widest font-bold mb-6">
                   {t(`projects_items.${idx}.client`)}
                 </p>
-                <p className="text-gray-400 font-mono text-sm leading-relaxed mb-8 flex-grow">
+                <p className="text-gray-400 font-mono text-xs leading-relaxed mb-8 flex-grow">
                   {t(`projects_items.${idx}.desc`)}
                 </p>
                 <Link
@@ -184,13 +184,13 @@ export default function WebsitesServicePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Co Oferujemy */}
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold font-sans text-white mb-6 tracking-tight uppercase border-b border-[#333] pb-6">
+              <h2 className="text-2xl md:text-3xl font-bold font-sans text-white mb-6 tracking-tight uppercase border-b border-[#333] pb-6">
                 {t("offer_title_1")}{" "}
                 <span className="text-[var(--color-brand-orange)]">
                   {t("offer_title_2")}
                 </span>
               </h2>
-              <p className="text-gray-400 font-mono text-sm leading-relaxed mb-8">
+              <p className="text-gray-400 font-mono text-xs leading-relaxed mb-8">
                 {t("offer_desc")}
               </p>
 
@@ -210,10 +210,10 @@ export default function WebsitesServicePage() {
 
               {/* SEO Highlight Box */}
               <div className="bg-[#111] border border-[var(--color-brand-orange)] p-8 brutal-shadow">
-                <h3 className="text-2xl font-bold font-sans text-white uppercase tracking-tight mb-4">
+                <h3 className="text-xl font-bold font-sans text-white uppercase tracking-tight mb-4">
                   {t("seo_title")}
                 </h3>
-                <p className="text-gray-400 font-mono text-sm leading-relaxed">
+                <p className="text-gray-400 font-mono text-xs leading-relaxed">
                   {t("seo_desc")}
                 </p>
               </div>
@@ -221,13 +221,13 @@ export default function WebsitesServicePage() {
 
             {/* Korzyści */}
             <div className="bg-[#0a0a0a] border border-[#333] p-8 md:p-12 brutal-shadow">
-              <h2 className="text-3xl md:text-4xl font-bold font-sans text-white mb-6 tracking-tight uppercase">
+              <h2 className="text-2xl md:text-3xl font-bold font-sans text-white mb-6 tracking-tight uppercase">
                 {t("benefits_title_1")} <br />
                 <span className="text-[var(--color-brand-orange)]">
                   {t("benefits_title_2")}
                 </span>
               </h2>
-              <p className="text-gray-400 font-mono text-sm leading-relaxed mb-8">
+              <p className="text-gray-400 font-mono text-xs leading-relaxed mb-8">
                 {t("benefits_desc")}
               </p>
 
@@ -265,10 +265,10 @@ export default function WebsitesServicePage() {
       {/* Zakończenie CTA */}
       <section className="bg-[#050505]">
         <AnimatedSection animation="scale" className="bg-[var(--color-brand-orange)] p-12 md:p-24 text-center border-b border-[#333] max-w-7xl mx-auto my-12 brutal-shadow">
-          <h2 className="text-4xl md:text-5xl font-bold font-sans tracking-tight text-black mb-6 uppercase">
+          <h2 className="text-3xl md:text-4xl font-bold font-sans tracking-tight text-black mb-6 uppercase">
             {t("cta_title_1")} <span className="text-white">{t("cta_title_2")}</span>
           </h2>
-          <p className="font-mono text-black/80 font-bold mb-8 max-w-2xl mx-auto text-sm">
+          <p className="font-mono text-black/80 font-bold mb-8 max-w-2xl mx-auto text-xs">
             {t("cta_desc")}
           </p>
           <Link

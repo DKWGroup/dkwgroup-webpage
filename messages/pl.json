@@ -35,12 +35,8 @@
                 "description": "Projektowanie i tworzenie responsywnych stron internetowych oraz optymalizacja pod kątem wyszukiwarek, aby zwiększyć widoczność Twojej marki online."
             },
             "5": {
-                "title": "Treści marketingowe",
-                "description": "Tworzymy angażujące treści marketingowe, które docierają do Twoich klientów i budują świadomość marki."
-            },
-            "6": {
-                "title": "Social Media",
-                "description": "Kompleksowa obsługa social media, która zwiększa zasięgi i buduje zaangażowaną społeczność wokół Twojej marki."
+                "title": "Social Media Management",
+                "description": "Zmieniamy Twoje media społecznościowe w maszynę do generowania zysków i budowania lojalnej społeczności. Kompleksowa obsługa: od strategii, przez content, po wyniki."
             }
         }
     },
@@ -142,7 +138,7 @@
     "Contact": {
         "heading_1": "Zacznijmy",
         "heading_2": "działać!",
-        "description": "Masz pytania dotyczące naszych usług? Chcesz się dowiedzieć, jak możemy wspólnie zrealizować Twój projekt? Wypełnij formularz, a my odezwiemy się do Ciebie w ciągu 24 godzin.",
+        "description": "Napisz do nas, aby omówić projekt lub zadać pytanie. Odpowiemy w ciągu 24h.",
         "contactLabel": "Kontakt",
         "nameLabel": "Imię",
         "namePlaceholder": "Jan Kowalski",
@@ -464,12 +460,8 @@
                 "description": "Realizujemy transmisje na żywo z konferencji, wydarzeń i szkoleń w studiu oraz zdalnie w terenie."
             },
             "4": {
-                "title": "Tworzenie treści marketingowych",
-                "description": "Tworzymy skuteczne teksty i kampanie, które docierają do Twoich klientów i budują świadomość marki."
-            },
-            "5": {
-                "title": "Social Media",
-                "description": "Prowadzimy obsługę kanałów social media – od planu, przez treści, po dystrybucję i zwiększanie zasięgów."
+                "title": "Prowadzenie mediów społecznościowych",
+                "description": "Zmieniamy Twoje media społecznościowe w maszynę do generowania zysków i budowania lojalnej społeczności. Kompleksowa obsługa: od strategii, przez content, po wyniki."
             },
             "6": {
                 "title": "Strony internetowe i SEO",
@@ -1176,5 +1168,48 @@
                 "answer": "Dodatkowo przygotowujemy branding graficzny oprawy kanału i miniaturki, introwizualne lub dźwiękowe jingle początkowe, analizę i consulting przed debiutem w platformach audiowizualnych, a także wspieramy SEO audycji."
             }
         }
+    },
+    "SocialMediaManagement": {
+        "hero_badge": "Social Media & Growth",
+        "hero_title_1": "Zmień swoje social media",
+        "hero_title_2": "w maszynę do sprzedaży",
+        "hero_description": "Większość agencji po prostu wrzuca posty. My wchodzimy głęboko w Twój biznes, rozumiemy Twoją markę i tworzymy content, który nie tylko ładnie wygląda, ale przede wszystkim zarabia. Otaczamy Cię pełnym wsparciem, budując realną wartość i społeczność.",
+        "hero_cta": "Chcę skalować mój biznes",
+        "problem_title": "Dlaczego Twoje social media nie działają?",
+        "problem_desc": "Jeśli czujesz, że Twoje posty trafiają w próżnię, a agencje, z którymi współpracowałeś, nie rozumiały Twojej wizji - nie jesteś sam. My nie jesteśmy 'tylko od postów'.",
+        "agencies_problem": "Co robią inne agencje? Wrzucają cokolwiek, byle odhaczyć plan. Zero strategii, zero zrozumienia marki, zero efektów.",
+        "our_approach": "Nasze podejście: Jesteśmy częścią Twojego zespołu. Analizujemy, testujemy i optymalizujemy każdy element, by Twoja marka stała się liderem w swojej branży.",
+        "numbers_title": "Wyniki, które mówią same za siebie",
+        "stats": [
+            {
+                "value": "+300 tyś. zł",
+                "label": "Dodatkowego przychodu w 3 miesiące",
+                "desc": "Branża fitness - firma suplementacyjna"
+            },
+            {
+                "value": "+104",
+                "label": "Hot Leads w jeden miesiąc",
+                "desc": "Usługa transportu premium VIP"
+            },
+            {
+                "value": "+4,3 mln",
+                "label": "Zasięgu organicznego",
+                "desc": "Regularnie 1,5 mln miesięcznie po roku współpracy"
+            },
+            {
+                "value": "+12",
+                "label": "Miesięcy współpracy",
+                "desc": "Średni czas trwania partnerstwa z naszymi klientami"
+            }
+        ],
+        "benefits_title": "Co zyskujesz współpracując z nami?",
+        "benefits": [
+            "Pełne zaangażowanie i zrozumienie Twojej marki",
+            "Content oparty na języku korzyści i psychologii sprzedaży",
+            "Budowanie autentycznej i zaangażowanej społeczności",
+            "Regularna analityka i optymalizacja działań",
+            "Wsparcie kreatywne na każdym etapie",
+            "Skalowalność i przewidywalność wyników"
+        ]
     }
 }

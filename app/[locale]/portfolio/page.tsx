@@ -14,6 +14,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 export default function PortfolioPage() {
     const [filter, setFilter] = useState<CategoryFilter>("all");
     const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+    const [visibleCount, setVisibleCount] = useState(9);
     const [touchStartX, setTouchStartX] = useState<number>(0);
     const [touchEndX, setTouchEndX] = useState<number>(0);
 
@@ -54,6 +55,17 @@ export default function PortfolioPage() {
         window.addEventListener("keydown", handleKeyDown);
         return () => window.removeEventListener("keydown", handleKeyDown);
     }, [lightboxIndex, nextImage, prevImage]);
+
+    // Lazy load on scroll
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 500) {
+                setVisibleCount((prev) => Math.min(prev + 6, filteredItems.length));
+            }
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [filteredItems.length]);
 
     // Swipe handlers
     const handleTouchStart = (e: React.TouchEvent) => {
@@ -127,7 +139,7 @@ export default function PortfolioPage() {
             <section className="py-12 bg-[#0a0a0a]">
                 <AnimatedSection animation="fade-up" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
-                        {filteredItems.map((item, index) => {
+                        {filteredItems.slice(0, visibleCount).map((item, index) => {
                             return (
                                 <div
                                     key={`${item.type}-${index}`}
@@ -135,7 +147,7 @@ export default function PortfolioPage() {
                                     onClick={() => openLightbox(index)}
                                 >
                                     <div
-                                        className={`relative bg-[#111] border-2 border-[#333] overflow-hidden transition-all duration-300 group-hover:border-[var(--color-brand-orange)] group-hover:-translate-y-1 brutal-shadow pointer-events-none`}
+                                        className={`relative bg-[#111] border-2 border-[#333] overflow-hidden transition-all duration-300 group-hover:border-[var(--color-brand-orange)] group-hover:-translate-y-1 brutal-shadow`}
                                     >
                                         {/* Media Content */}
                                         <div className={`relative w-full ${item.type === 'video' ? 'aspect-video' : 'aspect-[4/5] sm:aspect-[3/4]'}`}>

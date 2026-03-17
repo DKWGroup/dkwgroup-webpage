@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Mail, Phone, MapPin, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import SuccessPopup from "./SuccessPopup";
 
 export default function DetailedContact() {
     const t = useTranslations("DetailedContact");
@@ -109,21 +110,13 @@ export default function DetailedContact() {
                             {/* Optional Decoration */}
                             <div className="absolute top-0 right-0 w-16 h-16 border-t-2 border-r-2 border-[var(--color-brand-orange)] m-4 opacity-50 pointer-events-none"></div>
 
-                            {/* Success Notification */}
+                            {/* Success Popup */}
                             {status === "success" && (
-                                <div className="absolute inset-0 bg-[#111]/95 backdrop-blur-sm flex items-center justify-center z-10 p-8 rounded-inherit">
-                                    <div className="text-center">
-                                        <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-                                        <h3 className="text-xl font-bold text-white mb-3 font-sans">{t("success_title")}</h3>
-                                        <p className="text-gray-400 font-mono text-sm leading-relaxed mb-6">{t("success_message")}</p>
-                                        <button
-                                            onClick={() => setStatus("idle")}
-                                            className="px-6 py-2 border border-[#333] text-gray-300 font-mono text-sm hover:border-[var(--color-brand-orange)] hover:text-white transition-colors"
-                                        >
-                                            OK
-                                        </button>
-                                    </div>
-                                </div>
+                                <SuccessPopup
+                                    title={t("success_title")}
+                                    message={t("success_message")}
+                                    onClose={() => setStatus("idle")}
+                                />
                             )}
 
                             <h2 className="text-2xl font-bold font-sans text-white tracking-tight mb-8">{t("form_title")}</h2>

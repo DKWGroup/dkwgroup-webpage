@@ -35,12 +35,8 @@
                 "description": "Design and development of responsive websites and search engine optimization to increase your brand's online visibility."
             },
             "5": {
-                "title": "Marketing content",
-                "description": "We create engaging marketing content that reaches your customers and builds brand awareness."
-            },
-            "6": {
-                "title": "Social Media",
-                "description": "Comprehensive social media management that increases reach and builds an engaged community around your brand."
+                "title": "Social Media Management",
+                "description": "We turn your social media into a sales-generating machine and build a loyal community. Full service: from strategy to results."
             }
         }
     },
@@ -142,7 +138,7 @@
     "Contact": {
         "heading_1": "Let's get",
         "heading_2": "started!",
-        "description": "Have questions about our services? Want to find out how we can bring your project to life? Fill out the form and we will get back to you within 24 hours.",
+        "description": "Write to us to discuss your project or ask a question. We'll reply within 24h.",
         "contactLabel": "Contact",
         "nameLabel": "Name",
         "namePlaceholder": "John Smith",
@@ -451,12 +447,8 @@
                 "description": "We produce live streams from conferences, events, and training sessions. We provide a mobile studio and top-level technical support."
             },
             "4": {
-                "title": "Marketing Content Creation",
-                "description": "We create effective marketing content that reaches your customers and builds brand awareness online."
-            },
-            "5": {
-                "title": "Social Media",
-                "description": "We provide comprehensive social media channel management – from strategy, through creating engaging content, to moderation and advertising campaigns. We increase reach, build an engaged community, and support sales."
+                "title": "Social Media Management",
+                "description": "We turn your social media into a sales-generating machine and build a loyal community. Full service: from strategy to results."
             },
             "6": {
                 "title": "Websites and SEO",
@@ -1155,5 +1147,48 @@
                 "answer": "In addition, we prepare graphic branding for channel layout and thumbnails, initial visual or audio jingles, analysis and consulting before debuting on audiovisual platforms, and we also support broadcast SEO."
             }
         }
+    },
+    "SocialMediaManagement": {
+        "hero_badge": "Social Media & Growth",
+        "hero_title_1": "Turn your social media",
+        "hero_title_2": "into a sales machine",
+        "hero_description": "Most agencies just post content. We dive deep into your business, understand your brand, and create content that doesn't just look good, but primarily generates revenue. We provide full support, building real value and community.",
+        "hero_cta": "I want to scale my business",
+        "problem_title": "Why isn't your social media working?",
+        "problem_desc": "If you feel like your posts are disappearing into a void and the agencies you've worked with didn't understand your vision - you're not alone. We're not 'just about posts'.",
+        "agencies_problem": "What do other agencies do? They post anything just to tick off a box. Zero strategy, zero brand understanding, zero results.",
+        "our_approach": "Our approach: We are part of your team. We analyze, test, and optimize every element so your brand becomes a leader in its industry.",
+        "numbers_title": "Results that speak for themselves",
+        "stats": [
+            {
+                "value": "+k",
+                "label": "Additional revenue in 3 months",
+                "desc": "Fitness industry - supplement company"
+            },
+            {
+                "value": "+104",
+                "label": "Hot Leads in one month",
+                "desc": "Premium VIP transport service"
+            },
+            {
+                "value": "+4.3M",
+                "label": "Organic reach",
+                "desc": "Regularly 1.5M monthly after one year of collaboration"
+            },
+            {
+                "value": "+12",
+                "label": "Months of collaboration",
+                "desc": "Average duration of partnership with our clients"
+            }
+        ],
+        "benefits_title": "What do you gain by working with us?",
+        "benefits": [
+            "Full commitment and understanding of your brand",
+            "Content based on benefit language and sales psychology",
+            "Building an authentic and engaged community",
+            "Regular analytics and activity optimization",
+            "Creative support at every stage",
+            "Scalability and predictability of results"
+        ]
     }
 }

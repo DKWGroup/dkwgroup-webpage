@@ -31,10 +31,10 @@ export default function LiveStreamingServicePage() {
                             <span className="w-2 h-2 rounded-full bg-[var(--color-brand-orange)]"></span>
                             <span className="text-[10px] font-bold font-mono text-gray-400 uppercase tracking-widest">{t("hero_badge")}</span>
                         </div>
-                        <h1 className="text-5xl md:text-6xl font-bold font-sans tracking-tight text-white mb-6 uppercase">
+                        <h1 className="text-4xl md:text-5xl font-bold font-sans tracking-tight text-white mb-6 uppercase leading-tight">
                             {t("hero_title_1")} <span className="text-[var(--color-brand-orange)]">{t("hero_title_2")}</span>
                         </h1>
-                        <p className="text-gray-400 font-mono text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-10">
+                        <p className="text-gray-400 font-mono text-base md:text-lg leading-relaxed max-w-3xl mx-auto mb-10">
                             {t("hero_description")}
                         </p>
                         <Link
@@ -53,10 +53,10 @@ export default function LiveStreamingServicePage() {
                 <AnimatedSection animation="fade-right" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="border-l-4 border-[var(--color-brand-orange)] bg-[#0a0a0a] p-8 md:p-12 brutal-shadow flex flex-col md:flex-row items-center justify-between gap-8 group">
                         <div className="max-w-2xl">
-                            <h2 className="text-2xl md:text-3xl font-bold uppercase tracking-tight text-white mb-2">
+                            <h2 className="text-xl md:text-2xl font-bold uppercase tracking-tight text-white mb-2">
                                 {t("studio_title_1")} <span className="text-[var(--color-brand-orange)]">{t("studio_title_2")}</span>
                             </h2>
-                            <p className="text-gray-400 font-mono text-sm mt-4">
+                            <p className="text-gray-400 font-mono text-xs mt-4">
                                 {t("studio_desc")}
                             </p>
                         </div>
@@ -77,10 +77,10 @@ export default function LiveStreamingServicePage() {
             <section className="py-24 bg-[#050505] border-b border-[#333]">
                 <AnimatedSection animation="fade-up" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold font-sans text-white mb-4 tracking-tight uppercase">
+                        <h2 className="text-2xl md:text-3xl font-bold font-sans text-white mb-4 tracking-tight uppercase">
                             {t("capabilities_title_1")} <span className="text-[var(--color-brand-orange)]">{t("capabilities_title_2")}</span>
                         </h2>
-                        <p className="text-gray-400 font-mono text-sm leading-relaxed max-w-2xl mx-auto">
+                        <p className="text-gray-400 font-mono text-xs leading-relaxed max-w-2xl mx-auto">
                             {t("capabilities_desc")}
                         </p>
                     </div>
@@ -104,10 +104,10 @@ export default function LiveStreamingServicePage() {
                 <AnimatedSection animation="fade-left" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-bold font-sans text-white mb-6 tracking-tight uppercase border-b border-[#333] pb-6">
+                            <h2 className="text-2xl md:text-3xl font-bold font-sans text-white mb-6 tracking-tight uppercase border-b border-[#333] pb-6">
                                 {t("equipment_title_1")} <span className="text-[var(--color-brand-orange)]">{t("equipment_title_2")}</span>
                             </h2>
-                            <p className="text-gray-400 font-mono text-sm leading-relaxed mb-8">
+                            <p className="text-gray-400 font-mono text-xs leading-relaxed mb-8">
                                 {t("equipment_desc")}
                             </p>
 
@@ -124,10 +124,10 @@ export default function LiveStreamingServicePage() {
                         <div className="grid grid-cols-1 gap-6">
                             <div className="bg-[#111] border border-[var(--color-brand-orange)] p-8 md:p-12 brutal-shadow">
                                 <Tv2 className="w-12 h-12 text-[var(--color-brand-orange)] mb-6" />
-                                <h3 className="text-3xl font-bold font-sans text-white uppercase tracking-tight mb-4">
+                                <h3 className="text-2xl font-bold font-sans text-white uppercase tracking-tight mb-4">
                                     {t("mobile_studio_title")}
                                 </h3>
-                                <p className="text-gray-400 font-mono text-sm leading-relaxed mb-8">
+                                <p className="text-gray-400 font-mono text-xs leading-relaxed mb-8">
                                     {t("mobile_studio_desc")}
                                 </p>
                                 <div className="grid grid-cols-2 gap-4">
@@ -151,10 +151,10 @@ export default function LiveStreamingServicePage() {
             <section className="py-24 bg-[#050505] border-b border-[#333]">
                 <AnimatedSection animation="fade-up" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold font-sans text-white mb-4 tracking-tight uppercase">
+                        <h2 className="text-2xl md:text-3xl font-bold font-sans text-white mb-4 tracking-tight uppercase">
                             {t("applications_title_1")} <span className="text-[var(--color-brand-orange)]">{t("applications_title_2")}</span>
                         </h2>
-                        <p className="text-gray-400 font-mono text-sm leading-relaxed max-w-2xl">
+                        <p className="text-gray-400 font-mono text-xs leading-relaxed max-w-2xl">
                             {t("applications_desc")}
                         </p>
                     </div>
@@ -183,10 +183,10 @@ export default function LiveStreamingServicePage() {
             {/* Zakończenie CTA */}
             <section className="bg-[#050505]">
                 <AnimatedSection animation="scale" className="bg-[var(--color-brand-orange)] p-12 md:p-24 text-center border-b border-[#333] max-w-7xl mx-auto my-12 brutal-shadow">
-                    <h2 className="text-4xl md:text-5xl font-bold font-sans tracking-tight text-black mb-6 uppercase">
+                    <h2 className="text-3xl md:text-4xl font-bold font-sans tracking-tight text-black mb-6 uppercase">
                         {t("cta_title_1")} <span className="text-white">{t("cta_title_2")}</span>
                     </h2>
-                    <p className="font-mono text-black/80 font-bold mb-8 max-w-2xl mx-auto text-sm">
+                    <p className="font-mono text-black/80 font-bold mb-8 max-w-2xl mx-auto text-xs">
                         {t("cta_desc")}
                     </p>
                     <Link

@@ -3,20 +3,38 @@
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
-export default function ServiceFaq() {
+interface ServiceFaqProps {
+    bgImage?: string;
+}
+
+export default function ServiceFaq({ bgImage }: ServiceFaqProps) {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
     const t = useTranslations("ServiceFaq");
 
     return (
-        <section className="py-24 bg-[#050505] border-b border-[#333]">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="relative py-24 border-b border-[#333] overflow-hidden">
+            {bgImage && (
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src={bgImage}
+                        alt=""
+                        fill
+                        className="object-cover opacity-20"
+                    />
+                    <div className="absolute inset-0 bg-[#050505]/90"></div>
+                </div>
+            )}
+            {!bgImage && <div className="absolute inset-0 bg-[#050505] -z-10"></div>}
+
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold font-sans tracking-tight uppercase text-white mb-6">
+                    <h2 className="text-3xl md:text-4xl font-bold font-sans tracking-tight uppercase text-white mb-6">
                         {t("heading_1")} <span className="text-[var(--color-brand-orange)]">{t("heading_2")}</span>
                     </h2>
-                    <p className="text-gray-400 font-mono text-sm leading-relaxed max-w-2xl mx-auto">
+                    <p className="text-gray-400 font-mono text-xs leading-relaxed max-w-2xl mx-auto">
                         {t("description")}
                     </p>
                 </div>
@@ -25,13 +43,13 @@ export default function ServiceFaq() {
                     {[0, 1, 2, 3, 4].map((index) => (
                         <div
                             key={index}
-                            className={`border border-[#333] bg-[#0a0a0a] transition-all duration-200 ${openIndex === index ? 'border-[var(--color-brand-orange)] brutal-shadow' : 'hover:border-gray-500'}`}
+                            className={`border border-[#333] bg-[#0a0a0a]/80 backdrop-blur-sm transition-all duration-200 ${openIndex === index ? 'border-[var(--color-brand-orange)] brutal-shadow' : 'hover:border-gray-500'}`}
                         >
                             <button
                                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                                 className="w-full flex items-center justify-between p-6 text-left focus:outline-none focus:bg-[#111]"
                             >
-                                <span className={`font-bold font-sans tracking-wide uppercase pr-4 ${openIndex === index ? 'text-[var(--color-brand-orange)]' : 'text-white'}`}>
+                                <span className={`font-bold font-sans tracking-wide uppercase pr-4 text-xs md:text-sm ${openIndex === index ? 'text-[var(--color-brand-orange)]' : 'text-white'}`}>
                                     {t(`items.${index}.question`)}
                                 </span>
                                 <span className={`flex-shrink-0 w-8 h-8 flex items-center justify-center border transition-colors ${openIndex === index ? 'border-[var(--color-brand-orange)] text-[var(--color-brand-orange)]' : 'border-[#333] text-gray-500'}`}>
@@ -43,7 +61,7 @@ export default function ServiceFaq() {
                                 className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
                             >
                                 <div className="p-6 pt-0 border-t border-[#222] mt-4">
-                                    <p className="text-gray-400 font-mono text-sm leading-relaxed">
+                                    <p className="text-gray-400 font-mono text-xs leading-relaxed">
                                         {t(`items.${index}.answer`)}
                                     </p>
                                 </div>

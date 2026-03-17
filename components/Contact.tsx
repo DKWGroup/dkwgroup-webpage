@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import SuccessPopup from "./SuccessPopup";
 
 export default function Contact() {
     const t = useTranslations("Contact");
@@ -37,26 +38,26 @@ export default function Contact() {
 
                     {/* Header & Info */}
                     <div>
-                        <h2 className="text-3xl md:text-4xl font-bold font-sans tracking-tight uppercase text-white mb-5">
+                        <h2 className="text-2xl md:text-3xl font-bold font-sans tracking-tight uppercase text-white mb-5">
                             {t("heading_1")} <span className="text-[var(--color-brand-orange)]">{t("heading_2")}</span>
                         </h2>
-                        <p className="text-gray-400 font-mono text-base leading-relaxed mb-8">
+                        <p className="text-gray-400 font-mono text-sm leading-relaxed mb-8">
                             {t("description")}
                         </p>
 
                         <div className="space-y-6">
                             <div>
-                                <h4 className="text-[var(--color-brand-orange)] font-mono text-sm tracking-widest uppercase mb-2">{t("contactLabel")}</h4>
+                                <h4 className="text-[var(--color-brand-orange)] font-mono text-xs tracking-widest uppercase mb-2">{t("contactLabel")}</h4>
                                 <div className="space-y-4">
                                     <a
                                         href="mailto:contact.dkwgroup@gmail.com"
-                                        className="block text-lg md:text-xl font-bold font-sans text-white hover:text-[var(--color-brand-orange)] transition-colors"
+                                        className="block text-base md:text-lg font-bold font-sans text-white hover:text-[var(--color-brand-orange)] transition-colors"
                                     >
                                         contact.dkwgroup@gmail.com
                                     </a>
                                     <a
                                         href="tel:+48517957875"
-                                        className="block text-lg md:text-xl font-bold font-sans text-white hover:text-[var(--color-brand-orange)] transition-colors"
+                                        className="block text-base md:text-lg font-bold font-sans text-white hover:text-[var(--color-brand-orange)] transition-colors"
                                     >
                                         +48 517 957 875
                                     </a>
@@ -84,24 +85,16 @@ export default function Contact() {
                     <div className="bg-[#050505] p-6 md:p-10 border-2 border-[#333] brutal-shadow relative">
                         <div className="absolute -top-4 -right-4 w-8 h-8 bg-[var(--color-brand-orange)]"></div>
 
-                        {/* Success Notification */}
+                        {/* Success Popup */}
                         {status === "success" && (
-                            <div className="absolute inset-0 bg-[#050505]/95 backdrop-blur-sm flex items-center justify-center z-10 p-8">
-                                <div className="text-center">
-                                    <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-                                    <h3 className="text-xl font-bold text-white mb-3 font-sans">{t("success_title")}</h3>
-                                    <p className="text-gray-400 font-mono text-sm leading-relaxed mb-6">{t("success_message")}</p>
-                                    <button
-                                        onClick={() => setStatus("idle")}
-                                        className="px-6 py-2 border border-[#333] text-gray-300 font-mono text-sm hover:border-[var(--color-brand-orange)] hover:text-white transition-colors"
-                                    >
-                                        OK
-                                    </button>
-                                </div>
-                            </div>
+                            <SuccessPopup
+                                title={t("success_title")}
+                                message={t("success_message")}
+                                onClose={() => setStatus("idle")}
+                            />
                         )}
 
-                        <form className="space-y-6 font-mono text-sm" onSubmit={handleSubmit}>
+                        <form className="space-y-6 font-mono text-xs" onSubmit={handleSubmit}>
                             <div>
                                 <label htmlFor="contact-name" className="block text-gray-400 mb-2 uppercase tracking-wider">{t("nameLabel")}</label>
                                 <input
@@ -158,10 +151,14 @@ export default function Contact() {
                                 className="w-full flex items-center justify-center px-8 py-4 bg-[var(--color-brand-orange)] text-black font-bold uppercase tracking-widest hover:bg-[var(--color-brand-orange-hover)] transition-colors group disabled:opacity-60 disabled:cursor-not-allowed"
                             >
                                 {status === "loading" ? (
-                                    <>
-                                        {t("sending")}
-                                        <Loader2 className="ml-3 w-5 h-5 animate-spin" />
-                                    </>
+                                    <div className="flex items-center gap-4">
+                                        <span className="animate-pulse">{t("sending")}</span>
+                                        <div className="flex gap-1">
+                                            <div className="w-2 h-2 bg-black animate-bounce [animation-delay:-0.3s]"></div>
+                                            <div className="w-2 h-2 bg-black animate-bounce [animation-delay:-0.15s]"></div>
+                                            <div className="w-2 h-2 bg-black animate-bounce"></div>
+                                        </div>
+                                    </div>
                                 ) : (
                                     <>
                                         {t("submit")}

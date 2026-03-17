@@ -1,25 +1,44 @@
 import { CheckCircle2, Zap } from "lucide-react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
-export default function ServiceOfferings() {
+interface ServiceOfferingsProps {
+    bgImage?: string;
+    hideBox?: boolean;
+}
+
+export default function ServiceOfferings({ bgImage, hideBox = false }: ServiceOfferingsProps) {
     const t = useTranslations("ServiceOfferings");
 
     return (
-        <section className="py-24 bg-[#050505] border-b border-[#333]">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="relative py-24 border-b border-[#333] overflow-hidden">
+            {bgImage && (
+                <div className="absolute inset-0 z-0">
+                    <Image
+                        src={bgImage}
+                        alt=""
+                        fill
+                        className="object-cover opacity-50"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#050505] via-[#050505]/95 to-transparent"></div>
+                </div>
+            )}
+            {!bgImage && <div className="absolute inset-0 bg-[#050505] -z-10"></div>}
+
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
                 <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
 
                     {/* Left Side: Offerings List */}
-                    <div className="w-full lg:w-1/2">
-                        <h2 className="text-4xl font-bold font-sans tracking-tight uppercase text-white mb-6">
+                    <div className={`w-full ${hideBox ? 'lg:w-full max-w-4xl' : 'lg:w-1/2'}`}>
+                        <h2 className="text-3xl font-bold font-sans tracking-tight uppercase text-white mb-6">
                             {t("heading_1")} <span className="text-[var(--color-brand-orange)]">{t("heading_2")}</span>
                         </h2>
-                        <p className="text-gray-400 font-mono text-sm leading-relaxed mb-10 max-w-lg">
+                        <p className="text-gray-400 font-mono text-xs leading-relaxed mb-10 max-w-lg">
                             {t("description")}
                         </p>
 
-                        <ul className="space-y-4 font-mono text-sm text-gray-300">
+                        <ul className={`grid grid-cols-1 ${hideBox ? 'md:grid-cols-2 gap-x-12' : '' } gap-y-4 font-mono text-xs text-gray-300`}>
                             {Array.from({ length: 6 }).map((_, i) => (
                                 <li key={i} className="flex items-center gap-3">
                                     <CheckCircle2 className="w-5 h-5 text-[var(--color-brand-orange)] flex-shrink-0" />
@@ -30,18 +49,20 @@ export default function ServiceOfferings() {
                     </div>
 
                     {/* Right Side: Informational Box */}
-                    <div className="w-full lg:w-1/2 relative">
-                        <div className="absolute inset-0 bg-[var(--color-brand-orange)] translate-x-4 translate-y-4 -z-10 bg-opacity-40 pointer-events-none"></div>
-                        <div className="bg-[#0a0a0a] border border-[#333] p-10 lg:p-14 brutal-shadow flex flex-col items-center text-center">
-                            <div className="w-16 h-16 rounded-full border border-[var(--color-brand-orange)] flex items-center justify-center mb-8 rotate-12">
-                                <Zap className="w-8 h-8 text-[var(--color-brand-orange)]" />
+                    {!hideBox && (
+                        <div className="w-full lg:w-1/2 relative">
+                            <div className="absolute inset-0 bg-[var(--color-brand-orange)] translate-x-4 translate-y-4 -z-10 bg-opacity-40 pointer-events-none"></div>
+                            <div className="bg-[#0a0a0a] border border-[#333] p-10 lg:p-14 brutal-shadow flex flex-col items-center text-center transition-transform hover:scale-[1.02]">
+                                <div className="w-16 h-16 rounded-full border border-[var(--color-brand-orange)] flex items-center justify-center mb-8 rotate-12">
+                                    <Zap className="w-8 h-8 text-[var(--color-brand-orange)]" />
+                                </div>
+                                <h3 className="text-xl font-bold font-sans uppercase text-white mb-4">{t("box_title")}</h3>
+                                <p className="text-gray-400 font-mono text-xs leading-relaxed">
+                                    {t("box_desc")}
+                                </p>
                             </div>
-                            <h3 className="text-2xl font-bold font-sans uppercase text-white mb-4">{t("box_title")}</h3>
-                            <p className="text-gray-400 font-mono text-sm leading-relaxed">
-                                {t("box_desc")}
-                            </p>
                         </div>
-                    </div>
+                    )}
 
                 </div>
 

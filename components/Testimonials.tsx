@@ -16,6 +16,21 @@ export default function Testimonials() {
             name: "Piotr Wiśniewski",
             role: "Właściciel, FitnessClub",
             text: "Dzięki ich sesjom zdjęciowym i wideo nasz klub w końcu wygląda w internecie tak samo dobrze jak na żywo. Gorąco polecam!"
+        },
+        {
+            name: "Grzegorz Zawadzki",
+            role: "Właściciel, E-shop",
+            text: "Social Media Management od DKW Group to game changer. Sprzedaż wzrosła o 40% w pierwszym kwartale. Wiedzą co robią!"
+        },
+        {
+            name: "Magdalena K.",
+            role: "Założycielka Kliniki Estetycznej",
+            text: "Zasięgi naszych postów wystrzeliły w górę. Profesjonalizm i dbałość o estetykę marki na najwyższym poziomie."
+        },
+        {
+            name: "Robert Milewski",
+            role: "Dyrektor Operacyjny, LogiTrans",
+            text: "Filmy korporacyjne wykonane przez zespół DKW oddają ducha naszej firmy. Współpraca przebiegła sprawnie i bezproblemowo."
         }
     ];
 

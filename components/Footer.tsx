@@ -9,6 +9,7 @@ const FOOTER_LINKS_PL = [
     { label: "BLOG", href: "/blog" as const },
     { label: "PORTFOLIO", href: "/portfolio" as const },
     { label: "KONTAKT", href: "/kontakt" as const },
+    { label: "DARMOWA CHECKLISTA", href: "/checklista" as const },
 ];
 
 const FOOTER_LINKS_EN = [
@@ -19,6 +20,7 @@ const FOOTER_LINKS_EN = [
     { label: "BLOG", href: "/blog" as const },
     { label: "PORTFOLIO", href: "/portfolio" as const },
     { label: "CONTACT", href: "/kontakt" as const },
+    { label: "FREE CHECKLIST", href: "/checklista" as const },
 ];
 
 export default function Footer() {

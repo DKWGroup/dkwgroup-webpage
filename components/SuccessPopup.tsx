@@ -4,12 +4,15 @@ import { CheckCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 interface SuccessPopupProps {
+    isOpen?: boolean;
     title: string;
     message: string;
     onClose: () => void;
 }
 
-export default function SuccessPopup({ title, message, onClose }: SuccessPopupProps) {
+export default function SuccessPopup({ isOpen = true, title, message, onClose }: SuccessPopupProps) {
+    if (!isOpen) return null;
+
     return (
         <div className="fixed inset-0 flex items-center justify-center z-[100] p-4 pointer-events-auto">
             {/* Backdrop with intense blur */}

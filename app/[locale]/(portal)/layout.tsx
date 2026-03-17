@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/src/i18n/routing";
 import { usePathname } from "next/navigation";
 import {
     LayoutDashboard,
@@ -12,33 +12,17 @@ import {
 } from "lucide-react";
 
 const PORTAL_NAVIGATION = [
-    { name: "Pulpit", href: "/dashboard", icon: LayoutDashboard },
-    { name: "Projekty", href: "/dashboard/projekty", icon: FolderOpen },
-    { name: "Wiadomości", href: "/dashboard/wiadomosci", icon: MessageSquare },
-    { name: "Ustawienia", href: "/dashboard/ustawienia", icon: Settings },
+    { name: "Pulpit", href: "/dashboard" as const, icon: LayoutDashboard },
+    { name: "Projekty", href: "/dashboard/projekty" as const, icon: FolderOpen },
+    { name: "Wiadomości", href: "/dashboard/wiadomosci" as const, icon: MessageSquare },
+    { name: "Ustawienia", href: "/dashboard/ustawienia" as const, icon: Settings },
 ];
-
-import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
-import "../globals.css";
-
-const spaceGrotesk = Space_Grotesk({
-    variable: "--font-space-grotesk",
-    subsets: ["latin"],
-    weight: ["300", "400", "500", "600", "700"],
-});
-
-const jetbrainsMono = JetBrains_Mono({
-    variable: "--font-jetbrains-mono",
-    subsets: ["latin"],
-});
 
 export default function PortalLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
 
     return (
-        <html lang="pl">
-            <body className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans antialiased bg-black text-white`}>
-                <div className="flex bg-[#050505] min-h-screen text-white relative z-50">
+        <div className="flex bg-[#050505] min-h-screen text-white relative z-50">
 
                     {/* Sidebar Desktop */}
                     <aside className="hidden md:flex flex-col w-64 bg-[#0a0a0a] border-r border-[#333] fixed h-full z-40">
@@ -69,7 +53,7 @@ export default function PortalLayout({ children }: { children: React.ReactNode }
                         </nav>
 
                         <div className="p-4 border-t border-[#333]">
-                            <Link href="/login" className="flex items-center gap-3 px-4 py-3 w-full text-gray-400 hover:text-[var(--color-brand-orange)] hover:bg-[#111] transition-colors font-mono text-sm">
+                            <Link href={"/login" as const} className="flex items-center gap-3 px-4 py-3 w-full text-gray-400 hover:text-[var(--color-brand-orange)] hover:bg-[#111] transition-colors font-mono text-sm">
                                 <LogOut className="w-5 h-5" />
                                 Wyloguj się
                             </Link>
@@ -102,8 +86,6 @@ export default function PortalLayout({ children }: { children: React.ReactNode }
                         </div>
                     </main>
 
-                </div>
-            </body>
-        </html>
+        </div>
     );
 }

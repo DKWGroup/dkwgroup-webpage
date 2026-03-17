@@ -15,9 +15,46 @@ import {
     Loader2
 } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import SuccessPopup from "@/components/SuccessPopup";
-import Navbar from "@/components/Navbar";
+import { motion, useScroll, useTransform, useSpring, useInView } from "framer-motion";
+
+// Reusable Mini CTA Component
+const MiniCTA = ({ title, buttonText }: { title: string, buttonText: string }) => (
+    <div className="w-full bg-[var(--color-brand-orange)] py-8 px-4 flex flex-col md:flex-row items-center justify-between brutal-shadow my-0 border-y-2 border-black z-20 relative">
+        <div className="max-w-4xl">
+            <h3 className="text-black text-xl md:text-2xl font-black uppercase tracking-tight mb-4 md:mb-0">
+                {title}
+            </h3>
+        </div>
+        <a href="#odbierz" className="whitespace-nowrap inline-flex items-center justify-center px-6 py-3 bg-black text-white font-bold uppercase hover:bg-gray-800 transition-colors brutal-shadow text-sm group shrink-0">
+            {buttonText}
+            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        </a>
+    </div>
+);
+
+// Floating Parallax Icon Component
+const ParallaxIcon = ({ children, x, y, delay = 0, speed = 1 }: { children: React.ReactNode, x: string, y: string, delay?: number, speed?: number }) => {
+    return (
+        <motion.div
+            className="absolute opacity-10 pointer-events-none z-0"
+            style={{ left: x, top: y }}
+            animate={{
+                y: ["-10px", "10px", "-10px"],
+                rotate: [-5, 5, -5]
+            }}
+            transition={{
+                duration: 4 * speed,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: delay
+            }}
+        >
+            {children}
+        </motion.div>
+    );
+};
 
 export default function ChecklistLandingPage() {
     const t = useTranslations("ChecklistLanding");
@@ -38,14 +75,13 @@ export default function ChecklistLandingPage() {
         setStatus("loading");
 
         try {
-            // Simplified logic using existing contact endpoint for now
-            const response = await fetch('/api/contact', {
+            const response = await fetch('/api/newsletter/subscribe', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     name: formData.name,
                     email: formData.email,
-                    message: "Prośba o darmową checklistę (Landing Page)",
+                    source: "marketing-checklist",
                 }),
             });
 
@@ -62,10 +98,9 @@ export default function ChecklistLandingPage() {
 
     return (
         <main className="bg-[#050505] min-h-screen text-white font-sans selection:bg-[var(--color-brand-orange)] selection:text-white">
-            <Navbar />
             
             {/* 1. HERO SECTION */}
-            <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 px-4 overflow-hidden">
+            <section className="relative pt-20 pb-20 md:pt-32 md:pb-32 px-4 overflow-hidden">
                 <div className="absolute top-0 right-0 w-1/2 h-1/2 bg-[var(--color-brand-orange)]/5 blur-[120px] rounded-full point-events-none"></div>
                 
                 <div className="max-w-4xl mx-auto text-center relative z-10">
@@ -92,8 +127,15 @@ export default function ChecklistLandingPage() {
             </section>
 
             {/* 2. CONTRAST SECTION */}
-            <section className="py-24 bg-[#0a0a0a] border-y border-[#222]">
-                <div className="max-w-6xl mx-auto px-4">
+            <section className="py-24 bg-[#050505] border-y border-[#222] relative overflow-hidden">
+                {/* Parallax Background Icons */}
+                <ParallaxIcon x="10%" y="15%" speed={1.2} delay={0}><CheckCircle2 className="w-24 h-24 text-[var(--color-brand-orange)]" /></ParallaxIcon>
+                <ParallaxIcon x="80%" y="10%" speed={1.5} delay={1}><XCircle className="w-32 h-32 text-red-500" /></ParallaxIcon>
+                <ParallaxIcon x="5%" y="70%" speed={0.8} delay={2}><XCircle className="w-20 h-20 text-red-500" /></ParallaxIcon>
+                <ParallaxIcon x="85%" y="60%" speed={1.1} delay={0.5}><CheckCircle2 className="w-40 h-40 text-[var(--color-brand-orange)]" /></ParallaxIcon>
+                <ParallaxIcon x="50%" y="85%" speed={1.3} delay={1.5}><CheckCircle2 className="w-16 h-16 text-[var(--color-brand-orange)]" /></ParallaxIcon>
+                
+                <div className="max-w-6xl mx-auto px-4 relative z-10">
                     <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 uppercase">{t("contrast_h2")}</h2>
                     
                     <div className="grid md:grid-cols-2 gap-8 lg:gap-16">
@@ -129,12 +171,27 @@ export default function ChecklistLandingPage() {
                 </div>
             </section>
 
+            {/* MINI CTA 1 */}
+            <MiniCTA title={t("mini_cta_title")} buttonText={t("mini_cta_button")} />
+
             {/* 3. TARGET AUDIENCE */}
-            <section className="py-24 max-w-7xl mx-auto px-4">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold uppercase mb-4">{t("target_h2")}</h2>
-                    <p className="text-gray-400 font-mono">{t("target_sub")}</p>
+            <section className="py-24 w-full relative">
+                {/* Background Image Setup */}
+                <div className="absolute inset-0 z-0">
+                    <Image 
+                        src="/portfolio-photos/069c54d6-020e-498c-89eb-e025c6c350ec_rw_600.webp" 
+                        alt="Portfolio background" 
+                        fill 
+                        className="object-cover opacity-10"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-b from-[#050505] via-[#050505]/70 to-[#050505]"></div>
                 </div>
+
+                <div className="max-w-7xl mx-auto px-4 relative z-10">
+                    <div className="text-center mb-16">
+                        <h2 className="text-3xl md:text-4xl font-bold uppercase mb-4">{t("target_h2")}</h2>
+                        <p className="text-gray-400 font-mono">{t("target_sub")}</p>
+                    </div>
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {/* Beauty */}
@@ -157,6 +214,7 @@ export default function ChecklistLandingPage() {
                         <Utensils className="w-12 h-12 text-[var(--color-brand-orange)] mb-6 group-hover:scale-110 transition-transform" />
                         <h3 className="font-bold uppercase tracking-wider">{t("target_4")}</h3>
                     </div>
+                </div>
                 </div>
             </section>
 
@@ -185,9 +243,24 @@ export default function ChecklistLandingPage() {
                 </div>
             </section>
 
+            {/* MINI CTA 2 */}
+            <MiniCTA title={t("mini_cta_title")} buttonText={t("mini_cta_button")} />
+
             {/* 5. AUTHORITY & 6. COST AWARENESS */}
-            <section className="py-24 max-w-5xl mx-auto px-4">
-                <div className="grid md:grid-cols-2 gap-16 items-center mb-32">
+            <section className="py-24 w-full relative">
+                 {/* Background Image Setup */}
+                 <div className="absolute inset-0 z-0 hidden md:block">
+                    <Image 
+                        src="/portfolio-photos/76ad12e6-6966-4374-841f-32b1baad5255_rw_600.webp" 
+                        alt="Background" 
+                        fill 
+                        className="object-cover opacity-[0.05]"
+                    />
+                     <div className="absolute inset-0 bg-gradient-to-r from-[#050505] via-[#050505]/80 to-[#050505]"></div>
+                </div>
+
+                <div className="max-w-5xl mx-auto px-4 relative z-10">
+                    <div className="grid md:grid-cols-2 gap-16 items-center mb-32">
                     <div className="relative">
                         <div className="absolute inset-0 bg-[var(--color-brand-orange)] translate-x-4 translate-y-4 border-2 border-[var(--color-brand-orange)]"></div>
                         <div className="relative h-[400px] md:h-[500px] bg-[#111] border-2 border-[#333] overflow-hidden z-10">
@@ -230,6 +303,7 @@ export default function ChecklistLandingPage() {
                         </div>
                     </div>
                 </div>
+                </div>
             </section>
 
             {/* 7. TESTIMONIALS */}
@@ -258,9 +332,24 @@ export default function ChecklistLandingPage() {
                 </div>
             </section>
 
+            {/* MINI CTA 3 */}
+            <MiniCTA title={t("mini_cta_title")} buttonText={t("mini_cta_button")} />
+
             {/* 8. FAQ */}
-            <section className="py-24 max-w-3xl mx-auto px-4">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 uppercase">{t("faq_h2")}</h2>
+            <section className="py-24 w-full relative">
+                {/* Background Image Setup */}
+                <div className="absolute inset-0 z-0">
+                    <Image 
+                        src="/portfolio-photos/f00994ac-75b9-4e52-9bf1-6ffa62da844b_rw_600.webp" 
+                        alt="FAQ background" 
+                        fill 
+                        className="object-cover opacity-[0.15] mix-blend-overlay"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-transparent to-[#050505]"></div>
+                </div>
+
+                <div className="max-w-3xl mx-auto px-4 relative z-10">
+                    <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 uppercase">{t("faq_h2")}</h2>
                 
                 <div className="space-y-4">
                     {[1, 2, 3].map((i) => (
@@ -281,6 +370,7 @@ export default function ChecklistLandingPage() {
                             </div>
                         </div>
                     ))}
+                </div>
                 </div>
             </section>
 

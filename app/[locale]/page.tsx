@@ -15,6 +15,7 @@ import Faq from "@/components/Faq";
 import Contact from "@/components/Contact";
 import AnimatedSection from "@/components/AnimatedSection";
 import AlternativeCta from "@/components/AlternativeCta";
+import NewsletterSection from "@/components/NewsletterSection";
 import type { Metadata } from "next";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -103,9 +104,9 @@ export default function Home() {
         <Testimonials />
       </AnimatedSection>
       
-      <AnimatedSection animation="fade-right">
-        <Blog />
-      </AnimatedSection>
+      <Blog />
+      
+      <NewsletterSection />
       
       <AnimatedSection animation="fade-up">
         <Team />

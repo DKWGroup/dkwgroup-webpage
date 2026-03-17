@@ -2,8 +2,11 @@
 
 import { Link } from "@/src/i18n/routing";
 import { ArrowRight, Phone } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function StatsCta() {
+    const t = useTranslations("StatsCta");
+
     return (
         <section className="bg-[#050505] border-b border-[#333] relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -16,10 +19,10 @@ export default function StatsCta() {
                         </div>
                         <div>
                             <h3 className="text-xl md:text-2xl font-bold font-sans text-white uppercase tracking-tight">
-                                Umów się na <span className="text-[var(--color-brand-orange)]">darmową konsultację!</span>
+                                {t("heading")} <span className="text-[var(--color-brand-orange)]">{t("heading_highlight")}</span>
                             </h3>
                             <p className="text-gray-400 font-mono text-sm mt-2 max-w-xl">
-                                Porozmawiajmy o Twoim projekcie — bez zobowiązań. Doradzimy, zaproponujemy strategię i pokażemy, jak możemy pomóc.
+                                {t("description")}
                             </p>
                         </div>
                     </div>
@@ -29,7 +32,7 @@ export default function StatsCta() {
                         href="#kontakt"
                         className="inline-flex items-center justify-center px-8 py-4 bg-[var(--color-brand-orange)] text-black font-bold uppercase tracking-widest text-sm font-mono brutal-shadow hover:bg-[var(--color-brand-orange-hover)] transition-colors group whitespace-nowrap flex-shrink-0"
                     >
-                        Skontaktuj się
+                        {t("cta")}
                         <ArrowRight className="ml-3 w-5 h-5 transition-transform group-hover:translate-x-2" />
                     </Link>
 

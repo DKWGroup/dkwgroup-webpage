@@ -2,8 +2,10 @@
 
 import { Link } from "@/src/i18n/routing";
 import { ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function AlternativeCta() {
+    const t = useTranslations("AlternativeCta");
     return (
         <section className="bg-[#050505] border-b border-[#333] relative overflow-hidden py-10 md:py-0">
             {/* Background glowing decal */}
@@ -16,22 +18,22 @@ export default function AlternativeCta() {
                     <div className="md:col-span-7 py-8 md:py-16 text-center md:text-left z-20">
                         <div className="inline-flex items-center gap-2 px-3 py-1.5 border border-[#333] bg-black max-w-max mb-6">
                             <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-brand-orange)] animate-pulse"></span>
-                            <span className="text-[10px] font-bold font-mono text-gray-400 uppercase tracking-widest">Darmowa Wycena</span>
+                            <span className="text-[10px] font-bold font-mono text-gray-400 uppercase tracking-widest">{t("badge")}</span>
                         </div>
                         
                         <h2 className="text-3xl lg:text-3xl font-bold font-sans text-white uppercase tracking-tight mb-3 leading-none">
-                            Gotowy na <span className="text-[var(--color-brand-orange)]">skuteczne</span><br className="hidden lg:block"/> rozwiązania?
+                            {t("heading_part1")} <span className="text-[var(--color-brand-orange)]">{t("heading_highlight")}</span><br className="hidden lg:block"/> {t("heading_part2")}
                         </h2>
                         
                         <p className="text-gray-400 font-mono text-sm leading-relaxed mb-6 max-w-lg mx-auto md:mx-0">
-                            Umów się na darmową konsultację. Zbadamy możliwości i zaproponujemy strategię wideo skrojoną na miarę.
+                            {t("description")}
                         </p>
                         
                         <Link
                             href="#kontakt"
                             className="inline-flex items-center justify-center px-8 py-4 bg-[var(--color-brand-orange)] text-black font-bold uppercase tracking-widest text-sm font-mono brutal-shadow hover:bg-[var(--color-brand-orange-hover)] transition-all group shadow-[4px_4px_0_0_#333]"
                         >
-                            Zarezerwuj termin
+                            {t("cta")}
                             <ArrowRight className="ml-3 w-5 h-5 transition-transform group-hover:translate-x-2" />
                         </Link>
                     </div>

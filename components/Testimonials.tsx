@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 
 export default function Testimonials() {
     const t = useTranslations("Testimonials");
-    const testimonialsCount = 6;
+    const testimonialsCount = 3;
 
     return (
         <section className="py-16 bg-[#0a0a0a] border-b border-[#333] relative overflow-hidden">

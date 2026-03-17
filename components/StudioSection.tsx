@@ -1,7 +1,10 @@
 import Image from "next/image";
 import { Link } from "@/src/i18n/routing";
+import { useTranslations } from "next-intl";
 
 export default function StudioSection() {
+    const t = useTranslations("StudioSection");
+
     return (
         <section className="bg-[#050505] py-16 border-b border-[#333] overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -9,13 +12,13 @@ export default function StudioSection() {
 
                     <div>
                         <h2 className="text-3xl md:text-4xl font-bold font-sans tracking-tight mb-6 uppercase text-white leading-tight">
-                            Studio nagrań <br />
-                            <span className="text-[var(--color-brand-orange)]">wideo<br />i podcastów</span><br />
-                            w Katowicach
+                            {t("heading_part1")} <br />
+                            <span className="text-[var(--color-brand-orange)] font-bold">{t("heading_highlight")}</span><br />
+                            {t("heading_part2")}
                         </h2>
 
                         <p className="text-gray-400 font-mono text-base leading-relaxed mb-8 border-l-4 border-[var(--color-brand-orange)] pl-5">
-                            Dla firm, ekspertów, trenerów i twórców internetowych, którzy chcą nagrywać profesjonalne podcasty i wideo bez martwienia się o technikalia.
+                            {t("description")}
                         </p>
 
                         <Link
@@ -24,14 +27,14 @@ export default function StudioSection() {
                             rel="noopener noreferrer"
                             className="inline-flex items-center justify-center px-8 py-4 bg-[#111] border-2 border-[#333] text-white font-bold uppercase tracking-wider hover:border-[var(--color-brand-orange)] hover:text-[var(--color-brand-orange)] transition-colors brutal-shadow text-sm md:text-base"
                         >
-                            Odwiedź podcastkatowice.pl
+                            {t("cta")}
                         </Link>
                     </div>
 
                     <div className="relative w-full aspect-video border-2 border-[#333] brutal-shadow overflow-hidden group">
                         <Image
                             src="/photos/IMG_2753.webp"
-                            alt="Studio podcastowe DKW Group w Katowicach"
+                            alt="DKW Group Studio"
                             fill
                             className="object-cover transition-all duration-700 group-hover:scale-[1.03]"
                         />

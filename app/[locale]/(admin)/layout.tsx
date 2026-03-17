@@ -1,7 +1,8 @@
 "use client";
 
-import Link from "next/link";
+import { Link, useRouter } from "@/src/i18n/routing";
 import { usePathname } from "next/navigation";
+import { supabase } from "@/src/utils/supabase";
 import {
     BarChart3,
     Users,
@@ -10,41 +11,33 @@ import {
     Bot,
     LogOut,
     FolderOpen,
-    Settings
+    Settings,
+    Mail
 } from "lucide-react";
 
 // Rozbudowaną sieć linków dla admina (CMS / CRM)
 const ADMIN_NAVIGATION = [
-    { name: "Przegląd", href: "/admin", icon: BarChart3 },
-    { name: "CRM: Klienci", href: "/admin/crm", icon: Users },
-    { name: "Pipeline", href: "/admin/pipeline", icon: Trello },
-    { name: "CMS: Treści", href: "/admin/cms", icon: FileEdit },
-    { name: "Pliki i Dokumenty", href: "/admin/pliki", icon: FolderOpen },
-    { name: "Integracje AI", href: "/admin/ai", icon: Bot },
-    { name: "Ustawienia", href: "/admin/ustawienia", icon: Settings },
+    { name: "Dashboard", href: "/admin" as const, icon: BarChart3 },
+    { name: "Klienci", href: "/admin/crm" as const, icon: Users },
+    { name: "Newsletter", href: "/admin/newsletter" as const, icon: Mail },
+    { name: "Narzędzia", href: "/admin/cms" as const, icon: FileEdit },
+    { name: "Ustawienia", href: "/admin/ustawienia" as const, icon: Settings },
 ];
 
-import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
-import "../globals.css";
-
-const spaceGrotesk = Space_Grotesk({
-    variable: "--font-space-grotesk",
-    subsets: ["latin"],
-    weight: ["300", "400", "500", "600", "700"],
-});
-
-const jetbrainsMono = JetBrains_Mono({
-    variable: "--font-jetbrains-mono",
-    subsets: ["latin"],
-});
+const spaceGrotesk = { variable: "--font-space-grotesk" };
+const jetbrainsMono = { variable: "--font-jetbrains-mono" };
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
+    const router = useRouter();
+
+    const handleLogout = async () => {
+        await supabase.auth.signOut();
+        router.push("/login");
+    };
 
     return (
-        <html lang="pl">
-            <body className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans antialiased bg-black text-white`}>
-                <div className="flex bg-[#050505] min-h-screen text-white relative z-50 font-sans">
+        <div className="flex bg-[#050505] min-h-screen text-white relative z-50 font-sans">
 
                     {/* Sidebar Admin Desktop */}
                     <aside className="hidden md:flex flex-col w-64 bg-[#0a0a0a] border-r border-[#333] fixed h-full z-40">
@@ -78,10 +71,13 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                         </nav>
 
                         <div className="p-4 border-t border-[#333] bg-[#050505]">
-                            <Link href="/login" className="flex items-center justify-center gap-2 px-4 py-3 w-full bg-[#111] border border-[#333] hover:border-[var(--color-brand-orange)] text-gray-400 hover:text-[var(--color-brand-orange)] transition-colors font-mono text-xs uppercase tracking-widest">
+                            <button 
+                                onClick={handleLogout}
+                                className="flex items-center justify-center gap-2 px-4 py-3 w-full bg-[#111] border border-[#333] hover:border-[var(--color-brand-orange)] text-gray-400 hover:text-[var(--color-brand-orange)] transition-colors font-mono text-xs uppercase tracking-widest"
+                            >
                                 <LogOut className="w-4 h-4" />
                                 Wyloguj (Admin)
-                            </Link>
+                            </button>
                         </div>
                     </aside>
 
@@ -116,8 +112,6 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                         </div>
                     </main>
 
-                </div>
-            </body>
-        </html>
+        </div>
     );
 }

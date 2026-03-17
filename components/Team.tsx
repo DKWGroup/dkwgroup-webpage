@@ -43,7 +43,7 @@ export default function Team() {
                                             src={photos[index]}
                                             alt={t(`members.${index}.name`)}
                                             fill
-                                            className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                                            className="object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-500"
                                             sizes="(max-width: 768px) 100vw, 33vw"
                                         />
                                     </div>

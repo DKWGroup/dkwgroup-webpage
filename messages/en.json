@@ -1435,40 +1435,34 @@
         "cta_desc": "Contact us to discuss your project and learn about our capabilities.",
         "cta_button": "Contact us"
     },
+    "Newsletter": {
+        "heading_1": "Get your free",
+        "heading_2": "checklist",
+        "description": "Sign up for our newsletter and download the 12-point marketing optimization checklist for your business.",
+        "button": "GET FREE CHECKLIST",
+        "placeholder": "Your email address",
+        "tagline": "100% Free • No Spam • PDF Format",
+        "disclaimer": "By subscribing you agree to our privacy policy"
+    },
     "Testimonials": {
         "heading_1": "Client",
         "heading_2": "Testimonials",
         "description": "Check what the clients we have had the pleasure to work with say about us.",
         "items": [
             {
-                "name": "John Smith",
-                "role": "CEO, TechCompany",
-                "text": "Working with DKW Group was a great decision. Professional approach and amazing results in the form of great video materials that helped us increase sales."
+                "name": "Paweł Węglarz",
+                "role": "GlowUp Nutrition & Vital Clinic",
+                "text": "DKW Group is a team characterized by extraordinary diligence and consistency – they always see things through to the end."
             },
             {
-                "name": "Anna Newman",
-                "role": "Marketing Manager, BeautyBrand",
-                "text": "We commissioned them to handle our advertising campaigns and the results exceeded our wildest expectations. Great contact, timeliness, and full understanding of our needs."
+                "name": "Adrian Dębowiec",
+                "role": "Turbo Marketing",
+                "text": "I highly recommend DKW Group. If you create podcasts or plan to create courses or other educational materials, podcastkatowice.pl is a great place. The team has extensive experience in editing and offers several really useful additional services, including support in creating content for social media. The quality of implementation is at a very high level. You certainly won't regret it!"
             },
             {
-                "name": "Peter West",
-                "role": "Owner, FitnessClub",
-                "text": "Thanks to their photo and video sessions, our club finally looks as good online as it does in person. I highly recommend them!"
-            },
-            {
-                "name": "George Miller",
-                "role": "Owner, E-shop",
-                "text": "Social Media Management from DKW Group is a game changer. Sales increased by 40% in the first quarter. They know what they are doing!"
-            },
-            {
-                "name": "Magdalene K.",
-                "role": "Founder, Aesthetic Clinic",
-                "text": "Our post reach rocketed. Professionalism and attention to brand aesthetics at the highest level."
-            },
-            {
-                "name": "Robert Winston",
-                "role": "Operations Director, LogiTrans",
-                "text": "Corporate films made by the DKW team capture the spirit of our company. The collaboration went smoothly and without problems."
+                "name": "Alex Matoga",
+                "role": "RaveDrone & Limitless",
+                "text": "I definitely recommend working with them — full professionalism at every stage of implementation. The websites work exemplary, everything is refined and functions without a flaw. Any corrections are implemented very quickly, which significantly simplifies the entire process. A big plus is also the communication and atmosphere — everything goes smoothly, specifically and in a very friendly tone. Cooperation is at a truly high level."
             }
         ]
     },
@@ -1482,6 +1476,8 @@
         "hero_h1": "Stop losing customers to your competitors. Build visibility that sells.",
         "hero_sub": "Download the 12-point marketing optimization checklist and learn how to quickly seal your sales funnel. Fill the calendar of your salon, clinic or restaurant.",
         "hero_cta": "Download the FREE checklist",
+        "mini_cta_title": "Ready to outpace the competition? Download the checklist and implement changes today.",
+        "mini_cta_button": "Grab the free PDF",
         "contrast_h2": "Does this sound familiar?",
         "contrast_pain_1": "You rely mostly on \"word of mouth\", which can be unpredictable.",
         "contrast_pain_2": "Your booking calendar is empty in the middle of the week.",
@@ -1546,5 +1542,32 @@
         "portfolio": "Portfolio",
         "contact": "Contact",
         "services": "Services"
+    },
+    "StatsCta": {
+        "heading": "Schedule a",
+        "heading_highlight": "free consultation!",
+        "description": "Let's talk about your project — no strings attached. We'll advise, propose a strategy, and show you how we can help.",
+        "cta": "Get in touch"
+    },
+    "ScrollingImages": {
+        "heading_1": "Our",
+        "heading_2": "Team",
+        "subheading": "Swipe with your finger/mouse or click to enlarge.",
+        "zoom_label": "Enlarge image"
+    },
+    "AlternativeCta": {
+        "badge": "FREE QUOTE",
+        "heading_part1": "Ready for",
+        "heading_highlight": "effective",
+        "heading_part2": "solutions?",
+        "description": "Schedule a free consultation. We'll explore the possibilities and propose a tailor-made video strategy.",
+        "cta": "Book a date"
+    },
+    "StudioSection": {
+        "heading_part1": "Video & Podcast",
+        "heading_highlight": "recording studio",
+        "heading_part2": "in Katowice",
+        "description": "For companies, experts, coaches and internet creators who want to record professional podcasts and videos without worrying about technicalities.",
+        "cta": "Visit podcastkatowice.pl"
     }
 }

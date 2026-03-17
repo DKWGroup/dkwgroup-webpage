@@ -1435,40 +1435,34 @@
         "cta_desc": "Skontaktuj się z nami, aby omówić Twój projekt i poznać nasze możliwości.",
         "cta_button": "Skontaktuj się z nami"
     },
+    "Newsletter": {
+        "heading_1": "Odbierz darmową",
+        "heading_2": "checklistę",
+        "description": "Zapisz się do newslettera i pobierz 12-punktową checklistę optymalizacji marketingu dla Twojego biznesu.",
+        "button": "ODBIERZ DARMOWĄ CHECKLISTĘ",
+        "placeholder": "Twój adres e-mail",
+        "tagline": "100% Darmowa • Zero Spamu • Format PDF",
+        "disclaimer": "Zapisując się, akceptujesz naszą politykę prywatności"
+    },
     "Testimonials": {
         "heading_1": "Opinie",
         "heading_2": "Klientów",
         "description": "Sprawdź, co mówią o nas klienci, z którymi mieliśmy przyjemność współpracować.",
         "items": [
             {
-                "name": "Jan Kowalski",
-                "role": "CEO, TechCompany",
-                "text": "Współpraca z DKW Group to była świetna decyzja. Profesjonalne podejście i niesamowite efekty w postaci świetnych materiałów video, które pomogły nam zwiększyć sprzedaż."
+                "name": "Paweł Węglarz",
+                "role": "GlowUp Nutrition & Vital Clinic",
+                "text": "DKW Group to zespół, który wyróżnia niezwykła sumienność i konsekwencja – zawsze doprowadzają sprawy do końca."
             },
             {
-                "name": "Anna Nowak",
-                "role": "Marketing Manager, BeautyBrand",
-                "text": "Zleciliśmy im obsługę naszych kampanii reklamowych i efekty przeszły nasze najśmielsze oczekiwania. Świetny kontakt, terminowość i pełne zrozumienie naszych potrzeb."
+                "name": "Adrian Dębowiec",
+                "role": "Turbo Marketing",
+                "text": "Bardzo polecam DKW Group. Jeśli tworzysz podcasty lub planujesz tworzyć kursy czy inne materiały edukacyjne, to podcastkatowice.pl to świetne miejsce. Zespół ma duże doświadczenie w montażu i oferuje kilka naprawdę przydatnych usług dodatkowych, m.in. wsparcie w tworzeniu contentu pod social media. Jakość realizacji stoi na bardzo wysokim poziomie. Na pewno nie będziecie żałować!"
             },
             {
-                "name": "Piotr Wiśniewski",
-                "role": "Właściciel, FitnessClub",
-                "text": "Dzięki ich sesjom zdjęciowym i wideo nasz klub w końcu wygląda w internecie tak samo dobrze jak na żywo. Gorąco polecam!"
-            },
-            {
-                "name": "Grzegorz Zawadzki",
-                "role": "Właściciel, E-shop",
-                "text": "Social Media Management od DKW Group to game changer. Sprzedaż wzrosła o 40% w pierwszym kwartale. Wiedzą co robią!"
-            },
-            {
-                "name": "Magdalena K.",
-                "role": "Założycielka Kliniki Estetycznej",
-                "text": "Zasięgi naszych postów wystrzeliły w górę. Profesjonalizm i dbałość o estetykę marki na najwyższym poziomie."
-            },
-            {
-                "name": "Robert Milewski",
-                "role": "Dyrektor Operacyjny, LogiTrans",
-                "text": "Filmy korporacyjne wykonane przez zespół DKW oddają ducha naszej firmy. Współpraca przebiegła sprawnie i bezproblemowo."
+                "name": "Alex Matoga",
+                "role": "RaveDrone & Limitless",
+                "text": "Zdecydowanie polecam współpracę — pełen profesjonalizm na każdym etapie realizacji. Strony działają wzorowo, wszystko jest dopracowane i funkcjonuje bez zarzutu. Wszelkie poprawki są wdrażane bardzo szybko, co znacząco ułatwia cały proces. Na duży plus zasługuje również komunikacja oraz atmosfera — wszystko przebiega sprawnie, konkretnie i w bardzo przyjaznym tonie. Współpraca stoi na naprawdę wysokim poziomie."
             }
         ]
     },
@@ -1482,6 +1476,8 @@
         "hero_h1": "Przestań tracić klientów na rzecz konkurencji. Zbuduj widoczność, która sprzedaje.",
         "hero_sub": "Pobierz 12-punktową checklistę optymalizacji marketingu i dowiedz się, jak szybko uszczelnić swój lejek sprzedażowy. Zapełnij kalendarz swojego salonu, gabinetu lub restauracji.",
         "hero_cta": "Pobierz DARMOWĄ checklistę",
+        "mini_cta_title": "Gotowy wyprzedzić konkurencję? Pobierz checklistę i wdróż zmiany już dziś.",
+        "mini_cta_button": "Zgarnij darmowy PDF",
         "contrast_h2": "Czy to brzmi znajomo?",
         "contrast_pain_1": "Polegasz głównie na \"poczcie pantoflowej\", która bywa nieprzewidywalna.",
         "contrast_pain_2": "Twój kalendarz rezerwacji świeci pustkami w środku tygodnia.",
@@ -1546,5 +1542,32 @@
         "portfolio": "Portfolio",
         "contact": "Kontakt",
         "services": "Usługi"
+    },
+    "StatsCta": {
+        "heading": "Umów się na",
+        "heading_highlight": "darmową konsultację!",
+        "description": "Porozmawiajmy o Twoim projekcie — bez zobowiązań. Doradzimy, zaproponujemy strategię i pokażemy, jak możemy pomóc.",
+        "cta": "Skontaktuj się"
+    },
+    "ScrollingImages": {
+        "heading_1": "Nasze",
+        "heading_2": "Kadry",
+        "subheading": "Przeciągaj palcem/myszką lub kliknij, by powiększyć.",
+        "zoom_label": "Powiększ obraz"
+    },
+    "AlternativeCta": {
+        "badge": "Darmowa Wycena",
+        "heading_part1": "Gotowy na",
+        "heading_highlight": "skuteczne",
+        "heading_part2": "rozwiązania?",
+        "description": "Umów się na darmową konsultację. Zbadamy możliwości i zaproponujemy strategię wideo skrojoną na miarę.",
+        "cta": "Zarezerwuj termin"
+    },
+    "StudioSection": {
+        "heading_part1": "Studio nagrań",
+        "heading_highlight": "wideo i podcastów",
+        "heading_part2": "w Katowicach",
+        "description": "Dla firm, ekspertów, trenerów i twórców internetowych, którzy chcą nagrywać profesjonalne podcasty i wideo bez martwienia się o technikalia.",
+        "cta": "Odwiedź podcastkatowice.pl"
     }
 }

@@ -5,6 +5,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { LazyMotion, domAnimation, m, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { createPortal } from "react-dom";
+import { useTranslations } from "next-intl";
 
 // All available portfolio photos
 const ALL_PORTFOLIO_IMAGES = [
@@ -71,6 +72,7 @@ export default function ScrollingImages() {
     // Lightbox state
     const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
     const [isMounted, setIsMounted] = useState(false);
+    const t = useTranslations("ScrollingImages");
 
     useEffect(() => {
         setIsMounted(true);
@@ -158,8 +160,8 @@ export default function ScrollingImages() {
             <section className="bg-[#050505] overflow-hidden border-b border-[#333] py-8">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4 flex justify-between items-end">
                     <div>
-                        <h2 className="text-xl md:text-2xl font-bold font-sans text-white uppercase tracking-tight">Nasze <span className="text-[var(--color-brand-orange)]">Kadry</span></h2>
-                        <p className="text-gray-500 font-mono text-xs uppercase tracking-widest mt-1">Przeciągaj palcem/myszką lub kliknij, by powiększyć.</p>
+                        <h2 className="text-xl md:text-2xl font-bold font-sans text-white uppercase tracking-tight">{t("heading_1")} <span className="text-[var(--color-brand-orange)]">{t("heading_2")}</span></h2>
+                        <p className="text-gray-500 font-mono text-xs uppercase tracking-widest mt-1">{t("subheading")}</p>
                     </div>
                     {/* Wskaźnik przeciągania */}
                     <div className="hidden sm:flex gap-1">
@@ -203,7 +205,7 @@ export default function ScrollingImages() {
                                 <div className="absolute inset-0 bg-black/20 group-hover/img:bg-transparent transition-colors duration-500 pointer-events-none"></div>
                                 <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm px-3 py-1.5 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center gap-2 border border-[#333] pointer-events-none">
                                     <span className="w-1.5 h-1.5 bg-[var(--color-brand-orange)] rounded-full animate-pulse"></span>
-                                    <span className="text-[10px] font-mono text-white tracking-widest uppercase">Powiększ obraz</span>
+                                    <span className="text-[10px] font-mono text-white tracking-widest uppercase">{t("zoom_label")}</span>
                                 </div>
                             </div>
                         ))}

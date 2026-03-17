@@ -456,8 +456,8 @@ export default function ChecklistLandingPage() {
             <SuccessPopup
                 isOpen={status === 'success'}
                 onClose={() => setStatus('idle')}
-                title="Dziękujemy!"
-                message="Checklista została wysłana na podany adres e-mail. Sprawdź swoją skrzynkę (również folder SPAM)."
+                title="Potwierdź E-mail!"
+                message="Aby otrzymać checklistę, musisz potwierdzić swój adres. Wysłaliśmy link weryfikacyjny - sprawdź swoją skrzynkę (również folder SPAM)."
             />
         </main>
     );

@@ -3,7 +3,7 @@ import { supabase } from '@/src/utils/supabase';
 import { Resend } from 'resend';
 import { render } from '@react-email/render';
 import React from 'react';
-import PdfDeliveryEmail from '@/components/emails/PdfDeliveryEmail';
+import VerificationEmail from '@/components/emails/VerificationEmail';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -15,7 +15,18 @@ export async function POST(request: NextRequest) {
             return NextResponse.json({ error: 'Email is required' }, { status: 400 });
         }
 
-        // 1. Save or Update Subscriber
+        // 1. Save or Update Subscriber as PENDING
+        // We use upsert but we don't change status if they are already 'subscribed'
+        const { data: existingSub } = await supabase
+            .from('newsletter_subscribers')
+            .select('status')
+            .eq('email', email)
+            .single();
+
+        if (existingSub?.status === 'subscribed') {
+            return NextResponse.json({ success: true, message: 'Already subscribed' });
+        }
+
         const { data: subscriber, error: subError } = await supabase
             .from('newsletter_subscribers')
             .upsert(
@@ -23,7 +34,7 @@ export async function POST(request: NextRequest) {
                     email, 
                     name, 
                     source: source || 'unknown',
-                    status: 'subscribed',
+                    status: 'pending',
                     unsubscribed_at: null 
                 },
                 { onConflict: 'email' }
@@ -33,38 +44,24 @@ export async function POST(request: NextRequest) {
 
         if (subError) throw subError;
 
-        // 2. Check for Automation
-        if (source) {
-            const { data: automation, error: autoError } = await supabase
-                .from('newsletter_automations')
-                .select('*')
-                .eq('trigger_key', source)
-                .eq('is_active', true)
-                .single();
+        // 2. Send Verification Email
+        const verificationUrl = `${process.env.NEXT_PUBLIC_APP_URL}/api/newsletter/verify?token=${subscriber.id}`;
+        
+        const emailHtml = await render(
+            React.createElement(VerificationEmail, {
+                name: name || '',
+                verificationUrl
+            })
+        );
 
-            // If automation exists, send the email
-            if (automation) {
-                const unsubscribeUrl = `${process.env.NEXT_PUBLIC_APP_URL}/newsletter/unsubscribe/${subscriber.id}`;
-                
-                const emailHtml = await render(
-                    React.createElement(PdfDeliveryEmail, {
-                        name: name || '',
-                        pdfTitle: automation.title,
-                        pdfUrl: automation.pdf_url,
-                        unsubscribeUrl
-                    })
-                );
+        await resend.emails.send({
+            from: 'DKW Group <noreply@dkwgroup.net>',
+            to: [email],
+            subject: 'Potwierdź swój zapis do newslettera DKW Group',
+            html: emailHtml,
+        });
 
-                await resend.emails.send({
-                    from: 'DKW Group <noreply@dkwgroup.net>',
-                    to: [email],
-                    subject: `Twoja darmowa checklista: ${automation.title}`,
-                    html: emailHtml,
-                });
-            }
-        }
-
-        return NextResponse.json({ success: true });
+        return NextResponse.json({ success: true, pending: true });
     } catch (error: any) {
         console.error('Newsletter subscribe error:', error);
         return NextResponse.json({ error: error.message }, { status: 500 });

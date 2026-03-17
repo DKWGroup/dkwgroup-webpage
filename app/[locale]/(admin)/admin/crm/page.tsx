@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Users, Search, Plus, MoreHorizontal, CheckCircle, Clock, FileWarning, Loader2 } from "lucide-react";
+import { Users, Plus, Search, MoreHorizontal, CheckCircle, Clock, FileWarning, Loader2, Download } from "lucide-react";
 import { supabase } from "@/src/utils/supabase";
 
 interface Client {
@@ -18,8 +18,12 @@ export default function AdminCrmPage() {
     const [clients, setClients] = useState<Client[]>([]);
     const [searchTerm, setSearchTerm] = useState("");
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [statusFilter, setStatusFilter] = useState("all");
     const [isLoading, setIsLoading] = useState(true);
     const [isSaving, setIsSaving] = useState(false);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [totalCount, setTotalCount] = useState(0);
+    const pageSize = 20;
 
     // Form state
     const [newClient, setNewClient] = useState({
@@ -32,23 +36,41 @@ export default function AdminCrmPage() {
 
     useEffect(() => {
         fetchClients();
-    }, []);
+    }, [currentPage, statusFilter]);
 
     const fetchClients = async () => {
         setIsLoading(true);
         try {
-            const { data, error } = await supabase
+            let query = supabase
                 .from('clients')
-                .select('*')
-                .order('created_at', { ascending: false });
+                .select('*', { count: 'exact' });
+
+            if (statusFilter !== 'all') {
+                query = query.eq('status', statusFilter);
+            }
+
+            if (searchTerm) {
+                query = query.or(`name.ilike.%${searchTerm}%,company.ilike.%${searchTerm}%`);
+            }
+
+            const { data, count, error } = await query
+                .order('created_at', { ascending: false })
+                .range((currentPage - 1) * pageSize, currentPage * pageSize - 1);
 
             if (error) throw error;
             setClients(data || []);
+            setTotalCount(count || 0);
         } catch (error: any) {
             console.error("Error fetching clients:", error.message);
         } finally {
             setIsLoading(false);
         }
+    };
+
+    const handleSearch = (e: React.FormEvent) => {
+        e.preventDefault();
+        setCurrentPage(1);
+        fetchClients();
     };
 
     const handleAddClient = async (e: React.FormEvent) => {
@@ -81,10 +103,10 @@ export default function AdminCrmPage() {
     };
 
     // Filtrowanie klientów w interfejsie 
-    const filteredClients = clients.filter(client =>
-        client.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        (client.company?.toLowerCase().includes(searchTerm.toLowerCase()) ?? false)
-    );
+    // const filteredClients = clients.filter(client =>
+    //     client.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    //     (client.company?.toLowerCase().includes(searchTerm.toLowerCase()) ?? false)
+    // );
 
     const getStatusStyle = (status: string) => {
         switch (status) {
@@ -106,6 +128,36 @@ export default function AdminCrmPage() {
         }
     };
 
+    const handleExport = () => {
+        if (clients.length === 0) return;
+        
+        const headers = ["ID", "Name", "Company", "Email", "Phone", "Status", "Created At"];
+        const csvContent = [
+            headers.join(","),
+            ...clients.map(client => [
+                client.id,
+                client.name,
+                client.company || "",
+                client.email,
+                client.phone || "",
+                client.status,
+                client.created_at
+            ].map(val => `"${val}"`).join(","))
+        ].join("\n");
+
+        const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+        const link = document.createElement("a");
+        const url = URL.createObjectURL(blob);
+        link.setAttribute("href", url);
+        link.setAttribute("download", `crm_clients_${new Date().toISOString().split('T')[0]}.csv`);
+        link.style.visibility = 'hidden';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
+    const totalPages = Math.ceil(totalCount / pageSize);
+
     return (
         <div className="animate-in fade-in duration-500 relative">
 
@@ -120,13 +172,22 @@ export default function AdminCrmPage() {
                     </p>
                 </div>
 
-                <button
-                    onClick={() => setIsModalOpen(true)}
-                    className="flex items-center justify-center bg-[var(--color-brand-orange)] hover:bg-[var(--color-brand-orange-hover)] text-black font-bold uppercase tracking-widest px-6 py-3 transition-colors font-sans brutal-shadow"
-                >
-                    <Plus className="w-4 h-4 mr-2" />
-                    Dodaj Klienta
-                </button>
+                <div className="flex gap-4">
+                    <button
+                        onClick={handleExport}
+                        className="flex items-center justify-center bg-[#111] border border-[#333] hover:border-blue-500 text-white font-bold uppercase tracking-widest px-6 py-3 transition-colors font-sans brutal-shadow"
+                    >
+                        <Download className="w-4 h-4 mr-2 text-blue-500" />
+                        Eksportuj CSV
+                    </button>
+                    <button
+                        onClick={() => setIsModalOpen(true)}
+                        className="flex items-center justify-center bg-[var(--color-brand-orange)] hover:bg-[var(--color-brand-orange-hover)] text-black font-bold uppercase tracking-widest px-6 py-3 transition-colors font-sans brutal-shadow"
+                    >
+                        <Plus className="w-4 h-4 mr-2" />
+                        Dodaj Klienta
+                    </button>
+                </div>
             </div>
 
             {/* Main Table Interface */}
@@ -134,7 +195,7 @@ export default function AdminCrmPage() {
 
                 {/* Table Toolbar */}
                 <div className="p-4 border-b border-[#333] bg-[#111] flex flex-col md:flex-row justify-between gap-4">
-                    <div className="relative w-full max-w-sm">
+                    <form onSubmit={handleSearch} className="relative w-full max-w-sm">
                         <input
                             type="text"
                             placeholder="Szukaj po nazwisku lub firmie..."
@@ -143,18 +204,28 @@ export default function AdminCrmPage() {
                             className="w-full bg-[#050505] border border-[#333] px-4 py-2.5 pl-10 text-white font-mono text-sm focus:outline-none focus:border-[var(--color-brand-orange)] transition-colors"
                         />
                         <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
-                    </div>
+                    </form>
 
                     <div className="flex gap-2 font-mono text-xs">
-                        <button className="px-4 py-2 border border-[#333] bg-[#050505] hover:border-[var(--color-brand-orange)] hover:text-white text-gray-400 transition-colors uppercase tracking-widest">Wszyscy</button>
-                        <button className="px-4 py-2 border border-[#333] bg-[#050505] hover:border-[var(--color-brand-orange)] hover:text-white text-gray-400 transition-colors uppercase tracking-widest">Aktywni</button>
+                        <button 
+                            onClick={() => setStatusFilter("all")}
+                            className={`px-4 py-2 border ${statusFilter === 'all' ? 'border-[var(--color-brand-orange)] text-white' : 'border-[#333] text-gray-400'} bg-[#050505] hover:border-[var(--color-brand-orange)] hover:text-white transition-colors uppercase tracking-widest`}
+                        >
+                            Wszyscy
+                        </button>
+                        <button 
+                            onClick={() => setStatusFilter("Aktywny")}
+                            className={`px-4 py-2 border ${statusFilter === 'Aktywny' ? 'border-[var(--color-brand-orange)] text-white' : 'border-[#333] text-gray-400'} bg-[#050505] hover:border-[var(--color-brand-orange)] hover:text-white transition-colors uppercase tracking-widest`}
+                        >
+                            Aktywni
+                        </button>
                     </div>
                 </div>
 
                 {/* Table Grid */}
                 <div className="overflow-x-auto min-h-[300px] relative">
                     {isLoading ? (
-                        <div className="absolute inset-0 flex items-center justify-center bg-black/20">
+                        <div className="absolute inset-0 flex items-center justify-center bg-black/20 z-10">
                             <Loader2 className="w-8 h-8 text-[var(--color-brand-orange)] animate-spin" />
                         </div>
                     ) : (
@@ -170,8 +241,8 @@ export default function AdminCrmPage() {
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-[#222] text-gray-300">
-                                {filteredClients.length > 0 ? (
-                                    filteredClients.map((client, idx) => (
+                                {clients.length > 0 ? (
+                                    clients.map((client, idx) => (
                                         <tr key={client.id} className="hover:bg-[#111] transition-colors group">
                                             <td className="px-6 py-4 text-gray-500 font-bold">{client.id.substring(0, 8)}</td>
                                             <td className="px-6 py-4">
@@ -209,15 +280,26 @@ export default function AdminCrmPage() {
                     )}
                 </div>
 
-                {/* Pagination Mock */}
+                {/* Pagination */}
                 <div className="p-4 border-t border-[#333] bg-[#050505] flex justify-between items-center font-mono text-xs text-gray-500">
-                    <span>Wyświetlanie {filteredClients.length} z {clients.length} wpisów</span>
+                    <span>Wyświetlanie {totalCount > 0 ? (currentPage - 1) * pageSize + 1 : 0}-{Math.min(currentPage * pageSize, totalCount)} z {totalCount} wpisów</span>
                     <div className="flex gap-2">
-                        <button className="px-3 py-1.5 border border-[#333] hover:text-white transition-colors" disabled>Poprzednia</button>
-                        <button className="px-3 py-1.5 border border-[#333] hover:text-white transition-colors">Następna</button>
+                        <button 
+                            onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+                            disabled={currentPage === 1 || isLoading}
+                            className="px-3 py-1.5 border border-[#333] hover:text-white transition-colors disabled:opacity-30"
+                        >
+                            Poprzednia
+                        </button>
+                        <button 
+                            onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
+                            disabled={currentPage === totalPages || isLoading || totalPages === 0}
+                            className="px-3 py-1.5 border border-[#333] hover:text-white transition-colors disabled:opacity-30"
+                        >
+                            Następna
+                        </button>
                     </div>
                 </div>
-
             </div>
 
             {/* Modal (Add Client) */}

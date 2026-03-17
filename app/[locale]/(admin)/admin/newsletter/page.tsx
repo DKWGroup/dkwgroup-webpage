@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Mail, Search, Trash2, UserMinus, Loader2, ChevronLeft, ChevronRight, Settings } from "lucide-react";
+import { Mail, Search, Trash2, UserMinus, Loader2, ChevronLeft, ChevronRight, Settings, Download } from "lucide-react";
 import { supabase } from "@/src/utils/supabase";
 import { Link } from "@/src/i18n/routing";
 
@@ -78,6 +78,33 @@ export default function AdminNewsletterPage() {
         fetchSubscribers();
     };
 
+    const handleExport = () => {
+        if (subscribers.length === 0) return;
+        
+        const headers = ["ID", "Email", "Name", "Status", "Source", "Created At"];
+        const csvContent = [
+            headers.join(","),
+            ...subscribers.map(sub => [
+                sub.id,
+                sub.email,
+                sub.name || "Anonim",
+                sub.status,
+                sub.source,
+                sub.created_at
+            ].map(val => `"${val}"`).join(","))
+        ].join("\n");
+
+        const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+        const link = document.createElement("a");
+        const url = URL.createObjectURL(blob);
+        link.setAttribute("href", url);
+        link.setAttribute("download", `newsletter_subscribers_${new Date().toISOString().split('T')[0]}.csv`);
+        link.style.visibility = 'hidden';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     const totalPages = Math.ceil(totalCount / pageSize);
 
     return (
@@ -94,13 +121,22 @@ export default function AdminNewsletterPage() {
                     </p>
                 </div>
 
-                <Link
-                    href="/admin/newsletter/automations"
-                    className="flex items-center justify-center bg-[#111] border border-[#333] hover:border-[var(--color-brand-orange)] text-white font-bold uppercase tracking-widest px-6 py-3 transition-colors font-sans brutal-shadow"
-                >
-                    <Settings className="w-4 h-4 mr-2 text-[var(--color-brand-orange)]" />
-                    Konfiguruj Automatyzacje
-                </Link>
+                <div className="flex gap-4">
+                    <button
+                        onClick={handleExport}
+                        className="flex items-center justify-center bg-[#111] border border-[#333] hover:border-blue-500 text-white font-bold uppercase tracking-widest px-6 py-3 transition-colors font-sans brutal-shadow"
+                    >
+                        <Download className="w-4 h-4 mr-2 text-blue-500" />
+                        Eksportuj CSV
+                    </button>
+                    <Link
+                        href="/admin/newsletter/automations"
+                        className="flex items-center justify-center bg-[#111] border border-[#333] hover:border-[var(--color-brand-orange)] text-white font-bold uppercase tracking-widest px-6 py-3 transition-colors font-sans brutal-shadow"
+                    >
+                        <Settings className="w-4 h-4 mr-2 text-[var(--color-brand-orange)]" />
+                        Konfiguruj Automatyzacje
+                    </Link>
+                </div>
             </div>
 
             {/* Main Interface */}
@@ -131,6 +167,12 @@ export default function AdminNewsletterPage() {
                             className={`px-4 py-2 border ${statusFilter === 'subscribed' ? 'border-[var(--color-brand-orange)] text-white' : 'border-[#333] text-gray-400'} bg-[#050505] hover:border-[var(--color-brand-orange)] hover:text-white transition-colors uppercase tracking-widest`}
                         >
                             Aktywni
+                        </button>
+                        <button 
+                            onClick={() => setStatusFilter("pending")}
+                            className={`px-4 py-2 border ${statusFilter === 'pending' ? 'border-[var(--color-brand-orange)] text-white' : 'border-[#333] text-gray-400'} bg-[#050505] hover:border-[var(--color-brand-orange)] hover:text-white transition-colors uppercase tracking-widest`}
+                        >
+                            Oczekujące
                         </button>
                         <button 
                             onClick={() => setStatusFilter('unsubscribed')}

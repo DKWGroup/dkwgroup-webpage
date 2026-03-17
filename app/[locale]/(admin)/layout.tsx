@@ -12,15 +12,19 @@ import {
     LogOut,
     FolderOpen,
     Settings,
-    Mail
+    Mail,
+    Wrench
 } from "lucide-react";
 
-// Rozbudowaną sieć linków dla admina (CMS / CRM)
+// Rozbudowaną sieć linków dla admina (CMS / CRM / Mailing / Tools)
 const ADMIN_NAVIGATION = [
     { name: "Dashboard", href: "/admin" as const, icon: BarChart3 },
-    { name: "Klienci", href: "/admin/crm" as const, icon: Users },
+    { name: "CRM", href: "/admin/crm" as const, icon: Users },
+    { name: "Pipeline", href: "/admin/pipeline" as const, icon: Trello },
     { name: "Newsletter", href: "/admin/newsletter" as const, icon: Mail },
-    { name: "Narzędzia", href: "/admin/cms" as const, icon: FileEdit },
+    { name: "CMS", href: "/admin/cms" as const, icon: FileEdit },
+    { name: "Pliki", href: "/admin/pliki" as const, icon: FolderOpen },
+    { name: "Narzędzia", href: "/admin/narzedzia" as const, icon: Wrench },
     { name: "Ustawienia", href: "/admin/ustawienia" as const, icon: Settings },
 ];
 

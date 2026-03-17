@@ -1,7 +1,8 @@
 "use client";
 
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { CheckCircle } from "lucide-react";
-import { useTranslations } from "next-intl";
 
 interface SuccessPopupProps {
     isOpen?: boolean;
@@ -11,13 +12,26 @@ interface SuccessPopupProps {
 }
 
 export default function SuccessPopup({ isOpen = true, title, message, onClose }: SuccessPopupProps) {
-    if (!isOpen) return null;
+    const [mounted, setMounted] = useState(false);
 
-    return (
-        <div className="fixed inset-0 flex items-center justify-center z-[100] p-4 pointer-events-auto">
+    useEffect(() => {
+        setMounted(true);
+        if (isOpen) {
+            // Prevent scrolling when popup is open
+            document.body.style.overflow = 'hidden';
+        }
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [isOpen]);
+
+    if (!mounted || !isOpen) return null;
+
+    return createPortal(
+        <div className="fixed inset-0 flex items-center justify-center z-[9999] p-4 pointer-events-auto">
             {/* Backdrop with intense blur */}
             <div 
-                className="absolute inset-0 bg-[#050505]/90 backdrop-blur-xl animate-in fade-in duration-500"
+                className="absolute inset-0 bg-[#050505]/95 backdrop-blur-xl animate-in fade-in duration-500"
                 onClick={onClose}
             />
             
@@ -35,7 +49,7 @@ export default function SuccessPopup({ isOpen = true, title, message, onClose }:
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 font-sans tracking-tight uppercase">
                     {title}
                 </h3>
-                <p className="text-gray-400 font-mono text-base md:text-lg leading-relaxed mb-10">
+                <p className="text-gray-400 font-mono text-sm md:text-base leading-relaxed mb-10">
                     {message}
                 </p>
                 <button
@@ -45,6 +59,7 @@ export default function SuccessPopup({ isOpen = true, title, message, onClose }:
                     OK
                 </button>
             </div>
-        </div>
+        </div>,
+        document.body
     );
 }

@@ -62,10 +62,10 @@ export default function NewsletterSection() {
                         <div>
                             <AnimatedSection animation="fade-left" delay={0.2}>
                                 {status === 'success' ? (
-                                    <div className="bg-[#111] border-2 border-green-500/30 p-8 text-center animate-in zoom-in duration-300">
-                                        <CheckCircle2 className="w-12 h-12 text-green-500 mx-auto mb-4" />
-                                        <h3 className="text-white font-bold uppercase tracking-widest mb-2">Dziękujemy!</h3>
-                                        <p className="text-gray-400 font-mono text-xs">Checklista została wysłana na Twój e-mail.</p>
+                                    <div className="bg-[#111] border-2 border-[var(--color-brand-orange)]/30 p-8 text-center animate-in zoom-in duration-300">
+                                        <Mail className="w-12 h-12 text-[var(--color-brand-orange)] mx-auto mb-4 animate-bounce" />
+                                        <h3 className="text-white font-bold uppercase tracking-widest mb-2">Potwierdź E-mail</h3>
+                                        <p className="text-gray-400 font-mono text-xs leading-relaxed">Wysłaliśmy link weryfikacyjny na Twój adres. Kliknij go, aby dokończyć zapis i pobrać materiały.</p>
                                         <button 
                                             onClick={() => setStatus('idle')}
                                             className="mt-6 text-[var(--color-brand-orange)] font-mono text-[10px] uppercase tracking-widest hover:underline"

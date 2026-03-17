@@ -1,0 +1,1159 @@
+{
+    "Hero": {
+        "title_1": "Video,",
+        "title_2": "Social Media",
+        "title_3": "& Digital Marketing",
+        "description": "Want your brand to be visible online and engage audiences? DKW Group is a creative agency specializing in commercial video production, podcasts, live streaming and comprehensive social media marketing.",
+        "cta_contact": "Get in touch",
+        "cta_projects": "View our projects"
+    },
+    "Services": {
+        "heading_1": "Our",
+        "heading_2": "services",
+        "viewAll": "View all",
+        "learnMore": "Learn more",
+        "viewAllServices": "View all services",
+        "items": {
+            "0": {
+                "title": "Video production",
+                "description": "We create video content from concept (brief) and 3D to professional recordings. Every production is polished for quality and detail."
+            },
+            "1": {
+                "title": "Drone footage",
+                "description": "Spectacular aerial shots using DJI and FPV drones. We create dynamic recordings of landscapes, properties and events from a unique perspective."
+            },
+            "2": {
+                "title": "Podcasts",
+                "description": "Full support in podcast creation – from recording in our professional studio, through editing, to publishing on social media platforms."
+            },
+            "3": {
+                "title": "Live streaming",
+                "description": "We handle live streams from conferences, events and training sessions. We provide a mobile production studio ready to work on-site and remotely."
+            },
+            "4": {
+                "title": "Websites & SEO",
+                "description": "Design and development of responsive websites and search engine optimization to increase your brand's online visibility."
+            },
+            "5": {
+                "title": "Marketing content",
+                "description": "We create engaging marketing content that reaches your customers and builds brand awareness."
+            },
+            "6": {
+                "title": "Social Media",
+                "description": "Comprehensive social media management that increases reach and builds an engaged community around your brand."
+            }
+        }
+    },
+    "Projects": {
+        "heading_1": "Our",
+        "heading_2": "projects",
+        "viewAll": "View all",
+        "viewCaseStudy": "View case study",
+        "viewMore": "View more projects",
+        "items": {
+            "0": {
+                "title": "Kokpit Kamila",
+                "subtitle": "YouTube Channel Management for Aviation Expert",
+                "description": "We created the Kokpit Kamila channel, which gathered 3 million views, building a strong expert brand for Kamil Majda in the aviation industry."
+            },
+            "1": {
+                "title": "Investment Partners",
+                "subtitle": "Advertising Campaign for Investment Partners",
+                "description": "We created a promotional video for Metamorfoza Finansowa, achieving 30,000+ views and hundreds of registrations, increasing Investment Partners' reach."
+            }
+        }
+    },
+    "CaseStudies": {
+        "heading_1": "Case",
+        "heading_2": "studies",
+        "viewAll": "View all",
+        "viewCaseStudy": "View case study",
+        "viewMore": "View more case studies",
+        "items": {
+            "0": {
+                "category": "Health & Finance",
+                "client": "Grzegorz Kusz - Special Agent",
+                "title": "Channel Management for Grzegorz Kusz - Special Agent",
+                "description": "Comprehensive channel management – from recordings to publication. We handled video production and post-production, publication planning, and creation of thumbnails and graphics, ensuring consistency and maximum content reach."
+            },
+            "1": {
+                "category": "Financial",
+                "client": "Investment Partners",
+                "title": "Advertising Campaign for Investment Partners",
+                "description": "For Investment Partners, we created an effective promotional campaign for the Metamorfoza Finansowa project – a free educational platform. We prepared an engaging promotional video that increased reach and attracted hundreds of participants."
+            },
+            "2": {
+                "category": "Aviation",
+                "client": "Kamil Matyja - Kokpit Kamila",
+                "title": "YouTube Channel Management for Aviation Expert",
+                "description": "For Kamil Matyja, we created the professional YouTube channel Kokpit Kamila, which quickly became the leading educational platform about helicopter aviation in Poland. The channel achieved millions of views, increasing personal brand recognition."
+            }
+        }
+    },
+    "Team": {
+        "heading_1": "Meet",
+        "heading_2": "our team",
+        "cta": "Get to know us better",
+        "members": {
+            "0": {
+                "name": "Dawid Myszka",
+                "role": "Video producer"
+            },
+            "1": {
+                "name": "Kamil Krukowski",
+                "role": "Drone operator / Websites / SEO"
+            },
+            "2": {
+                "name": "Wiktoria Skopek",
+                "role": "Marketing specialist / AI ADS"
+            }
+        }
+    },
+    "Faq": {
+        "heading_1": "Frequently asked",
+        "heading_2": "questions",
+        "subtitle": "Below you will find answers to the most frequently asked questions about our services and collaboration. If you cannot find the answer to your question, contact us!",
+        "ctaTitle": "Let's get started!",
+        "ctaDescription": "Don't wait – reach out to us now and find out how we can achieve your goals together! We look forward to hearing from you!",
+        "ctaButton": "Contact us",
+        "items": {
+            "0": {
+                "question": "What services does DKW Group offer?",
+                "answer": "We offer comprehensive services in video production (commercials, promotional materials), drone footage, podcast creation, live streaming, as well as website development, SEO and social media marketing strategy design."
+            },
+            "1": {
+                "question": "How does the collaboration process with DKW Group work?",
+                "answer": "Every project starts with a free consultation and brief. Then we prepare a strategy and quote. After approval, we proceed to production/implementation, keeping the client closely informed of progress. The final stage is post-production and content distribution."
+            },
+            "2": {
+                "question": "How much do DKW Group services cost?",
+                "answer": "Prices depend on the project complexity, required recording equipment and timeline. Each project is quoted individually. Fill out the contact form and we will prepare a free estimate."
+            },
+            "3": {
+                "question": "How long does project delivery take?",
+                "answer": "Shorter recordings (e.g., Reels/TikTok, simple spots) are produced and edited within 3-7 business days. Complex film productions or websites with extensive SEO can take several weeks to a month."
+            },
+            "4": {
+                "question": "Does DKW Group serve clients from all over Poland?",
+                "answer": "Yes, our stationary office enables on-site recordings (we have our own studio and equipment), but our mobile production team travels and serves clients throughout the country and even abroad."
+            }
+        }
+    },
+    "Contact": {
+        "heading_1": "Let's get",
+        "heading_2": "started!",
+        "description": "Have questions about our services? Want to find out how we can bring your project to life? Fill out the form and we will get back to you within 24 hours.",
+        "contactLabel": "Contact",
+        "nameLabel": "Name",
+        "namePlaceholder": "John Smith",
+        "emailLabel": "Email",
+        "emailPlaceholder": "john.smith@email.com",
+        "messageLabel": "Message",
+        "messagePlaceholder": "Write your message...",
+        "submit": "Send",
+        "sending": "Sending...",
+        "success_title": "Thank you for your submission!",
+        "success_message": "We will contact you within 24 hours. It usually takes 1-3 hours.",
+        "error_message": "Something went wrong. Please try again."
+    },
+    "About": {
+        "heading_1": "We'll support your",
+        "heading_2": "growth!",
+        "paragraph_1": "Our team of experts knows how to create marketing content that genuinely supports sales and builds customer loyalty.",
+        "paragraph_2": "We offer an individual approach, tailored marketing strategies and full management of your social media channels. With our services, your brand will gain a professional image and reach new audiences.",
+        "stat1_value": "100%",
+        "stat1_label": "Commitment",
+        "stat2_value": "ROI",
+        "stat2_label": "Complex made simple"
+    },
+    "AlternativeTeam": {
+        "heading_1": "Meet",
+        "heading_2": "our team",
+        "cta": "Contact us",
+        "members": {
+            "0": {
+                "name": "Dawid Myszka",
+                "role": "Video producer",
+                "desc": "Dawid is an experienced video producer with over 5 years of industry experience. He specializes in producing high-quality marketing and corporate materials. His creative approach and attention to detail make every project unique and professional."
+            },
+            "1": {
+                "name": "Kamil Krukowski",
+                "role": "Drone operator / Websites / SEO",
+                "desc": "Kamil is an experienced drone operator who produces professional aerial shots for commercials and live streams. He also specializes in website development and Google SEO positioning."
+            },
+            "2": {
+                "name": "Wiktoria Skopek",
+                "role": "Marketing specialist / AI ADS",
+                "desc": "Wiktoria is a marketing specialist with an excellent sense of trends and customer needs. She is responsible for marketing strategies and client communication. Her analytical approach and creativity enable the creation of effective campaigns."
+            }
+        }
+    },
+    "Blog": {
+        "heading_1": "Our",
+        "heading_2": "blog",
+        "viewAll": "View all posts",
+        "readMore": "Read more",
+        "viewMorePosts": "View more posts",
+        "post_date": "May 28, 2025",
+        "post_author": "Kamil Krukowski",
+        "post_title": "Why does your company need a professional website?"
+    },
+    "Clients": {
+        "heading_1": "We worked",
+        "heading_2": "with"
+    },
+    "Portfolio": {
+        "hero_label": "Portfolio",
+        "hero_title_1": "Our",
+        "hero_title_2": "projects",
+        "hero_description": "Discover our best video productions and photo sessions. Each project is a unique story told using modern technology and a creative approach.",
+        "filter_all": "All",
+        "filter_video": "Video",
+        "filter_photo": "Photo",
+        "tag_video": "Video",
+        "tag_photo": "Photo",
+        "empty": "No items in this category",
+        "cta_title": "Want a similar project?",
+        "cta_description": "Contact us and tell us about your idea. We will create materials for you that will make your brand stand out from the competition.",
+        "cta_button": "Contact us",
+        "items": {
+            "0": {
+                "title": "Commercial spot",
+                "client": "Investment Partners"
+            },
+            "1": {
+                "title": "Product photography",
+                "client": "GlowUP"
+            },
+            "2": {
+                "title": "Corporate video",
+                "client": "WellDone"
+            },
+            "3": {
+                "title": "Image session",
+                "client": "Akademia Lutowania"
+            },
+            "4": {
+                "title": "Podcast - pilot episode",
+                "client": "Contenty"
+            },
+            "5": {
+                "title": "Event photography",
+                "client": "MKHelicopters"
+            },
+            "6": {
+                "title": "Drone footage",
+                "client": "DKW Group"
+            },
+            "7": {
+                "title": "Live streaming",
+                "client": "Grzegorz Kusz"
+            },
+            "8": {
+                "title": "Portrait session",
+                "client": "Kokpit Kamila"
+            }
+        }
+    },
+    "DetailedProjectsList": {
+        "viewCaseStudy": "View full case study",
+        "items": {
+            "0": {
+                "category": "YouTube Management",
+                "title": "YouTube Channel Management for Aviation Expert",
+                "description": "We created the \"Kokpit Kamila\" channel, which accumulated 5 million views, building a strong expert brand in the aviation industry.",
+                "metrics": {
+                    "0": {
+                        "value": "5 000 000+",
+                        "label": "YouTube views"
+                    },
+                    "1": {
+                        "value": "2750+",
+                        "label": "subscribers"
+                    }
+                }
+            },
+            "1": {
+                "category": "Video Marketing",
+                "title": "Advertising Campaign for Investment Partners",
+                "description": "We created a commercial spot for \"Metamorfoza Finansowa\", reaching 30,000+ views and hundreds of registrations, expanding Investment Partners reach.",
+                "metrics": {
+                    "0": {
+                        "value": "Hundreds",
+                        "label": "registrations"
+                    },
+                    "1": {
+                        "value": "30 000+",
+                        "label": "views"
+                    }
+                }
+            },
+            "2": {
+                "category": "Content Creation",
+                "title": "Channel Management for Grzegorz Kusz - Special Agent",
+                "description": "Comprehensive channel management – from recording to publishing, building an engaged community and creating valuable content.",
+                "metrics": {
+                    "0": {
+                        "value": "5 years",
+                        "label": "collaboration"
+                    },
+                    "1": {
+                        "value": "+450k",
+                        "label": "subscribers"
+                    }
+                }
+            }
+        }
+    },
+    "CaseStudiesList": {
+        "viewDetails": "View full details",
+        "items": {
+            "0": {
+                "client": "Grzegorz Kusz - Special Agent",
+                "title": "YT Channel Management",
+                "industry": "Health & finance",
+                "description": "Comprehensive channel management – from recording to publishing. We handled video production and post-production, publication planning, and creating thumbnails and graphics, ensuring consistency and maximum content reach. 🚀"
+            },
+            "1": {
+                "client": "Investment Partners",
+                "title": "Advertising Campaign",
+                "industry": "Financial Sector",
+                "description": "For Investment Partners we created an effective promotional campaign for the \"Metamorfoza Finansowa\" project - a free educational platform. We prepared an engaging commercial spot which increased reach and attracted hundreds of participants. The campaign contributed to higher brand recognition."
+            },
+            "2": {
+                "client": "Kamil Matyja - \"Kokpit Kamila\"",
+                "title": "YouTube Channel Management",
+                "industry": "Aviation",
+                "description": "For Kamil Matyja we created a professional YouTube channel \"Kokpit Kamila\", which quickly emerged as a leading educational platform about helicopter aviation in Poland. Thanks to high quality production and effective strategy the channel reached millions of views, increasing brand reach."
+            }
+        }
+    },
+    "AboutHero": {
+        "heading_1": "About",
+        "heading_2": "us",
+        "description": "We are a team of professionals passionate about creating exceptional video and marketing content.",
+        "badge": "DKW Group Team"
+    },
+    "ServiceDetailHero": {
+        "heading_1": "Video",
+        "heading_2": "production",
+        "description": "We create professional video materials from concept to the finished product. Every recording is carefully polished for quality and detail.",
+        "cta": "Request a free consultation"
+    },
+    "ServiceFaq": {
+        "heading_1": "Frequently asked",
+        "heading_2": "questions",
+        "description": "Answers to the most important questions about video production.",
+        "items": {
+            "0": {
+                "question": "How much does it cost to produce a commercial video?",
+                "answer": "Production cost is always estimated individually and depends on scale, format (e.g. internet commercial vs TV), shooting days, number of actors/extras and post-production complexity (animations, vfx, color grading). We usually start around 3000 PLN net."
+            },
+            "1": {
+                "question": "How long does video production take?",
+                "answer": "A standard commercial or corporate video takes about 2 to 4 weeks from signing the agreement. The actual time depends heavily on screenplay complexity and the time required to prepare the set."
+            },
+            "2": {
+                "question": "Do you provide shooting equipment?",
+                "answer": "Yes. We have a full, professional technical setup – starting from the newest 4K/6K (RED/Sony) cameras, light, stabilizers and equipment for spatial sound recording."
+            },
+            "3": {
+                "question": "Can we take part in the editing process?",
+                "answer": "Definitely. While estimating we usually foresee 2 iterations of free directorial modifications. We give you access to a footage preview portal, where you can put notes and feedback directly on the video timeline in real time."
+            },
+            "4": {
+                "question": "In what formats do you deliver the videos?",
+                "answer": "Videos are basically rendered in 4K Ultra HD (MP4, H.264/H.265). There is of course an option for formatting it vertically for Social Media (e.g. 9:16), 'pro-res' files for TV stations or other formats upon special request."
+            }
+        }
+    },
+    "ProjectsHero": {
+        "heading_1": "Check out the results of our",
+        "heading_2": "clients!",
+        "description": "See our best projects and find out how we can help your brand achieve success."
+    },
+    "ServiceBenefits": {
+        "heading_1": "Benefits for",
+        "heading_2": "your business",
+        "description": "Professional video materials have a real impact on your company's performance.",
+        "benefits": {
+            "0": "Increasing brand awareness and audience engagement",
+            "1": "Professional company image building customer trust",
+            "2": "Higher conversions and sales growth thanks to valuable content",
+            "3": "Effective communication of values and advantages of products/services",
+            "4": "Building long-term relationships with the audience"
+        },
+        "cta_title": "Your dedicated goal?",
+        "cta_button": "Discuss it with us"
+    },
+    "History": {
+        "heading_1": "Our",
+        "heading_2": "history",
+        "paragraphs": {
+            "0": "DKW Group was born out of a passion for creating exceptional video content that not only looks professional but primarily achieves our clients' marketing goals.",
+            "1": "The company's founders - Dawid, Kamil, and Wiktoria - combined their experience and skills to create an agency that offers comprehensive services in video production, internet marketing, and engaging content creation.",
+            "2": "Since our inception, our goal has been to help brands stand out in the market through professional video materials and effective marketing strategies. Over the years of our activity, we have completed hundreds of projects for clients from various industries, always focusing on the highest quality and an individual approach."
+        },
+        "label": "DKW Group Story"
+    },
+    "Values": {
+        "heading_1": "Our",
+        "heading_2": "values",
+        "items": {
+            "0": {
+                "title": "Quality",
+                "desc": "We focus on the highest quality of executed projects, taking care of every, even the smallest detail. We use professional equipment and modern technologies."
+            },
+            "1": {
+                "title": "Creativity",
+                "desc": "We are constantly looking for new, creative solutions that will allow our clients to stand out from the competition and effectively reach their audience."
+            },
+            "2": {
+                "title": "Commitment",
+                "desc": "We engage 100% in every project, treating our clients' goals as our own. Thanks to this, we can achieve exceptional results."
+            },
+            "3": {
+                "title": "Professionalism",
+                "desc": "We work according to the highest industry standards, ensuring professional service at every stage of project execution."
+            },
+            "4": {
+                "title": "Innovation",
+                "desc": "We follow the latest industry trends and constantly develop our skills to offer our clients innovative solutions."
+            },
+            "5": {
+                "title": "Transparency",
+                "desc": "We ensure clear and transparent communication with our clients. We always inform about progress in project execution and possible options."
+            }
+        }
+    },
+    "ServicesHero": {
+        "heading_1": "Discover our",
+        "heading_2": "services",
+        "description": "We offer comprehensive solutions in video production, marketing, and content creation that will help your brand stand out."
+    },
+    "ServicesPageGrid": {
+        "learnMore": "Learn more",
+        "items": {
+            "0": {
+                "title": "Film and Video Production",
+                "description": "We create commercial films, promotional materials, and dynamic drone shots. We handle every project comprehensively – from concept, through recordings, to editing and publication."
+            },
+            "1": {
+                "title": "DJI and FPV Drone Recordings",
+                "description": "Spectacular aerial shots using professional DJI drones and dynamic FPV drones. We create unique perspectives for real estate, events, and marketing campaigns."
+            },
+            "2": {
+                "title": "Podcasts",
+                "description": "We offer full support in podcast production – from recording in a professional studio, through editing, to distribution on social media and streaming platforms."
+            },
+            "3": {
+                "title": "Live Streaming",
+                "description": "We produce live streams from conferences, events, and training sessions. We provide a mobile studio and top-level technical support."
+            },
+            "4": {
+                "title": "Marketing Content Creation",
+                "description": "We create effective marketing content that reaches your customers and builds brand awareness online."
+            },
+            "5": {
+                "title": "Social Media",
+                "description": "We provide comprehensive social media channel management – from strategy, through creating engaging content, to moderation and advertising campaigns. We increase reach, build an engaged community, and support sales."
+            },
+            "6": {
+                "title": "Websites and SEO",
+                "description": "We design modern websites and conduct SEO audits and positioning, so your brand is even more visible on Google."
+            }
+        }
+    },
+    "WhyUs": {
+        "heading_1": "Why",
+        "heading_2": "is it worth",
+        "heading_3": "working with us?",
+        "description": "We combine creativity, experience, and modern technologies to provide the highest quality of services.",
+        "items": {
+            "0": {
+                "title": "Experienced team",
+                "desc": "Our team consists of experienced specialists who have been working in the media and marketing industry for years."
+            },
+            "1": {
+                "title": "Modern equipment",
+                "desc": "We use the latest equipment and software to ensure the highest quality of our productions."
+            },
+            "2": {
+                "title": "Individual approach",
+                "desc": "Every client and project is unique to us. We always tailor our services to specific needs and goals."
+            },
+            "3": {
+                "title": "Comprehensive service",
+                "desc": "We offer services from concept, through production, to post-production and content distribution."
+            },
+            "4": {
+                "title": "Timeliness",
+                "desc": "We always meet agreed deadlines, ensuring high quality while maintaining time efficiency."
+            },
+            "5": {
+                "title": "Excellent results",
+                "desc": "Our projects contribute to a real increase in brand recognition and marketing efficiency for our clients."
+            }
+        }
+    },
+    "ContactHero": {
+        "heading_1": "Let's get",
+        "heading_2": "started!",
+        "description": "Contact us to discuss your project or ask a question about our services."
+    },
+    "DetailedContact": {
+        "heading_1": "Contact",
+        "heading_2": "information",
+        "email": "Email",
+        "phone": "Phone",
+        "location": "Location",
+        "location_value": "Katowice, Poland",
+        "working_hours": "Working hours",
+        "mon_fri": "Monday - Friday:",
+        "sat": "Saturday:",
+        "sun": "Sunday:",
+        "closed": "Closed",
+        "form_title": "Write to us",
+        "form_name": "Name",
+        "form_name_placeholder": "John Smith",
+        "form_email": "Email",
+        "form_email_placeholder": "john.smith@email.com",
+        "form_message": "Message",
+        "form_message_placeholder": "Write your message...",
+        "form_submit": "Send",
+        "sending": "Sending...",
+        "success_title": "Thank you for your submission!",
+        "success_message": "We will contact you within 24 hours. It usually takes 1-3 hours.",
+        "error_message": "Something went wrong. Please try again."
+    },
+    "CaseStudiesHero": {
+        "badge": "Case Study",
+        "heading_1": "Case",
+        "heading_2": "Studies",
+        "description": "Discover our results and see how we helped our clients achieve spectacular advertising and image success in their industries.",
+        "sort": "Sort stories"
+    },
+    "BlogHero": {
+        "heading": "Blog",
+        "description": "The latest posts, articles, and advice on marketing and business strategies."
+    },
+    "BlogList": {
+        "readMore": "Read more",
+        "items": {
+            "0": {
+                "title": "Why does your company need a professional website?",
+                "date": "May 28, 2025",
+                "author": "Kamil Krukowski"
+            }
+        }
+    },
+    "ContactMap": {
+        "title": "DKW Group office location - Zygmunta Krasińskiego 29, Katowice"
+    },
+    "ServiceProcess": {
+        "heading_1": "Our",
+        "heading_2": "work",
+        "heading_3": "process",
+        "description": "From the first consultation to the final materials - we take care of every stage of production.",
+        "items": {
+            "0": {
+                "title": "Consultation and brief",
+                "description": "We learn your needs and business goals to create the perfect solution."
+            },
+            "1": {
+                "title": "Script and storyboard",
+                "description": "We develop a script and visualize the concept before starting the shoot."
+            },
+            "2": {
+                "title": "Professional recordings",
+                "description": "We use the latest equipment to record materials in the highest quality."
+            },
+            "3": {
+                "title": "Post-production",
+                "description": "Editing, color correction, sound, and graphics - we refine every detail."
+            }
+        }
+    },
+    "ServicePortfolio": {
+        "heading_1": "Our",
+        "heading_2": "portfolio",
+        "description": "See examples of our productions and check the quality of our services.",
+        "viewCaseStudy": "View case study",
+        "viewMore": "View more projects",
+        "items": {
+            "0": {
+                "category": "Investment Partners",
+                "title": "Commercial Spot for Investment Partners",
+                "description": "A commercial film promoting financial services that generated 30,000+ views and hundreds of training registrations."
+            },
+            "1": {
+                "category": "Kokpit Kamila",
+                "title": "Kokpit Kamila Channel Management",
+                "description": "A series of professional educational recordings on aviation topics that garnered over 3 million views."
+            }
+        }
+    },
+    "ServiceOfferings": {
+        "heading_1": "What",
+        "heading_2": "do we offer?",
+        "description": "Our team specializes in creating a variety of video materials tailored to the needs of every client.",
+        "items": {
+            "0": "Promotional and commercial films",
+            "1": "Training and instructional materials",
+            "2": "Corporate films",
+            "3": "Event coverage",
+            "4": "Customer testimonials",
+            "5": "3D animation and motion graphics"
+        },
+        "box_title": "Highest quality",
+        "box_desc": "We use professional 4K equipment, modern software, and years of experience to ensure materials at the highest possible level."
+    },
+    "WebsitesServicePage": {
+        "hero_badge": "Specialized Service",
+        "hero_title_1": "Websites",
+        "hero_title_2": "and SEO",
+        "hero_description": "We create modern, responsive websites optimized for search engines. Your online presence has never been more professional.",
+        "hero_cta": "Order a free consultation",
+        "webdkw_title_1": "Do you want to create a sales platform,",
+        "webdkw_title_2": "a website, or need an audit?",
+        "webdkw_desc": "Take advantage of our space strictly in the programming industry provided for e-commerce!",
+        "webdkw_cta": "Check WebDKW.net",
+        "process_title_1": "Our creation",
+        "process_title_2": "process",
+        "process_desc": "From needs analysis to SEO optimization - every stage is well thought out.",
+        "process_items": {
+            "0": {
+                "title": "Needs analysis",
+                "desc": "We learn your business, goals, and target audience to create the perfect strategy."
+            },
+            "1": {
+                "title": "UX/UI Design",
+                "desc": "We create intuitive design focused on flawless user experience."
+            },
+            "2": {
+                "title": "Website development",
+                "desc": "We code a fully responsive website using the latest technologies (React/Next.js)."
+            },
+            "3": {
+                "title": "SEO Optimization",
+                "desc": "We implement strict SEO practices for better visibility in Google results."
+            }
+        },
+        "projects_title_1": "Our",
+        "projects_title_2": "projects",
+        "projects_desc": "See examples of websites and e-commerce platforms we have created for our clients.",
+        "projects_items": {
+            "0": {
+                "badge": "Web Development",
+                "title": "TechSolutions Corporate Website",
+                "client": "TechSolutions",
+                "desc": "A modern corporate website with advanced functionalities and SEO optimization, which increased organic traffic by 300%."
+            },
+            "1": {
+                "badge": "E-commerce",
+                "title": "Fashion Store E-commerce",
+                "client": "Fashion Store",
+                "desc": "A comprehensive e-commerce store with a payment system, order management, and optimized conversion for a large fashion brand."
+            },
+            "2": {
+                "badge": "B2B Platform",
+                "title": "EduLearn Educational Portal",
+                "client": "EduLearn",
+                "desc": "An e-learning platform with an online course system, subscription card payments, and advanced user analytics in the VOD portal."
+            }
+        },
+        "projects_cta": "View projects",
+        "offer_title_1": "What",
+        "offer_title_2": "do we offer?",
+        "offer_desc": "Our dedicated web services cover the full range of website creation and SEO optimization necessary for 21st-century sites.",
+        "offer_items": {
+            "0": "Responsive websites",
+            "1": "Online stores (e-commerce)",
+            "2": "Performance and SEO optimization",
+            "3": "Extremely fast loading times",
+            "4": "Security and SSL certificates",
+            "5": "Social media integration"
+        },
+        "seo_title": "SEO Optimization",
+        "seo_desc": "We implement the best on-page SEO practices so that your back-end site is well visible in Google search results and organically and permanently attracts more clients, generating sales.",
+        "benefits_title_1": "Benefits for",
+        "benefits_title_2": "your business",
+        "benefits_desc": "A professional website has for years remained a strong foundation and shield of success in today's digital world driven squarely by algorithms and recommendations.",
+        "benefits_items": {
+            "0": "Increased visibility in Google and Bing search engines",
+            "1": "Professional company image building solid customer trust",
+            "2": "Higher leads and conversions thanks to optimized UX/UI design",
+            "3": "Responsiveness and code lightness on absolutely all mobile devices",
+            "4": "Superfast loading (Web Vitals) positively impacting global track positioning"
+        },
+        "benefits_cta": "Contact us",
+        "cta_title_1": "Let's start",
+        "cta_title_2": "acting!",
+        "cta_desc": "Don't wait — write to us right now and find out how we can actively achieve your goals together! We look forward to your contact!",
+        "cta_button": "CONTACT US"
+    },
+    "WebsitesFaq": {
+        "heading_1": "Frequently asked",
+        "heading_2": "questions",
+        "description": "Answers to the most important questions about website creation.",
+        "items": {
+            "0": {
+                "question": "How much does a website cost?",
+                "answer": "The cost of creating a website depends on its complexity (from a One-Page business card to an extensive e-commerce service), the number of dedicated subpages, integration with external systems, and the complexity of the UX/UI project. We always tailor the price offer after a short audit of your needs."
+            },
+            "1": {
+                "question": "How long does the website creation process take?",
+                "answer": "The implementation time for simple business cards is around a dozen days. The realization of more advanced corporate websites or store platforms usually takes from 4 to 8 weeks. We specify the schedule at the contract signing stage."
+            },
+            "2": {
+                "question": "Will the website be responsive on mobile devices?",
+                "answer": "Absolutely yes (RWD/Mobile First). In every project, we ensure perfect layout adaptation to smartphones and tablets. Thanks to this, your customers gain a smooth experience regardless of the device, and the site positions better in the search engine."
+            },
+            "3": {
+                "question": "What does SEO optimization include?",
+                "answer": "Our technical SEO optimization includes the appropriate layout of H1-H6 headings, loading speed with WebP packages, alt attributes for images, structured Meta tags (Title & Description), a correct sitemaps.xml map, and a secure robots.txt file."
+            },
+            "4": {
+                "question": "Do you provide technical support after deployment?",
+                "answer": "Yes. After handing over a new website to you, we care for uninterrupted post-deployment support, administration, rapid fault repair (SLA), and we also train in CMS panel operation so you can largely independently publish e.g., blog posts."
+            }
+        }
+    },
+    "MarketingContentServicePage": {
+        "hero_badge": "Specialized Service",
+        "hero_title_1": "Marketing content",
+        "hero_title_2": "creation",
+        "hero_description": "We help brands stand out online by creating engaging video materials, guides, and all text and graphic content for target audiences.",
+        "hero_cta": "Order a free consultation",
+        "types_title_1": "Types of",
+        "types_title_2": "content",
+        "types_desc": "We create diverse marketing materials tailored to your business goals.",
+        "types_items": {
+            "0": {
+                "title": "Video materials",
+                "desc": "Promotional films, commercials, testimonials, and instructional materials."
+            },
+            "1": {
+                "title": "Text content",
+                "desc": "Copywriting, blog articles, product descriptions, and social media content."
+            },
+            "2": {
+                "title": "Advertising campaigns",
+                "desc": "Comprehensive campaigns for various advertising channels and target audiences."
+            },
+            "3": {
+                "title": "Performance analysis",
+                "desc": "Monitoring results and continuously optimizing content for conversion."
+            }
+        },
+        "strategy_title_1": "Strategic",
+        "strategy_title_2": "approach",
+        "strategy_desc": "We don't create content haphazardly. Each material is part of a thoughtful marketing strategy designed to lead to tangible results for your business.",
+        "strategy_items": {
+            "0": {
+                "title": "Target audience analysis",
+                "desc": "We get to know your audience, their daily needs, problems, and purchasing preferences."
+            },
+            "1": {
+                "title": "Trends and best practices",
+                "desc": "We continuously monitor the latest trends and proven market practices in B2B/B2C marketing."
+            },
+            "2": {
+                "title": "Measurable results",
+                "desc": "Every action, post, or video has predetermined goals and appropriate success metrics."
+            }
+        },
+        "benefits_badge": "Competitive Advantage",
+        "benefits_title_1": "Benefits for",
+        "benefits_title_2": "your brand",
+        "benefits_items": {
+            "0": "Increased brand recognition online",
+            "1": "Noticeably higher audience engagement",
+            "2": "Better organic positioning in search engines (SEO)",
+            "3": "Increase in conversion rates and online sales",
+            "4": "Building a loyal community around the brand",
+            "5": "Professional image of a modern company"
+        },
+        "benefits_cta": "Let's talk about strategy",
+        "process_title_1": "Creation",
+        "process_title_2": "process",
+        "process_desc": "Our path from idea to finished result implemented step by step.",
+        "process_items": {
+            "0": {
+                "title": "Analysis",
+                "desc": "We get to know your brand, unique organizational goals, and fully outline the target audience."
+            },
+            "1": {
+                "title": "Strategy",
+                "desc": "Based on the analysis, we precisely develop an action plan and a clear content calendar."
+            },
+            "2": {
+                "title": "Production",
+                "desc": "With the help of our equipment, we hit the set. We create high-quality content according to the assumed plan."
+            },
+            "3": {
+                "title": "Optimization",
+                "desc": "We actively distribute productions, analyze numerical results, and optimize actions."
+            }
+        },
+        "cta_title_1": "Let's start",
+        "cta_title_2": "acting!",
+        "cta_desc": "Don't wait — write to us right now and find out how we can actively achieve your goals together! We look forward to your contact!",
+        "cta_button": "CONTACT US"
+    },
+    "MarketingContentFaq": {
+        "heading_1": "Frequently asked",
+        "heading_2": "questions",
+        "description": "Answers to the most important questions about marketing content creation.",
+        "items": {
+            "0": {
+                "question": "What types of marketing content do you create?",
+                "answer": "We specialize in the production of professional video materials (spots, tutorials), sales and blog texts for SEO (copywriting), and the visual layer for Social Media (Facebook, Instagram, LinkedIn, TikTok)."
+            },
+            "1": {
+                "question": "How do you establish a content strategy for my brand?",
+                "answer": "We start the process with an in-depth analysis of your target audience and an audit of competitors' current activities on the market. On this basis, we build a communication strategy and a clear publishing calendar with short- and long-term goals."
+            },
+            "2": {
+                "question": "How much does monthly content marketing handling cost?",
+                "answer": "The cost of handling depends on the selected package and the intensity of activities (e.g., the number of monthly publications and video production involvement). We prepare quotes after an initial, free consultation, adapting to your goals and budget possibilities."
+            },
+            "3": {
+                "question": "How do you measure the effectiveness of the content created?",
+                "answer": "We use advanced analytical tools, systematically reporting key performance indicators (KPIs) such as reach, watch time, growing engagement rate, and final conversion and lead rates hitting the website."
+            },
+            "4": {
+                "question": "Can you take over existing content and optimize it?",
+                "answer": "Of course. Comprehensive 'content recycling' (repurposing) and optimization are among the more effective reach growth methods. We will gladly rebuild older video publications, blog posts, or broadcasts and adjust them to the current algorithms."
+            }
+        }
+    },
+    "LiveStreamingServicePage": {
+        "hero_badge": "Specialized Service",
+        "hero_title_1": "Live",
+        "hero_title_2": "production",
+        "hero_description": "We handle live streams from conferences, events, or training sessions. We provide a mobile production studio ready to work in the field and remotely.",
+        "hero_cta": "Order a free consultation",
+        "studio_title_1": "Want to do a live broadcast",
+        "studio_title_2": "in a studio?",
+        "studio_desc": "Take advantage of our studio space in Katowice, available for podcasts and live feeds! Do it with PodcastKatowice.pl",
+        "studio_cta": "Visit PodcastKatowice.pl",
+        "capabilities_title_1": "Our",
+        "capabilities_title_2": "capabilities",
+        "capabilities_desc": "Professional equipment and an experienced team guarantee the highest quality of transmission.",
+        "capabilities_items": {
+            "0": {
+                "title": "Live broadcasts",
+                "desc": "Professional live streams with a multi-camera setup and live switching."
+            },
+            "1": {
+                "title": "Mobile studio",
+                "desc": "A complete production studio that we will deliver anywhere in Poland and around the world."
+            },
+            "2": {
+                "title": "Stable connection",
+                "desc": "Redundant internet connections (LTE/5G) ensuring continuity and quality of transmission."
+            },
+            "3": {
+                "title": "Viewer interaction",
+                "desc": "Chat moderation, Q&A sessions, and smooth integration with social platforms."
+            }
+        },
+        "equipment_title_1": "Professional",
+        "equipment_title_2": "equipment",
+        "equipment_desc": "We have a complete mobile production studio that allows us to conduct top-level broadcasts anywhere.",
+        "equipment_items": {
+            "0": "4K cameras with optical stabilization",
+            "1": "ATEM video mixer",
+            "2": "Wireless microphones",
+            "3": "Professional LED lighting",
+            "4": "Streaming encoders",
+            "5": "Redundant internet connections",
+            "6": "Monitoring system",
+            "7": "Mobile studio in a suitcase"
+        },
+        "mobile_studio_title": "Mobile studio",
+        "mobile_studio_desc": "A complete production studio in a mobile version. Ready to work in any place and condition, right away.",
+        "mobile_studio_badges": {
+            "0": {
+                "value": "4K",
+                "label": "Transmission quality"
+            },
+            "1": {
+                "value": "Multi-cam",
+                "label": "Several cameras"
+            }
+        },
+        "applications_title_1": "Transmission",
+        "applications_title_2": "applications",
+        "applications_desc": "Use live video to be closer to your viewers in all important moments of your business.",
+        "applications_items": {
+            "0": {
+                "title": "Conferences",
+                "desc": "Broadcasts of business conferences, seminars, and industry events to the web and internal corporate intranets."
+            },
+            "1": {
+                "title": "Training",
+                "desc": "Online webinars, live video courses, and multi-faceted training sessions for a dispersed audience."
+            },
+            "2": {
+                "title": "Events",
+                "desc": "Live coverage and spectacles from events, festivals, concerts, product premieres, and executive meetings."
+            }
+        },
+        "cta_title_1": "Let's start",
+        "cta_title_2": "acting!",
+        "cta_desc": "Don't wait — write to us right now and find out how we can actively achieve your goals together! We look forward to your contact!",
+        "cta_button": "CONTACT US"
+    },
+    "LiveStreamingFaq": {
+        "heading_1": "Frequently asked",
+        "heading_2": "questions",
+        "description": "Answers to the most important questions about live production.",
+        "items": {
+            "0": {
+                "question": "What are the costs of producing a live broadcast?",
+                "answer": "Costs depend on the scale of the event, the selected number of cameras used (setup), the involvement of the production staff (video and audio operators), and the duration of the broadcast. We price each project individually to fully meet your needs."
+            },
+            "1": {
+                "question": "How far can you travel with the mobile studio?",
+                "answer": "Our mobile studio is 100% adapted for transport. We handle events without territorial limits - we operate throughout Poland, as well as during international productions across Europe."
+            },
+            "2": {
+                "question": "Do you guarantee broadcast stability?",
+                "answer": "Yes. We use advanced bonding systems that merge several internet streams (e.g., LTE/5G from different operators and a fixed link from the facility). Such connection redundancy guarantees high signal reliability even in the event of a temporary local network failure."
+            },
+            "3": {
+                "question": "To what platforms can you broadcast?",
+                "answer": "We stream in almost any RTMP protocol to platforms such as: YouTube, Facebook, LinkedIn, Twitch, Vimeo. We can also stream the signal to fully private servers for exclusive, paid PPV conferences, as well as simultaneously to several platforms at once (Multistreaming)."
+            },
+            "4": {
+                "question": "Do you offer a recording of the event in addition to the broadcast?",
+                "answer": "Of course! All camera signals and the finished, mixed program (Program Out) are continuously recorded locally in high quality in formats ready for editing. The material can be handed over immediately after packing up the equipment, or we can edit a short post-event clip upon request."
+            }
+        }
+    },
+    "DroneRecordingServicePage": {
+        "hero_badge": "Specialized Service",
+        "hero_title_1": "Drone",
+        "hero_title_2": "recordings",
+        "hero_description": "Spectacular aerial shots using professional DJI and FPV drones. We create unique perspectives that will delight your audience.",
+        "hero_cta": "ORDER DRONE RECORDING",
+        "professional_title_1": "Professional aerial",
+        "professional_title_2": "recordings",
+        "professional_p1": "We offer comprehensive drone recording services using cutting-edge equipment. Our DJI drones provide stable, high-quality shots, ideal for presenting real estate, events, and landscapes.",
+        "professional_p2": "For more dynamic shots, we use FPV drones that allow for spectacular flights through building interiors, forests, or hard-to-reach locations, creating cinematic shots full of emotion.",
+        "dji_title": "DJI Drones",
+        "dji_desc": "Stable 4K/6K shots",
+        "fpv_title": "FPV Drones",
+        "fpv_desc": "Dynamic maneuvers",
+        "why_title_1": "Why",
+        "why_title_2": "drone recordings?",
+        "why_desc": "Aerial shots are a way to stand out and show your brand from a completely new perspective.",
+        "why_items": {
+            "0": {
+                "title": "Unique perspectives",
+                "desc": "Aerial shots that will distinguish your brand and delight the audience."
+            },
+            "1": {
+                "title": "4K and 6K quality",
+                "desc": "Professional cameras ensuring the highest image quality."
+            },
+            "2": {
+                "title": "Precise maneuvers",
+                "desc": "Experienced pilots execute the most demanding shots."
+            },
+            "3": {
+                "title": "Dynamic FPV shots",
+                "desc": "Spectacular flights through hard-to-reach places."
+            }
+        },
+        "projects_title_1": "Our",
+        "projects_title_2": "projects",
+        "projects_desc": "See examples of our drone recordings in various categories.",
+        "projects_items": {
+            "0": {
+                "title": "Real estate recordings",
+                "desc": "Spectacular bird's-eye view shots of houses and plots"
+            },
+            "1": {
+                "title": "Landscape shots",
+                "desc": "Beautiful landscapes and tourist locations"
+            },
+            "2": {
+                "title": "Events and parties",
+                "desc": "Dynamic shots from events and celebrations"
+            }
+        },
+        "process_title_1": "Implementation",
+        "process_title_2": "process",
+        "process_desc": "From the first consultation to the final material - this is what our cooperation looks like.",
+        "process_items": {
+            "0": {
+                "step": "01",
+                "title": "Consultation and planning",
+                "desc": "We discuss your needs, location, and type of shots. We check permitted flight zones."
+            },
+            "1": {
+                "step": "02",
+                "title": "Equipment preparation",
+                "desc": "We select the appropriate drone (DJI or FPV) and configure camera settings."
+            },
+            "2": {
+                "step": "03",
+                "title": "Recording realization",
+                "desc": "We make professional recordings maintaining the highest safety standards."
+            },
+            "3": {
+                "step": "04",
+                "title": "Post-production",
+                "desc": "We edit the material, add effects, and deliver the final video in the chosen format."
+            }
+        },
+        "cta_title_1": "Let's start",
+        "cta_title_2": "acting!",
+        "cta_desc": "Don't wait — write to us right now and find out how we can actively achieve your goals together! We look forward to your contact!",
+        "cta_button": "CONTACT US"
+    },
+    "DroneFaq": {
+        "heading_1": "Frequently asked",
+        "heading_2": "questions",
+        "description": "We answer the most common questions regarding drone recordings.",
+        "items": {
+            "0": {
+                "question": "Do you have the appropriate licenses for drone flights?",
+                "answer": "Yes, our operators have the necessary permissions and qualification certificates to perform commercial VLOS and BVLOS flights. Additionally, we have adequate insurance coverage for each project."
+            },
+            "1": {
+                "question": "In what locations can you shoot?",
+                "answer": "We carry out projects throughout Poland and abroad. Before each assignment, we verify the air zones and obtain the necessary flight permits in the specific location."
+            },
+            "2": {
+                "question": "What is the difference between a DJI and an FPV drone?",
+                "answer": "DJI drones are ideal for smooth, stable, and slow shots with high precision, perfectly suited for standard promotional materials. FPV drones, on the other hand, are created with dynamics in mind, rapid changes in flight direction, and spectacular flights through small gaps and areas."
+            },
+            "3": {
+                "question": "How long does a project take?",
+                "answer": "Execution time depends on project complexity, scheduled flight dates depending on the weather, and the scope of post-production. The process usually takes from a few to a dozen working days."
+            },
+            "4": {
+                "question": "Do you shoot in difficult weather conditions?",
+                "answer": "The safety of people, equipment, and property is an absolute priority. Therefore, we do not operate during heavy downpours, strong gusts of wind, or severe frost. Before the shooting day, we carefully check the meteorological conditions."
+            }
+        }
+    },
+    "PodcastServicePage": {
+        "hero_badge": "Specialized Service",
+        "hero_title_1": "Podcasts",
+        "hero_title_2": "",
+        "hero_description": "Full support in podcast creation – from recording in our professional studio, through editing, to publication on social media.",
+        "hero_cta": "Order a free consultation",
+        "studio_title_1": "Record in our professional",
+        "studio_title_2": "studio with guests",
+        "studio_desc": "Contact and book your recordings completely automated, based on our corporate sub-brand in Silesia!",
+        "studio_cta": "Go to PodcastKatowice.pl",
+        "offer_title_1": "Comprehensive",
+        "offer_title_2": "service",
+        "offer_desc": "From concept to publication - we will take care of everything so you can focus on the content.",
+        "offer_items": {
+            "0": {
+                "title": "Studio recording",
+                "desc": "Professional studio with top-class audio equipment and acoustic soundproofing."
+            },
+            "1": {
+                "title": "Editing and post-production",
+                "desc": "Professional audio processing, noise removal, adding music and effects."
+            },
+            "2": {
+                "title": "Publication and distribution",
+                "desc": "We publish the podcast on all major platforms and social media."
+            },
+            "3": {
+                "title": "Strategic support",
+                "desc": "Help with content planning, episode formatting, and audience building."
+            }
+        },
+        "projects_title_1": "Sample",
+        "projects_title_2": "projects",
+        "projects_desc": "See the podcasts we have helped our clients create.",
+        "projects_items": {
+            "0": {
+                "badge": "Video / Audio",
+                "title": "Grzegorz Kusz Podcast",
+                "category": "Special Agent",
+                "desc": "Comprehensive podcast service from recording to publication, building an engaged community for 5 years of cooperation.",
+                "cta": "See case study"
+            },
+            "1": {
+                "badge": "IT / Bizz",
+                "title": "TechTalks Business Podcast",
+                "category": "TechSolutions",
+                "desc": "A series of interviews with technology industry experts, recorded in our professional studio.",
+                "cta": "See projects"
+            }
+        },
+        "equipment_title_1": "Our",
+        "equipment_title_2": "studio",
+        "equipment_desc": "We have a professional recording studio equipped with cutting-edge audio equipment. The studio is fully acoustically soundproofed, guaranteeing crystal clear recording quality.",
+        "equipment_items": {
+            "0": "Recording in a professional studio",
+            "1": "Audio editing and mastering",
+            "2": "Creating intro and outro",
+            "3": "Graphics for episodes",
+            "4": "Publication on podcast platforms",
+            "5": "Promotion in social media",
+            "6": "Analytics and reporting",
+            "7": "Strategic consultations"
+        },
+        "equipment_box_1": {
+            "title": "Professional equipment",
+            "desc": "Condenser microphones, audio interfaces, studio monitors, and software at the highest level."
+        },
+        "equipment_box_2": {
+            "title": "Studio quality",
+            "desc": "Recordings in 24-bit/48kHz resolution"
+        },
+        "benefits_title_1": "Benefits",
+        "benefits_title_2": "for Business",
+        "benefits_desc": "Podcasts are a powerful marketing tool that can significantly impact the development of your company.",
+        "benefits_items": {
+            "0": "Building industry authority through valuable audio content",
+            "1": "Reaching a new audience preferring the audio format",
+            "2": "Greater listener engagement thanks to long-form content",
+            "3": "Possibility of repurposing content for different media formats",
+            "4": "Building a community around the brand"
+        },
+        "benefits_cta": "Contact us",
+        "cta_title_1": "Let's start",
+        "cta_title_2": "acting!",
+        "cta_desc": "Don't wait — write to us right now and find out how we can actively achieve your goals together! We look forward to your contact!",
+        "cta_button": "CONTACT US"
+    },
+    "PodcastFaq": {
+        "heading_1": "Frequently asked",
+        "heading_2": "questions",
+        "description": "Answers to the most important questions regarding podcast production.",
+        "items": {
+            "0": {
+                "question": "How much does it cost to record a podcast in the studio?",
+                "answer": "The cost of recording a podcast in our studio space depends on many factors, such as recording time, the number of microphones/cameras used, or the addition of live streaming. You can find the full offer and price list on our dedicated studio website: podcastkatowice.pl."
+            },
+            "1": {
+                "question": "How long does the podcast episode production process take?",
+                "answer": "The standard editing time for an episode is 3 to 7 working days. However, this depends on the length of the source material, the number of corrections, and the complexity of multi-camera editing and noise removal."
+            },
+            "2": {
+                "question": "Do you help with podcast distribution?",
+                "answer": "Of course. We comprehensively distribute the finished material to the most popular audio platforms (Spotify, Apple Podcasts, Google Podcasts, etc.) and publish video in an accessible form on YouTube. We also prepare teasers and Shorts for Social Media (TikTok, IG Reels)."
+            },
+            "3": {
+                "question": "Can I record a podcast remotely?",
+                "answer": "Yes! We offer specialized support and software that allows you to connect remotely with your guest at the highest possible level for broadcast and hybrid recording in a resolution that emulates being physically in the studio."
+            },
+            "4": {
+                "question": "What additional services do you offer for podcasts?",
+                "answer": "In addition, we prepare graphic branding for channel layout and thumbnails, initial visual or audio jingles, analysis and consulting before debuting on audiovisual platforms, and we also support broadcast SEO."
+            }
+        }
+    }
+}

@@ -1,0 +1,1180 @@
+{
+    "Hero": {
+        "title_1": "Wideo,",
+        "title_2": "Social Media",
+        "title_3": "i Marketing Internetowy",
+        "description": "Chcesz, aby Twoja marka była widoczna w internecie i angażowała odbiorców? DKW Group to agencja kreatywna specjalizująca się w produkcji filmów reklamowych, podcastów, transmisji live oraz kompleksowym marketingu w social media.",
+        "cta_contact": "Skontaktuj się",
+        "cta_projects": "Zobacz nasze projekty"
+    },
+    "Services": {
+        "heading_1": "Nasze",
+        "heading_2": "usługi",
+        "viewAll": "Zobacz wszystkie",
+        "learnMore": "Dowiedz się więcej",
+        "viewAllServices": "Zobacz wszystkie usługi",
+        "items": {
+            "0": {
+                "title": "Produkcja filmowa",
+                "description": "Tworzymy materiały wideo od koncepcji (brief) po profesjonalne nagrania. Każde nagranie jest dopracowane pod kątem jakości i detalu."
+            },
+            "1": {
+                "title": "Nagrania dronem",
+                "description": "Spektakularne ujęcia z powietrza przy użyciu dronów DJI i FPV. Tworzymy dynamiczne nagrania krajobrazów, nieruchomości i wydarzeń z unikalnej perspektywy."
+            },
+            "2": {
+                "title": "Podcasty",
+                "description": "Pełna wsparcie w tworzeniu podcastów – od nagrania w naszym profesjonalnym studiu, przez montaż, po publikację na mediach społecznościowych."
+            },
+            "3": {
+                "title": "Realizacja na żywo",
+                "description": "Obsługujemy live streamy z konferencji, wydarzeń czy szkoleń. Dostarczamy mobilne studio realizacyjne gotowe do pracy w terenie i zdalnie."
+            },
+            "4": {
+                "title": "Strony internetowe i SEO",
+                "description": "Projektowanie i tworzenie responsywnych stron internetowych oraz optymalizacja pod kątem wyszukiwarek, aby zwiększyć widoczność Twojej marki online."
+            },
+            "5": {
+                "title": "Treści marketingowe",
+                "description": "Tworzymy angażujące treści marketingowe, które docierają do Twoich klientów i budują świadomość marki."
+            },
+            "6": {
+                "title": "Social Media",
+                "description": "Kompleksowa obsługa social media, która zwiększa zasięgi i buduje zaangażowaną społeczność wokół Twojej marki."
+            }
+        }
+    },
+    "Projects": {
+        "heading_1": "Nasze",
+        "heading_2": "projekty",
+        "viewAll": "Zobacz wszystkie",
+        "viewCaseStudy": "Zobacz case study",
+        "viewMore": "Zobacz więcej projektów",
+        "items": {
+            "0": {
+                "title": "Kokpit Kamila",
+                "subtitle": "Obsługa Kanału YouTube dla Eksperta Lotniczego",
+                "description": "Stworzyliśmy kanał Kokpit Kamila, który zgromadził 3 mln wyświetleń, budując silną markę ekspercką Kamila Majdy w branży lotniczej."
+            },
+            "1": {
+                "title": "Investment Partners",
+                "subtitle": "Kampania Reklamowa dla Investment Partners",
+                "description": "Stworzyliśmy spot reklamowy dla Metamorfozy Finansowej, osiągając 30,000+ wyświetleń i setki rejestracji, zwiększając zasięg Investment Partners."
+            }
+        }
+    },
+    "CaseStudies": {
+        "heading_1": "Case",
+        "heading_2": "studies",
+        "viewAll": "Zobacz wszystkie",
+        "viewCaseStudy": "Zobacz case study",
+        "viewMore": "Zobacz więcej case studies",
+        "items": {
+            "0": {
+                "category": "Zdrowie i finanse",
+                "client": "Grzegorz Kusz - Agent Specjalny",
+                "title": "Obsługa Kanału Grzegorz Kusz - Agent Specjalny",
+                "description": "Kompleksowa obsługa kanału – od nagrań po publikację. Zajmowaliśmy się produkcją i postprodukcją wideo, planowaniem publikacji oraz tworzeniem miniaturek i grafik, dbając o spójność i maksymalne zasięgi treści."
+            },
+            "1": {
+                "category": "Finansowa",
+                "client": "Investment Partners",
+                "title": "Kampania Reklamowa Dla Investment Partners",
+                "description": "Dla Investment Partners stworzyliśmy skuteczną kampanię promocyjną dla projektu Metamorfoza Finansowa – bezpłatnej platformy edukacyjnej. Przygotowaliśmy angażujący spot reklamowy, który zwiększył zasięgi i przyciągnął setki uczestników."
+            },
+            "2": {
+                "category": "Lotnicza",
+                "client": "Kamil Matyja - Kokpit Kamila",
+                "title": "Obsługa Kanału YouTube dla Eksperta Lotniczego",
+                "description": "Dla Kamila Matyji stworzyliśmy profesjonalny kanał YouTube Kokpit Kamila, który szybko stał się wiodącą platformą edukacyjną o lotnictwie śmigłowcowym w Polsce. Kanał osiągnął milionowe wyświetlenia, zwiększając rozpoznawalność marki osobistej."
+            }
+        }
+    },
+    "Team": {
+        "heading_1": "Poznaj",
+        "heading_2": "nasz zespół",
+        "cta": "Poznaj nas lepiej",
+        "members": {
+            "0": {
+                "name": "Dawid Myszka",
+                "role": "Producent wideo"
+            },
+            "1": {
+                "name": "Kamil Krukowski",
+                "role": "Operator drona / Strony WWW / SEO"
+            },
+            "2": {
+                "name": "Wiktoria Skopek",
+                "role": "Specjalistka od marketingu / AI ADS"
+            }
+        }
+    },
+    "Faq": {
+        "heading_1": "Najczęściej zadawane",
+        "heading_2": "pytania",
+        "subtitle": "Poniżej znajdziesz odpowiedzi na najczęściej zadawane pytania dotyczące naszych usług i współpracy. Jeśli nie znajdziesz odpowiedzi na swoje pytanie, skontaktuj się z nami!",
+        "ctaTitle": "Zacznijmy działać!",
+        "ctaDescription": "Nie czekaj – napisz do nas już teraz i dowiedz się, jak możemy wspólnie zrealizować Twoje cele! Czekamy na Twój kontakt!",
+        "ctaButton": "Skontaktuj się z nami",
+        "items": {
+            "0": {
+                "question": "Jakie usługi oferuje DKW Group?",
+                "answer": "Oferujemy kompleksową obsługę w zakresie produkcji filmowej (reklamy, materiały promocyjne), nagrań dronem, tworzenia podcastów, realizacji transmisji na żywo, a także budowy stron WWW, SEO oraz projektowania strategii marketingowych w social mediach."
+            },
+            "1": {
+                "question": "Jak przebiega proces współpracy z DKW Group?",
+                "answer": "Każdy projekt rozpoczynamy od darmowej konsultacji i briefu. Następnie przygotowujemy strategię oraz wycenę. Po akceptacji przechodzimy do produkcji/realizacji, ściśle informując klienta o postępach. Finałem jest postprodukcja i dystrybucja materiałów."
+            },
+            "2": {
+                "question": "Ile kosztują usługi DKW Group?",
+                "answer": "Ceny uwarunkowane są od stopnia skomplikowania projektu, wymaganego sprzętu nagraniowego oraz czasu realizacji. Każde zlecenie wyceniamy indywidualnie. Wypełnij formularz kontaktowy, a przygotujemy darmowy kosztorys."
+            },
+            "3": {
+                "question": "Jak długo trwa realizacja projektu?",
+                "answer": "Krótsze nagrania (np. Reels/TikTok, proste spoty) realizujemy i montujemy w ciągu 3-7 dni roboczych. Rozbudowane produkcje filmowe lub strony WWW z rozbudowanym SEO mogą zająć od kilku tygodni do miesiąca."
+            },
+            "4": {
+                "question": "Czy DKW Group obsługuje klientów z całej Polski?",
+                "answer": "Tak, nasza siedziba stacjonarna umożliwia nagrania na miejscu (mamy własne studio i sprzęt), ale nasz mobilny zespół realizacyjny podróżuje i obsługuje klientów na terenie całego kraju, a nawet za granicą."
+            }
+        }
+    },
+    "Contact": {
+        "heading_1": "Zacznijmy",
+        "heading_2": "działać!",
+        "description": "Masz pytania dotyczące naszych usług? Chcesz się dowiedzieć, jak możemy wspólnie zrealizować Twój projekt? Wypełnij formularz, a my odezwiemy się do Ciebie w ciągu 24 godzin.",
+        "contactLabel": "Kontakt",
+        "nameLabel": "Imię",
+        "namePlaceholder": "Jan Kowalski",
+        "emailLabel": "Email",
+        "emailPlaceholder": "JanKowalski@poczta.pl",
+        "messageLabel": "Wiadomość",
+        "messagePlaceholder": "Napisz swoją wiadomość...",
+        "submit": "Wyślij",
+        "sending": "Wysyłanie...",
+        "success_title": "Dziękujemy za wypełnienie formularza!",
+        "success_message": "Skontaktujemy się z Tobą w max 24 h. Zwykle trwa to 1-3 h od wysłania wiadomości.",
+        "error_message": "Coś poszło nie tak. Spróbuj ponownie."
+    },
+    "About": {
+        "heading_1": "Wesprzemy Cię w",
+        "heading_2": "promocji!",
+        "paragraph_1": "Nasz zespół ekspertów wie, jak tworzyć treści marketingowe, które realnie wspierają sprzedaż i budują lojalność klientów.",
+        "paragraph_2": "Oferujemy indywidualne podejście, dopasowane strategie marketingowe oraz pełną obsługę Twoich kanałów social media. Dzięki naszym usługom Twoja marka zyska profesjonalny wizerunek i dotrze do nowych odbiorców.",
+        "stat1_value": "100%",
+        "stat1_label": "Zaangażowania",
+        "stat2_value": "ROI",
+        "stat2_label": "Skomplikowane proste",
+        "stat_sales_title": "Zdejmujemy z Ciebie odpowiedzialność za tworzenie treści, contentu",
+        "stat_sales_desc": "Twój biznes rośnie, a my zajmujemy się resztą – od planowania, przez nagrania, aż po gotowy content, który realnie wspiera sprzedaż i zdejmuje ciężar z Twoich barków."
+    },
+    "AboutInvestment": {
+        "heading_1": "Inwestycja",
+        "heading_2": "oparta na relacjach",
+        "paragraph_1": "Nie jesteśmy tylko podwykonawcą. Stajemy się Twoim partnerem biznesowym, dla którego Twój sukces jest równie ważny jak nasz własny.",
+        "paragraph_2": "Współpraca z nami to oszczędność Twojego najcenniejszego zasobu – czasu. Ty zajmujesz się skalowaniem biznesu, a my bierzemy na siebie pełną odpowiedzialność za kreację, produkcję i dystrybucję wideo oraz content marketingu.",
+        "highlight_title": "Zyskujesz spokój i pewność",
+        "highlight_desc": "Tworzymy materiały, które pracują dla Ciebie 24/7. Budujemy wizerunek, angażujemy społeczność i konwertujemy widzów w lojalnych klientów."
+    },
+    "AlternativeTeam": {
+        "heading_1": "Poznaj",
+        "heading_2": "nasz zespół",
+        "cta": "Skontaktuj się z nami",
+        "members": {
+            "0": {
+                "name": "Dawid Myszka",
+                "role": "Producent wideo",
+                "desc": "Dawid to doświadczony producent wideo z ponad 5-letnim doświadczeniem w branży. Specjalizuje się w produkcji wysokiej jakości materiałów marketingowych i korporacyjnych. Jego kreatywne podejście i dbałość o detale sprawiają, że każdy projekt jest wyjątkowy i profesjonalny."
+            },
+            "1": {
+                "name": "Kamil Krukowski",
+                "role": "Operator drona / Strony WWW / SEO",
+                "desc": "Kamil to doświadczony operator drona, który realizuje profesjonalne ujęcia z powietrza na potrzeby filmów reklamowych i transmisji live. Specjalizuje się również w tworzeniu stron internetowych oraz pozycjonowaniu stron w Google."
+            },
+            "2": {
+                "name": "Wiktoria Skopek",
+                "role": "Specjalistka od marketingu / AI ADS",
+                "desc": "Wiktoria to specjalistka ds. marketingu z doskonałym wyczuciem trendów i potrzeb klientów. Odpowiada za strategie marketingowe i komunikację z klientami. Jej analityczne podejście i kreatywność pozwalają na tworzenie skutecznych kampanii."
+            }
+        }
+    },
+    "Blog": {
+        "heading_1": "Nasz",
+        "heading_2": "blog",
+        "viewAll": "Zobacz wszystkie wpisy",
+        "readMore": "Czytaj więcej",
+        "viewMorePosts": "Zobacz więcej wpisów",
+        "post_date": "28.05.2025",
+        "post_author": "Kamil Krukowski",
+        "post_title": "Dlaczego Twoja firma potrzebuje profesjonalnej strony internetowej?"
+    },
+    "Clients": {
+        "heading_1": "Zaufali",
+        "heading_2": "nam"
+    },
+    "Portfolio": {
+        "hero_label": "Portfolio",
+        "hero_title_1": "Nasze",
+        "hero_title_2": "realizacje",
+        "hero_description": "Poznaj nasze najlepsze produkcje wideo i sesje fotograficzne. Każdy projekt to unikalna historia opowiedziana przy użyciu nowoczesnych technologii i kreatywnego podejścia.",
+        "filter_all": "Wszystko",
+        "filter_video": "Wideo",
+        "filter_photo": "Zdjęcia",
+        "tag_video": "Wideo",
+        "tag_photo": "Foto",
+        "empty": "Brak elementów w tej kategorii",
+        "cta_title": "Chcesz podobny projekt?",
+        "cta_description": "Skontaktuj się z nami i opowiedz o swoim pomyśle. Stworzymy dla Ciebie materiały, które wyróżnią Twoją markę na tle konkurencji.",
+        "cta_button": "Skontaktuj się",
+        "items": {
+            "0": {
+                "title": "Spot reklamowy",
+                "client": "Investment Partners"
+            },
+            "1": {
+                "title": "Sesja produktowa",
+                "client": "GlowUP"
+            },
+            "2": {
+                "title": "Film korporacyjny",
+                "client": "WellDone"
+            },
+            "3": {
+                "title": "Sesja wizerunkowa",
+                "client": "Akademia Lutowania"
+            },
+            "4": {
+                "title": "Podcast - odcinek pilotażowy",
+                "client": "Contenty"
+            },
+            "5": {
+                "title": "Fotografia eventowa",
+                "client": "MKHelicopters"
+            },
+            "6": {
+                "title": "Zdjęcia z drona",
+                "client": "DKW Group"
+            },
+            "7": {
+                "title": "Transmisja live",
+                "client": "Grzegorz Kusz"
+            },
+            "8": {
+                "title": "Sesja portretowa",
+                "client": "Kokpit Kamila"
+            }
+        }
+    },
+    "DetailedProjectsList": {
+        "viewCaseStudy": "Zobacz całe case study",
+        "items": {
+            "0": {
+                "category": "YouTube Management",
+                "title": "Obsługa Kanału YouTube dla Eksperta Lotniczego",
+                "description": "Stworzyliśmy kanał \"Kokpit Kamila\", który zgromadził 5 mln wyświetleń, budując silną markę ekspercką w branży lotniczej.",
+                "metrics": {
+                    "0": {
+                        "value": "5 000 000+",
+                        "label": "wyświetleń na YouTube"
+                    },
+                    "1": {
+                        "value": "2750+",
+                        "label": "subskrybentów"
+                    }
+                }
+            },
+            "1": {
+                "category": "Video Marketing",
+                "title": "Kampania Reklamowa dla Investment Partners",
+                "description": "Stworzyliśmy spot reklamowy dla \"Metamorfozy Finansowej\", osiągając 30,000+ wyświetleń i setki rejestracji, zwiększając zasięg Investment Partners.",
+                "metrics": {
+                    "0": {
+                        "value": "Setki",
+                        "label": "rejestracji"
+                    },
+                    "1": {
+                        "value": "30 000+",
+                        "label": "wyświetleń"
+                    }
+                }
+            },
+            "2": {
+                "category": "Content Creation",
+                "title": "Obsługa Kanału Grzegorz Kusz - Agent Specjalny",
+                "description": "Kompleksowa obsługa kanału – od nagrań po publikację, budowanie zaangażowanej społeczności i tworzenie wartościowych treści.",
+                "metrics": {
+                    "0": {
+                        "value": "5 lat",
+                        "label": "współpracy"
+                    },
+                    "1": {
+                        "value": "+450k",
+                        "label": "subskrypcji"
+                    }
+                }
+            }
+        }
+    },
+    "CaseStudiesList": {
+        "viewDetails": "Zobacz szczegóły",
+        "items": {
+            "0": {
+                "client": "Grzegorz Kusz - Agent Specjalny",
+                "title": "Obsługa Kanału YT",
+                "industry": "Zdrowie i finanse",
+                "description": "Kompleksowa obsługa kanału – od nagrań po publikację. Zajmowaliśmy się produkcją i postprodukcją wideo, planowaniem publikacji oraz tworzeniem miniaturek i grafik, dbając o spójność i maksymalne zasięgi treści. 🚀"
+            },
+            "1": {
+                "client": "Investment Partners",
+                "title": "Kampania Reklamowa",
+                "industry": "Branża Finansowa",
+                "description": "Dla Investment Partners stworzyliśmy skuteczną kampanię promocyjną dla projektu „Metamorfoza Finansowa” – bezpłatnej platformy edukacyjnej. Przygotowaliśmy angażujący spot reklamowy, który zwiększył zasięgi i przyciągnął setki uczestników. Kampania przyczyniła się do wzrostu rozpoznawalności marki."
+            },
+            "2": {
+                "client": "Kamil Matyja - „Kokpit Kamila”",
+                "title": "Obsługa Kanału YouTube",
+                "industry": "Lotnicza",
+                "description": "Dla Kamila Matyji stworzyliśmy profesjonalny kanał YouTube „Kokpit Kamila”, który szybko stał się wiodącą platformą edukacyjną o lotnictwie śmigłowcowym w Polsce. Dzięki wysokiej jakości produkcji i skutecznej strategii kanał osiągnął milionowe wyświetlenia, zwiększając zasięg marki."
+            }
+        }
+    },
+    "AboutHero": {
+        "heading_1": "O",
+        "heading_2": "nas",
+        "description": "Jesteśmy zespołem profesjonalistów z pasją do tworzenia wyjątkowych treści wideo i marketingowych.",
+        "badge": "DKW Group Team"
+    },
+    "ServiceDetailHero": {
+        "heading_1": "Produkcja",
+        "heading_2": "filmowa",
+        "description": "Tworzymy profesjonalne materiały wideo od koncepcji po gotowy produkt. Każde nagranie jest dopracowane pod kątem jakości i detalu.",
+        "cta": "Zamów bezpłatną konsultację"
+    },
+    "ServiceFaq": {
+        "heading_1": "Najczęściej zadawane",
+        "heading_2": "pytania",
+        "description": "Odpowiedzi na najważniejsze pytania dotyczące produkcji filmowej.",
+        "items": {
+            "0": {
+                "question": "Ile kosztuje produkcja filmu reklamowego?",
+                "answer": "Koszt produkcji jest zawsze wyceniany indywidualnie i zależy od skali projektu, formatu (np. reklama do internetu vs TV), dni zdjęciowych, ilości aktorów/statystów oraz zaawansowania postprodukcji (animacje, vfx, kolor korekcja). Wycenę zaczynamy zazwyczaj od 3000 PLN netto."
+            },
+            "1": {
+                "question": "Jak długo trwa proces produkcji filmu?",
+                "answer": "Standardowy spot reklamowy lub film korporacyjny to ok. 2 do 4 tygodni od momentu podpisania umowy. Czas trwania zależy jednak od stopnia skomplikowania scenariusza i czasu wymaganego na organizację planu."
+            },
+            "2": {
+                "question": "Czy zapewniacie sprzęt do nagrań?",
+                "answer": "Tak. Posiadamy pełne, profesjonalne zaplecze techniczne – od najnowszych kamer 4K/6K (RED/Sony), oświetlenia filmowego, stabilizatorów i sprzętu do zapisu dźwięku przestrzennego."
+            },
+            "3": {
+                "question": "Czy możemy uczestniczyć w procesie montażu?",
+                "answer": "Zdecydowanie. Tworząc wycenę zakładamy najczęściej 2 iteracje bezpłatnych poprawek reżyserskich. Dajemy Ci dostęp do portalu podglądu materiału, gdzie możesz w czasie rzeczywistym nanieść swoje adnotacje z uwagami bezpośrednio na oś czasu wideo."
+            },
+            "4": {
+                "question": "W jakich formatach dostarczacie gotowe filmy?",
+                "answer": "Filmy renderowane są bazowo w 4K Ultra HD (MP4, H.264/H.265). Istnieje oczywiście możliwość dostarczenia formatów pionowych pod Social Media (np. 9:16), plików 'pro-res' do stacji TV czy innych na specyficzne życzenie."
+            }
+        }
+    },
+    "ProjectsHero": {
+        "heading_1": "Sprawdź wyniki naszych",
+        "heading_2": "klientów!",
+        "description": "Zobacz nasze najlepsze projekty i przekonaj się, jak możemy pomóc Twojej marce osiągnąć sukces."
+    },
+    "ServiceBenefits": {
+        "heading_1": "Korzyści dla",
+        "heading_2": "Twojego biznesu",
+        "description": "Profesjonalne materiały wideo mają realny wpływ na wyniki Twojej firmy.",
+        "benefits": {
+            "0": "Zwiększenie świadomości marki i zaangażowania odbiorców",
+            "1": "Profesjonalny wizerunek firmy budujący zaufanie klientów",
+            "2": "Wyższe konwersje i wzrost sprzedaży dzięki wartościowym treściom",
+            "3": "Efektywna komunikacja wartości i korzyści produktów/usług",
+            "4": "Budowanie długotrwałych relacji z odbiorcami"
+        },
+        "cta_title": "Twój dedykowany cel?",
+        "cta_button": "Omów go z nami"
+    },
+    "History": {
+        "heading_1": "Nasza",
+        "heading_2": "historia",
+        "paragraphs": {
+            "0": "DKW Group powstało z pasji do tworzenia wyjątkowych treści wideo, które nie tylko wyglądają profesjonalnie, ale przede wszystkim skutecznie realizują cele marketingowe naszych klientów.",
+            "1": "Założyciele firmy - Dawid, Kamil i Wiktoria - połączyli swoje doświadczenie i umiejętności, aby stworzyć agencję, która oferuje kompleksowe usługi w zakresie produkcji wideo, marketingu internetowego i tworzenia angażujących treści.",
+            "2": "Od momentu powstania, naszym celem jest pomaganie markom w wyróżnieniu się na rynku poprzez profesjonalne materiały wideo i skuteczne strategie marketingowe. Przez lata działalności zrealizowaliśmy setki projektów dla klientów z różnych branż, zawsze stawiając na najwyższą jakość i indywidualne podejście."
+        },
+        "label": "DKW Group Story"
+    },
+    "Values": {
+        "heading_1": "Nasze",
+        "heading_2": "wartości",
+        "items": {
+            "0": {
+                "title": "Jakość",
+                "desc": "Stawiamy na najwyższą jakość realizowanych projektów, dbając o każdy, nawet najmniejszy detal. Wykorzystujemy profesjonalny sprzęt i nowoczesne technologie."
+            },
+            "1": {
+                "title": "Kreatywność",
+                "desc": "Nieustannie poszukujemy nowych, kreatywnych rozwiązań, które pozwolą naszym klientom wyróżnić się na tle konkurencji i skutecznie dotrzeć do odbiorców."
+            },
+            "2": {
+                "title": "Zaangażowanie",
+                "desc": "W każdy projekt angażujemy się w 100%, traktując cele naszych klientów jak swoje własne. Dzięki temu możemy osiągać wyjątkowe rezultaty."
+            },
+            "3": {
+                "title": "Profesjonalizm",
+                "desc": "Pracujemy zgodnie z najwyższymi standardami branżowymi, zapewniając profesjonalną obsługę na każdym etapie realizacji projektu."
+            },
+            "4": {
+                "title": "Innowacyjność",
+                "desc": "Śledzimy najnowsze trendy w branży i nieustannie rozwijamy nasze umiejętności, aby oferować naszym klientom innowacyjne rozwiązania."
+            },
+            "5": {
+                "title": "Transparentność",
+                "desc": "Dbamy o jasną i przejrzystą komunikację z naszymi klientami. Zawsze informujemy o postępach w realizacji projektu i możliwych opcjach."
+            }
+        }
+    },
+    "ServicesHero": {
+        "heading_1": "Poznaj nasze",
+        "heading_2": "usługi",
+        "description": "Oferujemy kompleksowe rozwiązania z zakresu produkcji wideo, marketingu i kreacji treści, które pomogą Twojej marce się wyróżnić."
+    },
+    "ServicesPageGrid": {
+        "learnMore": "Dowiedz się więcej",
+        "category_1": "Wideo & Audio",
+        "category_2": "Marketing & Web",
+        "category_3": "Pakiety i Cennik",
+        "items": {
+            "0": {
+                "title": "Produkcja filmowa i wideo",
+                "description": "Tworzymy filmy reklamowe, materiały promocyjne, dynamiczne ujęcia. Od koncepcji, przez nagrania, po montaż i publikację."
+            },
+            "1": {
+                "title": "Nagrania dronem DJI i FPV",
+                "description": "Spektakularne ujęcia z powietrza przy użyciu profesjonalnych dronów DJI oraz dynamicznych dronów FPV."
+            },
+            "2": {
+                "title": "Podcasty",
+                "description": "Oferujemy wsparcie w produkcji podcastów – od nagrania w profesjonalnym studiu, po dystrybucję w social media."
+            },
+            "3": {
+                "title": "Realizacja na żywo",
+                "description": "Realizujemy transmisje na żywo z konferencji, wydarzeń i szkoleń w studiu oraz zdalnie w terenie."
+            },
+            "4": {
+                "title": "Tworzenie treści marketingowych",
+                "description": "Tworzymy skuteczne teksty i kampanie, które docierają do Twoich klientów i budują świadomość marki."
+            },
+            "5": {
+                "title": "Social Media",
+                "description": "Prowadzimy obsługę kanałów social media – od planu, przez treści, po dystrybucję i zwiększanie zasięgów."
+            },
+            "6": {
+                "title": "Strony internetowe i SEO",
+                "description": "Platformy WWW, audyty SEO i pozycjonowanie stron zoptymalizowanych pod urządzenia mobilne i responsywność."
+            },
+            "7": {
+                "title": "One Day Pack",
+                "description": "Profesjonalna produkcja contentu dla lokalnych biznesów. Nawet do 15 materiałów wideo kręconych w 1 dzień roboczy."
+            },
+            "8": {
+                "title": "Short Form Content Pack",
+                "description": "Systematyczne tworzenie rolek (Reels), TikToków oraz Shorts w atrakcyjnym systemie abonamentowym dla marek."
+            }
+        }
+    },
+    "WhyUs": {
+        "heading_1": "Dlaczego",
+        "heading_2": "warto",
+        "heading_3": "z nami współpracować?",
+        "description": "Łączymy kreatywność, doświadczenie i nowoczesne technologie, aby zapewnić najwyższą jakość usług.",
+        "items": {
+            "0": {
+                "title": "Doświadczony zespół",
+                "desc": "Nasz zespół składa się z doświadczonych specjalistów, którzy od lat pracują w branży mediów i marketingu."
+            },
+            "1": {
+                "title": "Nowoczesny sprzęt",
+                "desc": "Korzystamy z najnowszego sprzętu i oprogramowania, aby zapewnić najwyższą jakość naszych produkcji."
+            },
+            "2": {
+                "title": "Indywidualne podejście",
+                "desc": "Każdy klient i projekt jest dla nas wyjątkowy. Zawsze dostosowujemy nasze usługi do konkretnych potrzeb i celów."
+            },
+            "3": {
+                "title": "Kompleksowa obsługa",
+                "desc": "Oferujemy usługi od koncepcji, przez produkcję, po post-produkcję i dystrybucję treści."
+            },
+            "4": {
+                "title": "Terminowość",
+                "desc": "Zawsze dotrzymujemy ustalonych terminów, zapewniając wysoką jakość przy zachowaniu efektywności czasowej."
+            },
+            "5": {
+                "title": "Doskonałe rezultaty",
+                "desc": "Nasze projekty przyczyniają się do realnego wzrostu rozpoznawalności i efektywności marketingowej naszych klientów."
+            }
+        }
+    },
+    "ContactHero": {
+        "heading_1": "Zacznijmy",
+        "heading_2": "działać!",
+        "description": "Skontaktuj się z nami, aby omówić Twój projekt lub zadać pytanie o nasze usługi."
+    },
+    "DetailedContact": {
+        "heading_1": "Informacje",
+        "heading_2": "kontaktowe",
+        "email": "Email",
+        "phone": "Telefon",
+        "location": "Lokalizacja",
+        "location_value": "Katowice, Polska",
+        "working_hours": "Godziny pracy",
+        "mon_fri": "Poniedziałek - Piątek:",
+        "sat": "Sobota:",
+        "sun": "Niedziela:",
+        "closed": "Zamknięte",
+        "form_title": "Napisz do nas",
+        "form_name": "Imię",
+        "form_name_placeholder": "Jan Kowalski",
+        "form_email": "Email",
+        "form_email_placeholder": "JanKowalski@poczta.pl",
+        "form_message": "Wiadomość",
+        "form_message_placeholder": "Napisz swoją wiadomość...",
+        "form_submit": "Wyślij",
+        "sending": "Wysyłanie...",
+        "success_title": "Dziękujemy za wypełnienie formularza!",
+        "success_message": "Skontaktujemy się z Tobą w max 24 h. Zwykle trwa to 1-3 h od wysłania wiadomości.",
+        "error_message": "Coś poszło nie tak. Spróbuj ponownie."
+    },
+    "CaseStudiesHero": {
+        "badge": "Case Studies",
+        "heading_1": "Wyniki, które",
+        "heading_2": "robią różnicę",
+        "description": "Nie obiecujemy cudów, dowozimy rezultaty. Zobacz, w jaki sposób nasze strategie, wideo oraz marketing podnoszą zyski i budują rynkową przewagę naszych partnerów biznesowych.",
+        "sort": "Sortuj relacje"
+    },
+    "BlogHero": {
+        "heading": "Blog",
+        "description": "Najnowsze wpisy, artykuły i porady dotyczące marketingu i strategii biznesowych."
+    },
+    "BlogList": {
+        "readMore": "Czytaj więcej",
+        "items": {
+            "0": {
+                "title": "Dlaczego Twoja firma potrzebuje profesjonalnej strony internetowej?",
+                "date": "28.05.2025",
+                "author": "Kamil Krukowski"
+            }
+        }
+    },
+    "ContactMap": {
+        "title": "Lokalizacja biura DKW Group - Zygmunta Krasińskiego 29, Katowice"
+    },
+    "ServiceProcess": {
+        "heading_1": "Nasz",
+        "heading_2": "proces",
+        "heading_3": "pracy",
+        "description": "Od pierwszej konsultacji po finalne materiały - dbamy o każdy etap produkcji.",
+        "items": {
+            "0": {
+                "title": "Konsultacja i brief",
+                "description": "Poznajemy Twoje potrzeby i cele biznesowe, aby stworzyć idealne rozwiązanie."
+            },
+            "1": {
+                "title": "Scenariusz i storyboard",
+                "description": "Opracowujemy scenariusz i wizualizujemy koncepcję przed rozpoczęciem zdjęć."
+            },
+            "2": {
+                "title": "Profesjonalne nagrania",
+                "description": "Wykorzystujemy najnowszy sprzęt do nagrywania materiałów w najwyższej jakości."
+            },
+            "3": {
+                "title": "Post-produkcja",
+                "description": "Montaż, korekcja kolorów, dźwięk i grafika - dopracowujemy każdy detal."
+            }
+        }
+    },
+    "ServicePortfolio": {
+        "heading_1": "Nasze",
+        "heading_2": "portfolio",
+        "description": "Zobacz przykłady naszych produkcji i przekonaj się o jakości naszych usług.",
+        "viewCaseStudy": "Zobacz case study",
+        "viewMore": "Zobacz więcej projektów",
+        "items": {
+            "0": {
+                "category": "Investment Partners",
+                "title": "Spot Reklamowy dla Investment Partners",
+                "description": "Film reklamowy promujący usługi finansowe, który wygenerował 30,000+ wyświetleń i setki rejestracji na szkolenia."
+            },
+            "1": {
+                "category": "Kokpit Kamila",
+                "title": "Obsługa Kanału Kokpit Kamila",
+                "description": "Seria profesjonalnych nagrań edukacyjnych o tematyce lotniczej, które zgromadziły ponad 3 miliony wyświetleń."
+            }
+        }
+    },
+    "ServiceOfferings": {
+        "heading_1": "Co",
+        "heading_2": "oferujemy?",
+        "description": "Nasz zespół specjalizuje się w tworzeniu różnorodnych materiałów wideo, dostosowanych do potrzeb każdego klienta.",
+        "items": {
+            "0": "Filmy promocyjne i reklamowe",
+            "1": "Materiały szkoleniowe i instruktażowe",
+            "2": "Filmy korporacyjne",
+            "3": "Relacje z wydarzeń",
+            "4": "Testimoniale klientów",
+            "5": "Animacje 3D i motion graphics"
+        },
+        "box_title": "Najwyższa jakość",
+        "box_desc": "Wykorzystujemy profesjonalny sprzęt 4K, nowoczesne oprogramowanie i wieloletnie doświadczenie, aby zapewnić materiały na najwyższym poziomie."
+    },
+    "WebsitesServicePage": {
+        "hero_badge": "Usługa Specjalistyczna",
+        "hero_title_1": "Strony internetowe",
+        "hero_title_2": "i SEO",
+        "hero_description": "Tworzymy nowoczesne, responsywne strony internetowe zoptymalizowane pod kątem wyszukiwarek. Twoja obecność online nigdy nie była bardziej profesjonalna.",
+        "hero_cta": "Zamów bezpłatną konsultację",
+        "webdkw_title_1": "Chcesz stworzyć platformę sprzedażową,",
+        "webdkw_title_2": "stronę, lub potrzebujesz audytu?",
+        "webdkw_desc": "Skorzystaj również z naszej przestrzeni stricte w branży programowania udostępnionej dla e-commerce!",
+        "webdkw_cta": "Sprawdź WebDKW.net",
+        "process_title_1": "Nasz proces",
+        "process_title_2": "tworzenia",
+        "process_desc": "Od analizy potrzeb po optymalizację SEO - każdy etap jest przemyślany.",
+        "process_items": {
+            "0": {
+                "title": "Analiza potrzeb",
+                "desc": "Poznajemy Twój biznes, cele i grupę docelową, aby stworzyć idealną strategię."
+            },
+            "1": {
+                "title": "Projektowanie UX/UI",
+                "desc": "Tworzymy intuicyjny design skoncentrowany na nieskazitelnym doświadczeniu użytkownika."
+            },
+            "2": {
+                "title": "Rozwój strony",
+                "desc": "Kodujemy w pełni responsywną stronę z wykorzystaniem najnowszych technologii (React/Next.js)."
+            },
+            "3": {
+                "title": "Optymalizacja SEO",
+                "desc": "Implementujemy rygorystyczne praktyki SEO dla lepszej widoczności w wynikach Google."
+            }
+        },
+        "projects_title_1": "Nasze",
+        "projects_title_2": "realizacje",
+        "projects_desc": "Zobacz przykłady stron internetowych i platform e-commerce, które stworzyliśmy dla naszych klientów.",
+        "projects_items": {
+            "0": {
+                "badge": "Web Development",
+                "title": "Strona Korporacyjna TechSolutions",
+                "client": "TechSolutions",
+                "desc": "Nowoczesna strona firmowa z zaawansowanymi funkcjonalnościami i optymalizacją SEO, która zwiększyła ruch organiczny o 300%."
+            },
+            "1": {
+                "badge": "E-commerce",
+                "title": "Sklep Internetowy Fashion Store",
+                "client": "Fashion Store",
+                "desc": "Kompleksowy sklep e-commerce z systemem płatności, zarządzaniem zamówieniami i zoptymalizowaną konwersją dla dużej marki modowej."
+            },
+            "2": {
+                "badge": "Platforma B2B",
+                "title": "Portal Edukacyjny EduLearn",
+                "client": "EduLearn",
+                "desc": "Platforma e-learningowa z systemem kursów online, płatnościami kartą podpinana abonamentem i zaawansowaną analityką użytkowników w portalu VOD."
+            }
+        },
+        "projects_cta": "Zobacz projekty",
+        "offer_title_1": "Co",
+        "offer_title_2": "oferujemy?",
+        "offer_desc": "Nasze dedykowane web-usługi obejmują pełen zakres tworzenia stron internetowych i optymalizacji SEO niezbędnych dla witryn XXI wieku.",
+        "offer_items": {
+            "0": "Responsywne strony internetowe",
+            "1": "Sklepy internetowe (e-commerce)",
+            "2": "Optymalizacja działania i SEO",
+            "3": "Ekstremalnie szybkie ładowanie stron",
+            "4": "Bezpieczeństwo i certyfikaty SSL",
+            "5": "Integracja z mediami społecznościowymi"
+        },
+        "seo_title": "Optymalizacja SEO",
+        "seo_desc": "Implementujemy najlepsze praktyki SEO on-page, aby Twoja strona zapleczowa była dobrze widoczna w wynikach wyszukiwania Google i organicznie oraz trwale przyciągała więcej klientów generując sprzedaż.",
+        "benefits_title_1": "Korzyści dla",
+        "benefits_title_2": "Twojego biznesu",
+        "benefits_desc": "Profesjonalna strona internetowa to od lat wciąż mocna podstawa i tarcza sukcesu w dzisiejszym opartym do kwadratu na algorytmach i rekomendacjach świecie digital.",
+        "benefits_items": {
+            "0": "Zwiększenie widoczności w wyszukiwarkach Google i Bing",
+            "1": "Profesjonalny wizerunek firmy budujący twarde zaufanie klientów",
+            "2": "Wyższe leady i konwersje dzięki zoptymalizowanemu projektowaniu UX/UI",
+            "3": "Responsywność i lekkość kodu na absolutnie wszystkich urządzeniach mobilnych",
+            "4": "Superszybkie ładowanie (Web Vitals) oddziałujące pozytywnie na pozycjonowanie w global trackach"
+        },
+        "benefits_cta": "Skontaktuj się z nami",
+        "cta_title_1": "Zacznijmy",
+        "cta_title_2": "działać!",
+        "cta_desc": "Nie czekaj — napisz do nas już teraz i dowiedz się, jak możemy wspólnie zrealizować Twoje cele! Czekamy na Twój kontakt!",
+        "cta_button": "SKONTAKTUJ SIĘ Z NAMI"
+    },
+    "WebsitesFaq": {
+        "heading_1": "Najczęściej zadawane",
+        "heading_2": "pytania",
+        "description": "Odpowiedzi na najważniejsze pytania dotyczące tworzenia stron internetowych.",
+        "items": {
+            "0": {
+                "question": "Ile kosztuje stworzenie strony internetowej?",
+                "answer": "Koszt stworzenia strony zależy od jej zaawansowania (od wizytówki One-Page po rozbudowany serwis e-commerce), ilości dedykowanych podstron, integracji z zewnętrznymi systemami i stopnia skomplikowania projektu UX/UI. Ofertę cenową zawsze szyjemy na miarę po krótkim audycie Twoich potrzeb."
+            },
+            "1": {
+                "question": "Jak długo trwa proces tworzenia strony?",
+                "answer": "Czas wdrożenia prostych wizytówek to kilkanaście dni. Realizacja bardziej zaawansowanych stron korporacyjnych czy platform sklepowych zajmuje najczęściej od 4 do 8 tygodni. Harmonogram precyzujemy na etapie podpisania umowy."
+            },
+            "2": {
+                "question": "Czy strona będzie responsywna na urządzeniach mobilnych?",
+                "answer": "Absolutnie tak (RWD/Mobile First). W każdym projekcie zapewniamy doskonałe dostosowanie layoutu do smartfonów i tabletów. Dzięki temu Twoi klienci zyskują płynne doświadczenie niezależnie od urządzenia, a witryna lepiej pozycjonuje się w wyszukiwarce."
+            },
+            "3": {
+                "question": "Co obejmuje optymalizacja SEO?",
+                "answer": "Nasza optymalizacja techniczna SEO zawiera odpowiednie ułożenie nagłówków H1-H6, szybkość ładowania z pakietami WebP, atrybuty alt dla obrazków, ustrukturyzowane tagi Meta (Tittle & Description), poprawną mapę sitemaps.xml oraz bezpieczny plik robots.txt."
+            },
+            "4": {
+                "question": "Czy zapewniacie wsparcie techniczne po wdrożeniu?",
+                "answer": "Tak. Po przekazaniu Ci nowej witryny internetowej dbamy o nieprzerwane wsparcie powdrożeniowe, administrację, naprawę nagłych usterek (SLA), a także szkolimy z obsługi panelu CMS byś mógł w dużej mierze samodzielnie publikować np. posty blogowe."
+            }
+        }
+    },
+    "MarketingContentServicePage": {
+        "hero_badge": "Usługa Specjalistyczna",
+        "hero_title_1": "Tworzenie treści",
+        "hero_title_2": "marketingowych",
+        "hero_description": "Pomagamy markom wyróżnić się w sieci, tworząc angażujące materiały wideo, poradniki oraz wszelkie treści tekstowe i graficzne dla grup docelowych.",
+        "hero_cta": "Zamów bezpłatną konsultację",
+        "types_title_1": "Rodzaje",
+        "types_title_2": "treści",
+        "types_desc": "Tworzymy różnorodne materiały marketingowe dostosowane do Twoich celów biznesowych.",
+        "types_items": {
+            "0": {
+                "title": "Materiały wideo",
+                "desc": "Filmy promocyjne, reklamy, testimoniale i materiały instruktażowe."
+            },
+            "1": {
+                "title": "Treści tekstowe",
+                "desc": "Copywriting, artykuły blogowe, opisy produktów i social media content."
+            },
+            "2": {
+                "title": "Kampanie reklamowe",
+                "desc": "Kompleksowe kampanie dla różnych kanałów reklamowych i grup docelowych."
+            },
+            "3": {
+                "title": "Analiza efektywności",
+                "desc": "Monitorowanie rezultatów i ciągła optymalizacja treści pod kątem konwersji."
+            }
+        },
+        "strategy_title_1": "Strategiczne",
+        "strategy_title_2": "podejście",
+        "strategy_desc": "Nie tworzymy treści na chybił trafił. Każdy materiał jest częścią przemyślanej strategii marketingowej, która ma prowadzić do konkretnych rezultatów dla Twojego biznesu.",
+        "strategy_items": {
+            "0": {
+                "title": "Analiza grupy docelowej",
+                "desc": "Poznajemy Twoich odbiorców, ich codzienne potrzeby, problemy i preferencje zakupowe."
+            },
+            "1": {
+                "title": "Trendy i best practices",
+                "desc": "Na bieżąco śledzimy najnowsze trendy oraz sprawdzone praktyki rynkowe w marketingu b2b/b2c."
+            },
+            "2": {
+                "title": "Mierzalne rezultaty",
+                "desc": "Każda akcja, post czy wideo ma z góry określone cele i odpowiednie mierniki sukcesu."
+            }
+        },
+        "benefits_badge": "Przewaga Konkurencyjna",
+        "benefits_title_1": "Korzyści dla",
+        "benefits_title_2": "Twojej marki",
+        "benefits_items": {
+            "0": "Zwiększenie rozpoznawalności marki w sieci",
+            "1": "Zauważalnie wyższe zaangażowanie odbiorców",
+            "2": "Lepsze organiczne pozycjonowanie w wyszukiwarkach (SEO)",
+            "3": "Wzrost współczynnika konwersji i sprzedaży online",
+            "4": "Budowanie lojalnej społeczności wokół marki",
+            "5": "Profesjonalny wizerunek nowoczesnej firmy"
+        },
+        "benefits_cta": "Porozmawiajmy o strategii",
+        "process_title_1": "Proces",
+        "process_title_2": "tworzenia",
+        "process_desc": "Nasza ścieżka od pomysłu do gotowego rezultatu realizowana krok po kroku.",
+        "process_items": {
+            "0": {
+                "title": "Analiza",
+                "desc": "Poznajemy Twoją markę, unikalne cele organizacyjne i zarysowujemy w pełni grupę docelową."
+            },
+            "1": {
+                "title": "Strategia",
+                "desc": "Na bazie analizy precyzynie opracowujemy plan działań i klarowny kalendarz treści."
+            },
+            "2": {
+                "title": "Produkcja",
+                "desc": "Z pomocą naszego sprzętu ruszamy na plan. Tworzymy wysokiej jakości treści zgodnie z założonym planem."
+            },
+            "3": {
+                "title": "Optymalizacja",
+                "desc": "Aktywnie dystrybuujemy produkcje, analizujemy wyniki liczbowe i optymalizujemy działania."
+            }
+        },
+        "cta_title_1": "Zacznijmy",
+        "cta_title_2": "działać!",
+        "cta_desc": "Nie czekaj — napisz do nas już teraz i dowiedz się, jak możemy wspólnie zrealizować Twoje cele! Czekamy na Twój kontakt!",
+        "cta_button": "SKONTAKTUJ SIĘ Z NAMI"
+    },
+    "MarketingContentFaq": {
+        "heading_1": "Najczęściej zadawane",
+        "heading_2": "pytania",
+        "description": "Odpowiedzi na najważniejsze pytania dotyczące tworzenia treści marketingowych.",
+        "items": {
+            "0": {
+                "question": "Jakie rodzaje treści marketingowych tworzycie?",
+                "answer": "Specjalizujemy się w produkcji profesjonalnych materiałów wideo (spoty, tutoriale), tekstach sprzedażowych i blogowych pod SEO (copywriting) oraz warstwie wizualnej dla Social Mediów (Facebook, Instagram, LinkedIn, TikTok)."
+            },
+            "1": {
+                "question": "Jak ustalacie strategię treści dla mojej marki?",
+                "answer": "Proces rozpoczynamy od dogłębnej analizy Twojej grupy docelowej oraz audytu dotychczasowych działań konkurencji na rynku. Na tej podstawie budujemy strategię komunikacji i przejrzysty kalendarz wydawniczy z celami krótko- i długoterminowymi."
+            },
+            "2": {
+                "question": "Ile kosztuje comiesięczna obsługa content marketingu?",
+                "answer": "Koszt obsługi zależy od wybranego pakietu i intensywności działań (m.in. liczby publikacji miesięcznie i zaangażowania produkcji wideo). Wyceny przygotowujemy po wstępnej, bezpłatnej konsultacji, dostosowując się do Twoich celów i możliwości budżetowych."
+            },
+            "3": {
+                "question": "Jak mierzicie efektywność tworzonych treści?",
+                "answer": "Wykorzystujemy zaawansowane narzędzia analityczne, raportując systematycznie takie kluczowe wskaźniki (KPI) jak zasięgi, czas spędzony z materiałem (watch time), rosnące zaangażowanie (engagement rate) oraz finalny współczynnik konwersji i leadów uderzający w stronę internetową."
+            },
+            "4": {
+                "question": "Czy możecie przejąć treści już istniejące i je zoptymalizować?",
+                "answer": "Oczywiście. Kompleksowy \"recykling treści\" (repurposing) i ich optymalizacja są jednymi ze skuteczniejszych metod wzrostu zasięgów. Z przyjemnością przebudujemy starsze publikacje wideo, wpisy blogowe czy audycje i dostosujemy do aktualnych algorytmów."
+            }
+        }
+    },
+    "LiveStreamingServicePage": {
+        "hero_badge": "Usługa Specjalistyczna",
+        "hero_title_1": "Realizacja",
+        "hero_title_2": "na żywo",
+        "hero_description": "Obsługujemy live streamy z konferencji, wydarzeń czy szkoleń. Dostarczamy mobilne studio realizacyjne gotowe do pracy w terenie i zdalnie.",
+        "hero_cta": "Zamów bezpłatną konsultację",
+        "studio_title_1": "Chcesz wykonać transmisję na żywo",
+        "studio_title_2": "w studiu?",
+        "studio_desc": "Skorzystaj również z naszej przestrzeni studyjnej w Katowicach udostępnionej dla podcastów i wejść na żywo! Zrób to z PodcastKatowice.pl",
+        "studio_cta": "Zapraszamy do PodcastKatowice.pl",
+        "capabilities_title_1": "Nasze",
+        "capabilities_title_2": "możliwości",
+        "capabilities_desc": "Profesjonalny sprzęt i doświadczony zespół gwarantują najwyższą jakość transmisji.",
+        "capabilities_items": {
+            "0": {
+                "title": "Transmisje na żywo",
+                "desc": "Profesjonalne live streamy z wielokamerowym setup i switchingiem na żywo."
+            },
+            "1": {
+                "title": "Mobilne studio",
+                "desc": "Kompletne studio realizacyjne, które dotrzemy do każdego miejsca w Polsce i na świecie."
+            },
+            "2": {
+                "title": "Stabilne połączenie",
+                "desc": "Redundantne połączenia internetowe (LTE/5G) zapewniające ciągłość i jakość transmisji."
+            },
+            "3": {
+                "title": "Interakcja z widzami",
+                "desc": "Moderacja czatu, Q&A sessions i sprawna integracja z platformami społecznościowymi uczestników."
+            }
+        },
+        "equipment_title_1": "Profesjonalny",
+        "equipment_title_2": "sprzęt",
+        "equipment_desc": "Dysponujemy kompletnym mobilnym studiem realizacyjnym, które pozwala na przeprowadzenie transmisji na najwyższym poziomie w każdym miejscu.",
+        "equipment_items": {
+            "0": "Kamery 4K z optyczną stabilizacją",
+            "1": "Mikser wideo ATEM",
+            "2": "Bezprzewodowe mikrofony",
+            "3": "Profesjonalne oświetlenie LED",
+            "4": "Enkodery streamingowe",
+            "5": "Redundantne połączenia internetowe",
+            "6": "System monitorowania",
+            "7": "Mobilne studio w walizce"
+        },
+        "mobile_studio_title": "Mobilne studio",
+        "mobile_studio_desc": "Kompletne studio realizacyjne w mobilnej wersji. Gotowe do pracy w każdym miejscu i warunkach, od zaraz.",
+        "mobile_studio_badges": {
+            "0": {
+                "value": "4K",
+                "label": "Jakość transmisji"
+            },
+            "1": {
+                "value": "Multi-cam",
+                "label": "Kilka kamer"
+            }
+        },
+        "applications_title_1": "Zastosowania",
+        "applications_title_2": "transmisji",
+        "applications_desc": "Wykorzystaj wideo na żywo, by być bliżej z Twoimi widzami we wszystkich istotnych chwilach Twojej działalności.",
+        "applications_items": {
+            "0": {
+                "title": "Konferencje",
+                "desc": "Transmisje konferencji biznesowych, seminariów i wydarzeń branżowych do sieci oraz wewnętrznych intranetów korporacyjnych."
+            },
+            "1": {
+                "title": "Szkolenia",
+                "desc": "Webinary internetowe, kursy wideo online na żywo i wielopłaszczyznowe sesje szkoleniowe dla rozporoszonej publiczności."
+            },
+            "2": {
+                "title": "Wydarzenia",
+                "desc": "Relacje i widowiska na żywo z eventów, festynów, koncertów, premier produktów i spotkań biznesowych kadry z pracownikami."
+            }
+        },
+        "cta_title_1": "Zacznijmy",
+        "cta_title_2": "działać!",
+        "cta_desc": "Nie czekaj — napisz do nas już teraz i dowiedz się, jak możemy wspólnie zrealizować Twoje cele! Czekamy na Twój kontakt!",
+        "cta_button": "SKONTAKTUJ SIĘ Z NAMI"
+    },
+    "LiveStreamingFaq": {
+        "heading_1": "Najczęściej zadawane",
+        "heading_2": "pytania",
+        "description": "Odpowiedzi na najważniejsze pytania dotyczące realizacji na żywo.",
+        "items": {
+            "0": {
+                "question": "Jakie są koszty realizacji transmisji na żywo?",
+                "answer": "Koszty zależą od skali wydarzenia, wybranej ilości użytych kamer (setup), zaangażowania personelu realizatorskiego (operatorzy wizji, dźwięku) oraz czasu trwania transmisji. Każdy projekt wyceniamy indywidualnie, aby w pełni odpowiedzieć na Państwa zapotrzebowanie."
+            },
+            "1": {
+                "question": "Jak daleko możecie dojechać z mobilnym studiem?",
+                "answer": "Nasze mobilne studio jest w 100% dostosowane do transportu. Obsługujemy wydarzenia bez ograniczeń terytorialnych - działamy na terenie całej Polski, jak również podczas realizacji międzynarodowych na terenie całej Europy."
+            },
+            "2": {
+                "question": "Czy gwarantujecie stabilność transmisji?",
+                "answer": "Tak. Wykorzystujemy zaawansowane systemy bondingowe, które łączą ze sobą kilka strumieni internetowych (np. LTE/5G od różnych operatorów oraz łącze stałe z obiektu). Taka redundancja połączeń gwarantuje nam pełną niezawodność sygnału nawet w przypadku chwilowej awarii lokalnej sieci."
+            },
+            "3": {
+                "question": "Na jakie platformy możecie prowadzić transmisje?",
+                "answer": "Realizujemy strumieniowanie w niemalże każdym protokole RTMP do takich platform jak: YouTube, Facebook, LinkedIn, Twitch, Vimeo. Możemy również streamować sygnał na w pełni prywatne serwery w celu przeprowadzenia ekskluzywnej, płatnej konferencji PPV, a także równocześnie na kilka platform jednocześnie (Multistreaming)."
+            },
+            "4": {
+                "question": "Czy oferujecie nagranie wydarzenia oprócz transmisji?",
+                "answer": "Oczywiście! Wszystkie sygnały z kamer oraz gotowy, miksowany program (Program Out) nagrywane są na bieżąco, lokalnie, w wysokiej jakości w formatach gotowych do edycji. Materiał możemy przekazać od razu po spakowaniu sprzętu lub zmontować z niego na życzenie krctki klip po-eventowy."
+            }
+        }
+    },
+    "DroneRecordingServicePage": {
+        "hero_badge": "Usługa Specjalistyczna",
+        "hero_title_1": "Nagrania",
+        "hero_title_2": "dronem",
+        "hero_description": "Spektakularne ujęcia z powietrza przy użyciu profesjonalnych dronów DJI i FPV. Tworzymy unikalne perspektywy, które zachwycą Twoich odbiorców.",
+        "hero_cta": "ZAMÓW NAGRANIE DRONEM",
+        "professional_title_1": "Profesjonalne nagrania",
+        "professional_title_2": "z powietrza",
+        "professional_p1": "Oferujemy kompleksowe usługi nagrań dronem przy użyciu najnowocześniejszego sprzętu. Nasze drony DJI zapewniają stabilne, wysokiej jakości ujęcia, idealne do prezentacji nieruchomości, wydarzeń i krajobrazów.",
+        "professional_p2": "Dla bardziej dynamicznych ujęć wykorzystujemy drony FPV, które pozwalają na spektakularne przeloty przez wnętrza budynków, lasy czy trudno dostępne lokalizacje, tworząc kinowe ujęcia pełne emocji.",
+        "dji_title": "Drony DJI",
+        "dji_desc": "Stabilne ujęcia 4K/6K",
+        "fpv_title": "Drony FPV",
+        "fpv_desc": "Dynamiczne manewry",
+        "why_title_1": "Dlaczego",
+        "why_title_2": "nagrania dronem?",
+        "why_desc": "Ujęcia z powietrza to sposób na wyróżnienie się i pokazanie swojej marki z zupełnie nowej perspektywy.",
+        "why_items": {
+            "0": {
+                "title": "Unikalne perspektywy",
+                "desc": "Ujęcia z powietrza, które wyróżnią Twoją markę i zachwycą odbiorców."
+            },
+            "1": {
+                "title": "Jakość 4K i 6K",
+                "desc": "Profesjonalne kamery zapewniające najwyższą jakość obrazu."
+            },
+            "2": {
+                "title": "Precyzyjne manewry",
+                "desc": "Doświadczeni piloci wykonują najbardziej wymagające ujęcia."
+            },
+            "3": {
+                "title": "Dynamiczne ujęcia FPV",
+                "desc": "Spektakularne przeloty przez trudno dostępne miejsca."
+            }
+        },
+        "projects_title_1": "Nasze",
+        "projects_title_2": "realizacje",
+        "projects_desc": "Zobacz przykłady naszych nagrań dronem w różnych kategorii.",
+        "projects_items": {
+            "0": {
+                "title": "Nagrania nieruchomości",
+                "desc": "Spektakularne ujęcia domów i działek z perspektywy ptaka"
+            },
+            "1": {
+                "title": "Ujęcia krajobrazowe",
+                "desc": "Piękne krajobrazy i lokalizacje turystyczne"
+            },
+            "2": {
+                "title": "Wydarzenia i imprezy",
+                "desc": "Dynamiczne ujęcia z eventów i uroczystości"
+            }
+        },
+        "process_title_1": "Proces",
+        "process_title_2": "realizacji",
+        "process_desc": "Od pierwszej konsultacji do gotowego materiału - tak wygląda nasza współpraca.",
+        "process_items": {
+            "0": {
+                "step": "01",
+                "title": "Konsultacja i planowanie",
+                "desc": "Omawiamy Twoje potrzeby, lokalizację i rodzaj ujęć. Sprawdzamy dozwolone strefy lotów."
+            },
+            "1": {
+                "step": "02",
+                "title": "Przygotowanie sprzętu",
+                "desc": "Dobieramy odpowiedni dron (DJI lub FPV) i konfigurujemy ustawienia kamery."
+            },
+            "2": {
+                "step": "03",
+                "title": "Realizacja nagrań",
+                "desc": "Wykonujemy profesjonalne nagrania z zachowaniem najwyższych standardów bezpieczeństwa."
+            },
+            "3": {
+                "step": "04",
+                "title": "Post-produkcja",
+                "desc": "Montujemy materiał, dodajemy efekty i dostarczamy gotowy film w wybranym formacie."
+            }
+        },
+        "cta_title_1": "Zacznijmy",
+        "cta_title_2": "działać!",
+        "cta_desc": "Nie czekaj — napisz do nas już teraz i dowiedz się, jak możemy wspólnie zrealizować Twoje cele! Czekamy na Twój kontakt!",
+        "cta_button": "SKONTAKTUJ SIĘ Z NAMI"
+    },
+    "DroneFaq": {
+        "heading_1": "Często zadawane",
+        "heading_2": "pytania",
+        "description": "Odpowiadamy na najczęstsze pytania dotyczące nagrań dronem.",
+        "items": {
+            "0": {
+                "question": "Czy posiadacie odpowiednie licencje na loty dronem?",
+                "answer": "Tak, nasi operatorzy posiadają niezbędne uprawnienia i świadectwa kwalifikacji do wykonywania lotów komercyjnych VLOS i BVLOS. Dodatkowo dysponujemy odpowiednim zapleczem ubezpieczeniowym dla każdej realizacji."
+            },
+            "1": {
+                "question": "W jakich lokalizacjach możecie wykonywać nagrania?",
+                "answer": "Realizujemy projekty na terenie całej Polski i za granicą. Przed każdym zleceniem weryfikujemy strefy powietrzne i uzyskujemy niezbędne pozwolenia na lot w konkretnej lokalizacji."
+            },
+            "2": {
+                "question": "Jaka jest różnica między dronem DJI a FPV?",
+                "answer": "Drony DJI są idealne do płynnych, stabilnych i powolnych ujęć z dużą dokładnością, doskonale nadają się do standardowych materiałów promocyjnych. Drony FPV są z kolei tworzone z myślą o dynamice, szybkiej zmianie kierunku lotu oraz do efektownych przelotów przez małe szczeliny i obszary."
+            },
+            "3": {
+                "question": "Ile czasu zajmuje realizacja projektu?",
+                "answer": "Czas realizacji zależy od skomplikowania projektu, ustalonych terminów lotów uzależnionych od pogody oraz zakresu post-produkcji. Zazwyczaj proces zajmuje od kilku do kilkunastu dni roboczych."
+            },
+            "4": {
+                "question": "Czy wykonujecie nagrania w trudnych warunkach pogodowych?",
+                "answer": "Bezpieczeństwo ludzi, sprzętu i mienia jest absolutnym priorytetem. Dlatego nie wykonujemy operacji podczas ulewnych dreszczów, silnych porywów wiatru czy silnego mrozu. Przed dniem zdjęciowym dokładnie wyliczamy warunki meteorologiczne."
+            }
+        }
+    },
+    "PodcastServicePage": {
+        "hero_badge": "Usługa Specjalistyczna",
+        "hero_title_1": "Podcasty",
+        "hero_title_2": "",
+        "hero_description": "Pełne wsparcie w tworzeniu podcastów – od nagrania w naszym profesjonalnym studiu, przez montaż, po publikację na mediach społecznościowych.",
+        "hero_cta": "Zamów bezpłatną konsultację",
+        "studio_title_1": "Nagrywaj w naszym profesjonalnym",
+        "studio_title_2": "studiu z gośćmi",
+        "studio_desc": "Skontaktuj i zarezerwuj swoje nagrania całkowicie zautomatyzowanie, opierając się na naszej firmowej sub-marce na Śląsku!",
+        "studio_cta": "Przejdź do PodcastKatowice.pl",
+        "offer_title_1": "Kompleksowa",
+        "offer_title_2": "obsługa",
+        "offer_desc": "Od koncepcji po publikację - zajmiemy się wszystkim, abyś mógł skupić się na treści.",
+        "offer_items": {
+            "0": {
+                "title": "Nagranie w studiu",
+                "desc": "Profesjonalne studio z najwyższej klasy sprzętem audio i wygłuszeniem akustycznym."
+            },
+            "1": {
+                "title": "Montaż i post-produkcja",
+                "desc": "Profesjonalna obróbka dźwięku, usuwanie szumów, dodawanie muzyki i efektów."
+            },
+            "2": {
+                "title": "Publikacja i dystrybucja",
+                "desc": "Publikujemy podcast na wszystkich głównych platformach i w mediach społecznościowych."
+            },
+            "3": {
+                "title": "Wsparcie strategiczne",
+                "desc": "Pomoc w planowaniu treści, formatowaniu odcinków i budowaniu audytorium."
+            }
+        },
+        "projects_title_1": "Przykładowe",
+        "projects_title_2": "realizacje",
+        "projects_desc": "Zobacz podcasty, które pomogliśmy stworzyć naszym klientom.",
+        "projects_items": {
+            "0": {
+                "badge": "Wideo / Audio",
+                "title": "Podcast Grzegorz Kusz",
+                "category": "Agent Specjalny",
+                "desc": "Kompleksowa obsługa podcastu od nagrania po publikację, budowanie zaangażowanej społeczności przez 5 lat współpracy.",
+                "cta": "Zobacz case study"
+            },
+            "1": {
+                "badge": "IT / Bizz",
+                "title": "Podcast Biznesowy TechTalks",
+                "category": "TechSolutions",
+                "desc": "Seria wywiadów z ekspertami branży technologicznej, nagrywana w naszym profesjonalnym studiu.",
+                "cta": "Zobacz projekty"
+            }
+        },
+        "equipment_title_1": "Nasze",
+        "equipment_title_2": "studio",
+        "equipment_desc": "Dysponujemy profesjonalnym studiem nagraniowym wyposażonym w najnowocześniejszy sprzęt audio. Studio jest w pełni wygłuszone akustycznie, co gwarantuje krystalicznie czystą jakość nagrań.",
+        "equipment_items": {
+            "0": "Nagranie w profesjonalnym studiu",
+            "1": "Montaż i mastering audio",
+            "2": "Tworzenie intro i outro",
+            "3": "Grafika dla odcinków",
+            "4": "Publikacja na platformach podcast",
+            "5": "Promocja w social media",
+            "6": "Analityka i raportowanie",
+            "7": "Konsultacje strategiczne"
+        },
+        "equipment_box_1": {
+            "title": "Profesjonalny sprzęt",
+            "desc": "Mikrofony kondensatorowe, interfejsy audio, monitory studyjne i oprogramowanie na najwyższym poziomie."
+        },
+        "equipment_box_2": {
+            "title": "Jakość studyjna",
+            "desc": "Nagrania w rozdzielczości 24-bit/48kHz"
+        },
+        "benefits_title_1": "Korzyści",
+        "benefits_title_2": "dla Biznesu",
+        "benefits_desc": "Podcasty to potężne narzędzie marketingowe, które może znacząco wpłynąć na rozwój Twojej firmy.",
+        "benefits_items": {
+            "0": "Budowanie autorytetu w branży poprzez wartościowe treści audio",
+            "1": "Dotarcie do nowej grupy odbiorców preferujących format audio",
+            "2": "Większe zaangażowanie słuchaczy dzięki długiej formie treści",
+            "3": "Możliwość repurposingu treści na różne formaty mediów",
+            "4": "Budowanie społeczności wokół marki"
+        },
+        "benefits_cta": "Skontaktuj się z nami",
+        "cta_title_1": "Zacznijmy",
+        "cta_title_2": "działać!",
+        "cta_desc": "Nie czekaj — napisz do nas już teraz i dowiedz się, jak możemy wspólnie zrealizować Twoje cele! Czekamy na Twój kontakt!",
+        "cta_button": "SKONTAKTUJ SIĘ Z NAMI"
+    },
+    "PodcastFaq": {
+        "heading_1": "Najczęściej zadawane",
+        "heading_2": "pytania",
+        "description": "Odpowiedzi na najważniejsze pytania dotyczące produkcji podcastów.",
+        "items": {
+            "0": {
+                "question": "Ile kosztuje nagranie podcastu w studiu?",
+                "answer": "Koszt nagrania podcastu w naszej przestrzeni studyjnej uzależniony jest od wielu czynników, takich jak czas nagrania, ilość wykorzystywanych mikrofonów/kamer, czy dodanie streamingu na żywo. Pełną ofertę i cennik znajdziesz na naszej stronie dedykowanej studiu: podcastkatowice.pl."
+            },
+            "1": {
+                "question": "Jak długo trwa proces produkcji odcinka podcastu?",
+                "answer": "Standardowy czas montażu odcinka to od 3 do 7 dni roboczych. Zależy to jednak od długości materiału źródłowego, ilości poprawek oraz stopnia skomplikowania montażu wielokamerowego i szumu."
+            },
+            "2": {
+                "question": "Czy pomagacie w dystrybucji podcastu?",
+                "answer": "Oczywiście. Kompleksowo dystrybuujemy gotowy materiał na najpopularniejsze platformy audio (Spotify, Apple Podcasts, Google Podcasts, itp.) oraz publikujemy wideo w formie przystępnej na YouTube. Przygotowujemy też zajawki i Shorts na Social Media (TikTok, IG Reels)."
+            },
+            "3": {
+                "question": "Czy można nagrywać podcast zdalnie?",
+                "answer": "Tak! Oferujemy specjalistyczną obsługę i oprogramowanie, które pozwala na zdalne połączenie z Twoim gościem na najwyższym możliwym poziomie dla transmisji oraz nagrywania hybrydowego w rozdzielczości emulującej fizyczne bycie w studiu."
+            },
+            "4": {
+                "question": "Jakie usługi dodatkowe oferujecie dla podcastów?",
+                "answer": "Dodatkowo przygotowujemy branding graficzny oprawy kanału i miniaturki, introwizualne lub dźwiękowe jingle początkowe, analizę i consulting przed debiutem w platformach audiowizualnych, a także wspieramy SEO audycji."
+            }
+        }
+    }
+}

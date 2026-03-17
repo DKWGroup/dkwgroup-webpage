@@ -27,41 +27,53 @@ export const PdfDeliveryEmail = ({
 }: PdfDeliveryEmailProps) => (
     <Html>
         <Head />
-        <Preview>Twoja darmowa checklista: {pdfTitle}</Preview>
+        <Preview>Twoje materiały od DKW Group: {pdfTitle}</Preview>
         <Body style={main}>
             <Container style={container}>
-                <Section style={header}>
-                    <Heading style={h1}>DKW Group</Heading>
+                {/* Header */}
+                <Section style={headerSection}>
+                    <Text style={brandText}>DKW <span style={orangeText}>GROUP</span></Text>
                 </Section>
-                <Section style={content}>
-                    <Text style={paragraph}>Cześć {name || 'miłośniku marketingu'}!</Text>
+
+                {/* Main Content Box */}
+                <Section style={contentBox}>
+                    <Heading style={h1}>MATERIAŁY: <span style={orangeText}>DOBRY WYBÓR</span></Heading>
+                    
                     <Text style={paragraph}>
-                        Dziękujemy za zapisanie się do naszego newslettera. Zgodnie z obietnicą, przesyłamy Ci dostęp do: <strong>{pdfTitle}</strong>.
+                        Cześć {name || 'miłośniku marketingu'}!
                     </Text>
+                    
+                    <Text style={paragraph}>
+                        Dziękujemy za potwierdzenie zapisu. Zgodnie z obietnicą, przesyłamy Ci dostęp do: <strong>{pdfTitle}</strong>.
+                    </Text>
+
                     <Section style={buttonContainer}>
                         <Link style={button} href={pdfUrl}>
-                            POBIERZ PDF (KLIKNIJ TUTAJ)
+                            POBIERZ MATERIAŁY (PDF)
                         </Link>
                     </Section>
+
                     <Text style={paragraph}>
-                        Mamy nadzieję, że zawarte w nim wskazówki pomogą Ci wznieść Twój marketing na wyższy poziom.
+                        Mamy nadzieję, że zawarte w nim wskazówki pomogą Ci wznieść Twój marketing na zupełnie nowy poziom. Jeśli będziesz potrzebować wsparcia w produkcji wideo lub strategii — jesteśmy do Twojej dyspozycji.
                     </Text>
+
                     <Text style={paragraph}>
                         Pozdrawiamy,<br />
-                        Zespół DKW Group
+                        <strong>Zespół DKW Group</strong>
                     </Text>
                 </Section>
-                <Hr style={hr} />
+
+                {/* Footer Section */}
                 <Section style={footer}>
-                    <Text style={footerText}>
-                        DKW Group | Zygmunta Krasińskiego 29, Katowice
-                    </Text>
-                    <Text style={footerText}>
-                        Otrzymałeś tę wiadomość, ponieważ zapisałeś się na naszej stronie internetowej.
-                    </Text>
+                    <Text style={footerBrand}>DKW GROUP STRATEGY & VIDEO</Text>
+                    <Hr style={hr} />
                     <Link href={unsubscribeUrl} style={unsubscribeLink}>
                         Wypisz się z newslettera
                     </Link>
+                    <Text style={legalText}>
+                        Zygmunta Krasińskiego 29, Katowice | dkwgroup.net <br />
+                        Otrzymałeś tę wiadomość, ponieważ potwierdziłeś subskrypcję.
+                    </Text>
                 </Section>
             </Container>
         </Body>
@@ -70,77 +82,108 @@ export const PdfDeliveryEmail = ({
 
 export default PdfDeliveryEmail;
 
+// --- STYLES (Synchronized with VerificationEmail) ---
+
 const main = {
     backgroundColor: '#050505',
-    fontFamily: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
+    color: '#ffffff',
+    fontFamily: 'HelveticaNeue,Helvetica,Arial,sans-serif',
 };
 
 const container = {
     margin: '0 auto',
-    padding: '20px 0 48px',
-    maxWidth: '580px',
+    padding: '40px 20px',
+    maxWidth: '600px',
 };
 
-const header = {
-    padding: '30px',
+const headerSection = {
     textAlign: 'center' as const,
+    marginBottom: '40px',
+};
+
+const brandText = {
+    color: '#ffffff',
+    fontSize: '24px',
+    fontWeight: '900',
+    letterSpacing: '2px',
+    margin: '0',
+};
+
+const orangeText = {
+    color: '#ff6a00',
+};
+
+const contentBox = {
+    backgroundColor: '#0a0a0a',
+    border: '2px solid #333333',
+    padding: '40px',
+    textAlign: 'left' as const,
+    borderBottom: '6px solid #ff6a00',
+    borderRight: '6px solid #ff6a00',
 };
 
 const h1 = {
-    color: '#ff6a00',
-    fontSize: '32px',
-    fontWeight: 'bold',
-    margin: '0',
+    color: '#ffffff',
+    fontSize: '28px',
+    fontWeight: '900',
+    margin: '0 0 24px 0',
+    letterSpacing: '-0.5px',
     textTransform: 'uppercase' as const,
 };
 
-const content = {
-    padding: '30px',
-    backgroundColor: '#0a0a0a',
-    border: '1px solid #333',
-};
-
 const paragraph = {
+    color: '#cccccc',
     fontSize: '16px',
     lineHeight: '26px',
-    color: '#ccc',
+    margin: '16px 0',
 };
 
 const buttonContainer = {
     textAlign: 'center' as const,
-    margin: '30px 0',
+    margin: '32px 0',
 };
 
 const button = {
     backgroundColor: '#ff6a00',
-    borderRadius: '0px',
-    color: '#000',
-    fontSize: '16px',
-    fontWeight: 'bold',
+    color: '#000000',
+    fontSize: '14px',
+    fontWeight: '900',
     textDecoration: 'none',
     textAlign: 'center' as const,
     display: 'inline-block',
-    padding: '16px 32px',
-};
-
-const hr = {
-    borderColor: '#333',
-    margin: '20px 0',
+    padding: '18px 32px',
+    textTransform: 'uppercase' as const,
+    letterSpacing: '1px',
 };
 
 const footer = {
+    marginTop: '40px',
     textAlign: 'center' as const,
 };
 
-const footerText = {
+const footerBrand = {
+    color: '#ffffff',
     fontSize: '12px',
-    color: '#666',
-    lineHeight: '18px',
-    margin: '4px 0',
+    fontWeight: '700',
+    letterSpacing: '1px',
+    margin: '0 0 8px 0',
+};
+
+const hr = {
+    borderColor: '#222222',
+    margin: '20px 0',
 };
 
 const unsubscribeLink = {
-    fontSize: '12px',
+    fontSize: '11px',
     color: '#ff6a00',
     textDecoration: 'underline',
+    display: 'block',
+    marginBottom: '10px',
+};
+
+const legalText = {
+    color: '#444444',
+    fontSize: '10px',
+    lineHeight: '16px',
 };

@@ -7,9 +7,7 @@ export default function CaseStudiesPage() {
     return (
         <>
             <CaseStudiesHero />
-            <AnimatedSection animation="fade-up">
-                <CaseStudiesList />
-            </AnimatedSection>
+            <CaseStudiesList />
             <AnimatedSection animation="fade-up">
                 <Contact />
             </AnimatedSection>

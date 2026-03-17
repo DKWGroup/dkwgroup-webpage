@@ -79,15 +79,15 @@ export default function About() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-                    <div className="order-2 lg:order-1 relative">
+                    <div className="order-2 lg:order-1 relative h-full">
                         {/* Image with brutalist framing */}
-                        <div className="bg-[#111] border border-[#333] brutal-shadow overflow-hidden group relative">
+                        <div className="bg-[#111] border border-[#333] brutal-shadow overflow-hidden group relative h-[300px] md:h-[450px] lg:h-[500px]">
                             <Image
                                 src="/portfolio-photos/6ada456e-b927-4747-b584-0259cdc60659_rw_600.webp"
                                 alt="Zespół DKW Group na planie"
-                                width={800}
-                                height={600}
-                                className="w-full h-auto object-contain transition-all duration-700 group-hover:scale-[1.03]"
+                                fill
+                                className="object-cover transition-all duration-700 group-hover:scale-[1.03]"
+                                sizes="(max-width: 768px) 100vw, 50vw"
                             />
                         </div>
                         {/* Decorative block */}

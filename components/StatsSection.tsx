@@ -2,10 +2,12 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function StatsSection() {
     const sectionRef = useRef<HTMLElement>(null);
     const [scrollY, setScrollY] = useState(0);
+    const t = useTranslations("StatsSection");
 
     useEffect(() => {
         const handleScroll = () => {
@@ -48,28 +50,28 @@ export default function StatsSection() {
 
                     <div className="flex flex-col items-center md:items-start group">
                         <div className="text-3xl lg:text-4xl font-bold font-sans text-white mb-3 tracking-tighter w-full border-b-2 border-[#333] pb-3 group-hover:border-[var(--color-brand-orange)] transition-colors inline-block decoration-2">
-                            <span className="text-[var(--color-brand-orange)]">+10 mln</span> wyświetleń organicznych
+                            <span className="text-[var(--color-brand-orange)]">{t("stat_1_value")}</span> {t("stat_1_title")}
                         </div>
                         <p className="text-gray-400 font-mono text-sm leading-relaxed max-w-sm mt-2">
-                            wygenerowane w 6 miesięcy od startu kanału Kokpit Kamila
+                            {t("stat_1_desc")}
                         </p>
                     </div>
 
                     <div className="flex flex-col items-center md:items-start group">
                         <div className="text-4xl lg:text-5xl font-bold font-sans text-white mb-4 tracking-tighter w-full border-b-2 border-[#333] pb-4 group-hover:border-[var(--color-brand-orange)] transition-colors inline-block decoration-2">
-                            <span className="text-[var(--color-brand-orange)]">+450 000</span> subskrybentów
+                            <span className="text-[var(--color-brand-orange)]">{t("stat_2_value")}</span> {t("stat_2_title")}
                         </div>
                         <p className="text-gray-400 font-mono text-sm leading-relaxed max-w-sm mt-2">
-                            w ciągu 5 lat prowadzenia kanału
+                            {t("stat_2_desc")}
                         </p>
                     </div>
 
                     <div className="flex flex-col items-center md:items-start group">
                         <div className="text-4xl lg:text-5xl font-bold font-sans text-white mb-4 tracking-tighter w-full border-b-2 border-[#333] pb-4 group-hover:border-[var(--color-brand-orange)] transition-colors inline-block decoration-2">
-                            <span className="text-[var(--color-brand-orange)]">Setki</span> osób
+                            <span className="text-[var(--color-brand-orange)]">{t("stat_3_value")}</span> {t("stat_3_title")}
                         </div>
                         <p className="text-gray-400 font-mono text-sm leading-relaxed max-w-sm mt-2">
-                            zarejestrowało się do udziału w konkursie edukacyjnym metamorfozy finansowej
+                            {t("stat_3_desc")}
                         </p>
                     </div>
 

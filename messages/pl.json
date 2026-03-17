@@ -1,4 +1,15 @@
 {
+    "StatsSection": {
+        "stat_1_value": "+10 mln",
+        "stat_1_title": "wyświetleń organicznych",
+        "stat_1_desc": "wygenerowane w 6 miesięcy od startu kanału Kokpit Kamila",
+        "stat_2_value": "+450 000",
+        "stat_2_title": "subskrybentów",
+        "stat_2_desc": "w ciągu 5 lat prowadzenia kanału",
+        "stat_3_value": "Setki",
+        "stat_3_title": "osób",
+        "stat_3_desc": "zarejestrowało się do udziału w konkursie edukacyjnym metamorfozy finansowej"
+    },
     "Hero": {
         "title_1": "Wideo,",
         "title_2": "Social Media",
@@ -1175,10 +1186,43 @@
         "hero_title_2": "w maszynę do sprzedaży",
         "hero_description": "Większość agencji po prostu wrzuca posty. My wchodzimy głęboko w Twój biznes, rozumiemy Twoją markę i tworzymy content, który nie tylko ładnie wygląda, ale przede wszystkim zarabia. Otaczamy Cię pełnym wsparciem, budując realną wartość i społeczność.",
         "hero_cta": "Chcę skalować mój biznes",
+        "problem_badge": "Częsty problem",
         "problem_title": "Dlaczego Twoje social media nie działają?",
         "problem_desc": "Jeśli czujesz, że Twoje posty trafiają w próżnię, a agencje, z którymi współpracowałeś, nie rozumiały Twojej wizji - nie jesteś sam. My nie jesteśmy 'tylko od postów'.",
-        "agencies_problem": "Co robią inne agencje? Wrzucają cokolwiek, byle odhaczyć plan. Zero strategii, zero zrozumienia marki, zero efektów.",
-        "our_approach": "Nasze podejście: Jesteśmy częścią Twojego zespołu. Analizujemy, testujemy i optymalizujemy każdy element, by Twoja marka stała się liderem w swojej branży.",
+        "agencies_title": "Inne agencje",
+        "agencies_problem": "Wrzucają cokolwiek, byle odhaczyć plan. Zero strategii, zero zrozumienia marki, zero efektów. Brak konsekwencji w komunikacji i działanie 'na odczepnego'.",
+        "agencies_tags": {
+            "0": "Brak strategii",
+            "1": "Generyczny content",
+            "2": "Zerowe efekty"
+        },
+        "our_approach": "Jesteśmy częścią Twojego zespołu. Analizujemy, testujemy i optymalizujemy każdy element, by Twoja marka stała się liderem w swojej branży. Wchodzimy w głąb biznesu i budujemy realne wyniki.",
+        "dkw_tags": {
+            "0": "Strategia",
+            "1": "Analityka",
+            "2": "Realne wyniki"
+        },
+        "approach_badge": "Nasze podejście",
+        "approach_title": "Jak działamy na co dzień?",
+        "approach_desc": "Nie wrzucamy losowych postów. Każdy element naszych działań jest przemyślany i nastawiony na realne rezultaty dla Twojej marki.",
+        "approach_items": {
+            "0": {
+                "title": "Precyzyjne targetowanie",
+                "desc": "Docieramy dokładnie tam, gdzie są Twoi klienci. Analizujemy dane i optymalizujemy kampanie, by nie przepalać budżetu."
+            },
+            "1": {
+                "title": "Język korzyści",
+                "desc": "Piszemy tak, by budować pragnienie posiadania Twojego produktu lub usługi. Każde słowo pracuje na sprzedaż."
+            },
+            "2": {
+                "title": "Strategia contentu",
+                "desc": "Opracowujemy spójny plan publikacji, w którym każdy post realizuje konkretny cel biznesowy Twojej marki."
+            },
+            "3": {
+                "title": "Analityka i optymalizacja",
+                "desc": "Monitorujemy wyniki w czasie rzeczywistym i wprowadzamy zmiany, by stale zwiększać efektywność działań."
+            }
+        },
         "numbers_title": "Wyniki, które mówią same za siebie",
         "stats": [
             {
@@ -1203,6 +1247,7 @@
             }
         ],
         "benefits_title": "Co zyskujesz współpracując z nami?",
+        "benefits_cta": "Zacznijmy generować wyniki",
         "benefits": [
             "Pełne zaangażowanie i zrozumienie Twojej marki",
             "Content oparty na języku korzyści i psychologii sprzedaży",
@@ -1211,5 +1256,230 @@
             "Wsparcie kreatywne na każdym etapie",
             "Skalowalność i przewidywalność wyników"
         ]
+    },
+    "KokpitKamilaCaseStudy": {
+        "back": "Wróć do wszystkich Case Studies",
+        "industry": "Lotnicza",
+        "title_main": "Obsługa Kanału YouTube",
+        "title_sub": "dla Eksperta Lotniczego",
+        "client": "Kamil Matyja - „Kokpit Kamila”",
+        "summary_title": "Podsumowanie projektu",
+        "summary_desc": "Dla Kamila Matyji stworzyliśmy profesjonalny kanał YouTube „Kokpit Kamila”, który szybko stał się wiodącą platformą edukacyjną o lotnictwie śmigłowcowym w Polsce. Dzięki wysokiej jakości produkcji i skutecznej strategii marketingowej kanał osiągnął milionowe wyświetlenia, zwiększając rozpoznawalność marki osobistej i budując zaangażowaną społeczność pasjonatów lotnictwa.",
+        "intro_title": "Wprowadzenie i cel projektu",
+        "intro_p1": "Kamil Matyja, doświadczony pilot śmigłowców i właściciel firmy MK Helicopters specjalizującej się w premium transporcie śmigłowcowym, potrzebował kompleksowej strategii budowania swojej marki osobistej w internecie. W Polsce wiedza ekspercka z zakresu lotnictwa śmigłowcowego stanowi niszę z ogromnym potencjałem, który pozostawał niewykorzystany.",
+        "strategy_title": "Strategia",
+        "strategy_desc": "Nasza strategia opierała się na stworzeniu profesjonalnego kanału YouTube \"Kokpit Kamila\" z wysokiej jakości treściami edukacyjnymi, które:",
+        "strategy_items": {
+            "0": "Prezentują specjalistyczną wiedzę na temat śmigłowców i lotnictwa",
+            "1": "Budują wizerunek eksperta w dziedzinie lotniczej",
+            "2": "Docierają do zainteresowanych odbiorców poprzez wieloplatformową dystrybucję",
+            "3": "Wyróżniają się na tle konkurencji zaawansowaną produkcją filmową"
+        },
+        "realization_title": "Realizacja",
+        "realization_desc": "Zapewniliśmy kompleksową obsługę kanału, która obejmowała:",
+        "realization_items": [
+            "Regularne nagrania materiałów merytorycznych o lataniu śmigłowcami",
+            "Produkcję treści edukacyjnych dotyczących mechaniki i techniki lotniczej",
+            "Zaawansowany montaż z wykorzystaniem wielu perspektyw (kokpit, ujęcia z drona, kamery naziemne)",
+            "Tworzenie angażujących shortsów na platformy społecznościowe",
+            "Strategiczne działania marketingowe zwiększające zasięg i zaangażowanie"
+        ],
+        "realization_highlight": "Wyróżnikiem naszej produkcji była wyjątkowa jakość wizualna osiągnięta dzięki filmowaniu z wielu perspektyw, co znacząco podnosiło wartość edukacyjną materiałów.",
+        "results_title": "REZULTATY",
+        "results_subtitle": "Efekty naszej współpracy przerosły oczekiwania:",
+        "results_items": {
+            "0": {
+                "value": "Ponad 5 milionów wyświetleń",
+                "desc": "Materiały na kanale YouTube osiągnęły taki wynik w krótkim czasie"
+            },
+            "1": {
+                "value": "1,3 miliona wyświetleń",
+                "desc": "Pierwszy reel opublikowany na Instagramie"
+            },
+            "2": "Znacząco wzrosła rozpoznawalność marki osobistej Kamila Matyji w branży lotniczej",
+            "3": "Udało się skutecznie zagospodarować niszę edukacji lotniczej w polskim internecie",
+            "4": "Zbudowano zaangażowaną społeczność pasjonatów lotnictwa"
+        },
+        "conclusions_title": "Wnioski",
+        "conclusions_desc": "Projekt \"Kokpit Kamila\" pozwolił nam rozwinąć umiejętności w zakresie:",
+        "conclusions_items": [
+            "Produkcji treści specjalistycznych z wymagającego technicznie obszaru",
+            "Filmowania w trudnych warunkach (kokpit śmigłowca, ujęcia powietrzne)",
+            "Tworzenia angażujących treści edukacyjnych z kompleksowych tematów technicznych",
+            "Budowania strategii wieloplatformowej dla treści specjalistycznych"
+        ],
+        "conclusions_highlight": "Nasza współpraca z MK Helicopters udowodniła, że nawet w wąskich, specjalistycznych niszach możliwe jest zbudowanie silnej obecności online przy zastosowaniu profesjonalnej produkcji wideo i przemyślanej strategii marketingowej.",
+        "gallery_title": "Galeria Zdjęć",
+        "cta_title": "Potrzebujesz podobnego rozwiązania?",
+        "cta_desc": "Skontaktuj się z nami, aby omówić Twój projekt i poznać nasze możliwości.",
+        "cta_button": "Skontaktuj się z nami"
+    },
+    "InvestmentPartnersCaseStudy": {
+        "back": "Wróć do wszystkich Case Studies",
+        "industry": "Finansowa",
+        "title_main": "Kampania Reklamowa",
+        "title_sub": "Dla Investment Partners",
+        "summary_title": "Podsumowanie projektu",
+        "summary_desc": "Dla Investment Partners stworzyliśmy skuteczną kampanię promocyjną dla projektu „Metamorfoza Finansowa” – bezpłatnej platformy edukacyjnej. Przygotowaliśmy angażujący spot reklamowy, który zwiększył zasięgi i przyciągnął setki uczestników. Kampania przyczyniła się do wzrostu rozpoznawalności marki i wzmocnienia jej pozycji jako eksperta w edukacji finansowej.",
+        "intro_title": "Wprowadzenie i cel projektu",
+        "intro_p1": "Investment Partners – renomowana firma doradztwa finansowego – powierzyła nam realizację kampanii reklamowej dla ogólnopolskiego projektu „Metamorfoza Finansowa”. Celem było skuteczne wypromowanie bezpłatnej platformy edukacyjnej oraz konkursu, trwającego od września 2023 do marca 2024 roku. Kluczowym zadaniem było dotarcie do szerokiego grona odbiorców i zachęcenie ich do udziału w inicjatywie wspierającej świadome zarządzanie finansami osobistymi.",
+        "realization_title": "Proces realizacji",
+        "realization_items": {
+            "0": {
+                "title": "1. Opracowanie strategii marketingowej",
+                "desc": "Nasza strategia marketingowa opierała się na stworzeniu angażującego spotu reklamowego, który w przystępny sposób prezentował korzyści udziału w projekcie. Kluczowe etapy procesu obejmowały:",
+                "list": [
+                    "Opracowanie scenariusza podkreślającego wartość edukacyjną projektu „Metamorfoza Finansowa”",
+                    "Stworzenie profesjonalnego tekstu lektorskiego",
+                    "Kompleksową produkcję filmową, w tym nagrania z aktorami i organizację przestrzeni zdjęciowej",
+                    "Montaż końcowy oraz przygotowanie materiałów do dystrybucji",
+                    "Dystrybucję spotu v ramach kampanii reklamowej w mediach społecznościowych i na YouTube"
+                ]
+            },
+            "1": {
+                "title": "2. Produkcja filmowa",
+                "desc": "Zrealizowaliśmy kompletny spot reklamowy, który w atrakcyjny sposób prezentował:",
+                "list": [
+                    "Czteromodułowy kurs finansowy",
+                    "Dziennik Metamorfozy Finansowej",
+                    "Poradniki zarządzania budżetem domowym",
+                    "Indywidualne konsultacje z planerem finansowym",
+                    "Spotkania live z ekspertami finansowymi"
+                ]
+            }
+        },
+        "results_title": "WYNIKI KAMPANII",
+        "results_subtitle": "Kampania reklamowa dla projektu „Metamorfoza Finansowa” przyniosła wymierne efekty:",
+        "results_items": {
+            "0": {
+                "value": "Ponad 30 000 wyświetleń",
+                "desc": "Spot reklamowy opublikowany na kanale YouTube „Grzegorz Kusz Agent Specjalny” zgromadził imponującą publikę."
+            },
+            "1": {
+                "desc": "Setki osób zarejestrowało się do udziału w konkursie edukacyjnym"
+            },
+            "2": {
+                "desc": "Znacząco zwiększono rozpoznawalność marki Investment Partners w branży finansowej"
+            },
+            "3": {
+                "desc": "Wzmocniono wizerunek firmy jako eksperta w dziedzinie edukacji finansowej i marketingu internetowego"
+            }
+        },
+        "conclusions_title": "Wnioski",
+        "conclusions_desc": "Realizacja projektu „Metamorfoza Finansowa” pozwoliła nam:",
+        "conclusions_items": [
+            "Udoskonalić proces produkcji filmowej ukierunkowanej na konkretne cele biznesowe",
+            "Zoptymalizować komunikację na planie filmowym i koordynację pracy z aktorami",
+            "Skutecznie organizować przestrzeń zdjęciową pod kątem kampanii reklamowych",
+            "Rozwinąć kompetencje v zakresie marketingu internetowego i promocji usług edukacyjnych"
+        ],
+        "final_summary_title": "Podsumowanie",
+        "final_summary_desc": "Efektywna współpraca z Investment Partners zaowocowała kampanią reklamową, która nie tylko przyciągnęła setki uczestników do projektu „Metamorfoza Finansowa”, ale również przyczyniła się do budowania świadomości finansowej wśród Polaków. Nasze doświadczenie w produkcji filmowej, marketingu internetowym i promocji w social media potwierdza skuteczność realizowanych przez nas kampanii reklamowych dla branży finansowej.",
+        "gallery_title": "Galeria Zdjęć",
+        "cta_title": "Potrzebujesz podobnego rozwiązania?",
+        "cta_desc": "Skontaktuj się z nami, aby omówić Twój projekt i poznać nasze możliwości.",
+        "cta_button": "Skontaktuj się z nami"
+    },
+    "GrzegorzKuszCaseStudy": {
+        "back": "Wróć do wszystkich Case Studies",
+        "industry": "Zdrowie i finanse",
+        "title_main": "Obsługa Kanału Grzegorz Kusz",
+        "title_sub": "- Agent Specjalny",
+        "summary_title": "Podsumowanie projektu",
+        "summary_desc": "Kompleksowa obsługa kanału – od nagrań po publikację. Zajmowaliśmy się produkcją i postprodukcją wideo, planowaniem publikacji oraz tworzeniem miniaturek i grafik, dbając o spójność i maksymalne zasięgi treści. 🚀",
+        "intro_title": "Wprowadzenie i cel projektu",
+        "intro_p1": "Od ponad 5 lat prowadzimy kompleksową obsługę kanału YouTube naszego klienta, który zgromadził już ponad 450 000 subskrybentów. Dzięki naszemu doświadczeniu i skutecznym strategiom, kanał dynamicznie się rozwija, a twórca może w pełni skupić się na dostarczaniu wartościowych treści dla swojej społeczności.",
+        "realization_title": "Proces realizacji",
+        "realization_items": {
+            "1": {
+                "title": "1. Profesjonalne nagrania wideo",
+                "desc": "Zapewniamy realizację nagrań z wykorzystaniem wysokiej klasy sprzętu, dbając o optymalne oświetlenie, czysty dźwięk oraz dynamiczne ujęcia. Dzięki temu każdy materiał wyróżnia się jakością i przyciąga uwagę widzów."
+            },
+            "2": {
+                "title": "2. Postprodukcja i montaż filmów",
+                "desc": "Odpowiadamy za kompleksową postprodukcję: montaż, korekcję kolorów, dodawanie efektów wizualnych i dźwiękowych. Nasze działania sprawiają, że filmy są atrakcyjne, spójne i profesjonalne, co przekłada się na wyższe zaangażowanie odbiorców."
+            },
+            "3": {
+                "title": "3. Planowanie i strategia publikacji",
+                "desc": "Tworzymy strategię publikacji dostosowaną do algorytmów YouTube, co pozwala osiągać maksymalne zasięgi i utrzymywać regularność treści. Analizujemy trendy oraz najlepsze godziny publikacji, aby zwiększyć widoczność kanału."
+            },
+            "4": {
+                "title": "4. Tworzenie miniaturek i grafik",
+                "desc": "Projektujemy przyciągające uwagę miniaturki oraz grafiki zoptymalizowane pod CTR (Click-Through Rate). Dzięki temu filmy generują więcej kliknięć i wyświetleń, a kanał zyskuje rozpoznawalność."
+            },
+            "5": {
+                "title": "5. Optymalizacja treści pod SEO",
+                "desc": "Dbamy o odpowiednie tytuły, opisy, tagi i hashtagi, które wspierają pozycjonowanie filmów w wyszukiwarce YouTube oraz rekomendacjach platformy. Nasza optymalizacja SEO przekłada się na stały wzrost liczby subskrybentów i wyświetleń."
+            }
+        },
+        "results_title": "WYNIKI KAMPANII",
+        "results_items": {
+            "0": {
+                "value": "Ponad 450 000 subskrybentów",
+                "desc": "w ciągu 5 lat prowadzenia kanału"
+            },
+            "1": {
+                "desc": "Regularny wzrost liczby wyświetleń i zaangażowania społeczności"
+            },
+            "2": {
+                "desc": "Profesjonalny wizerunek twórcy i rozpoznawalność marki w branży"
+            }
+        },
+        "view_channel": "Zobacz kanał na YouTube",
+        "conclusions_title": "Wnioski",
+        "conclusions_p1": "Wieloletnia, kompleksowa obsługa kanału YouTube potwierdziła, że sukces wideo marketingu wymaga spójnej strategii, wysokiej jakości produkcji oraz ciągłej optymalizacji pod SEO.",
+        "conclusions_p2": "Dzięki systematycznemu planowaniu publikacji, atrakcyjnym miniaturkom i skutecznej optymalizacji treści, kanał osiągnął imponujący wzrost subskrypcji i zaangażowania. Nasze doświadczenie pokazuje, że profesjonalna produkcja wideo i przemyślana strategia publikacji są kluczowe dla budowania silnej marki oraz długofalowego rozwoju w mediach społecznościowych.",
+        "final_summary_title": "Podsumowanie",
+        "final_summary_desc": "Dzięki kompleksowej obsłudze kanału YouTube nasz klient może w pełni skoncentrować się na tworzeniu wartościowych treści, a we dbamy o każdy aspekt techniczny, kreatywny i promocyjny. Nasze doświadczenie w produkcji wideo, optymalizacji SEO i strategii publikacji gwarantuje skuteczny rozwój kanału oraz wzrost zasięgów w mediach społecznościowych.",
+        "cta_title": "Potrzebujesz podobnego rozwiązania?",
+        "cta_desc": "Skontaktuj się z nami, aby omówić Twój projekt i poznać nasze możliwości.",
+        "cta_button": "Skontaktuj się z nami"
+    },
+    "Testimonials": {
+        "heading_1": "Opinie",
+        "heading_2": "Klientów",
+        "description": "Sprawdź, co mówią o nas klienci, z którymi mieliśmy przyjemność współpracować.",
+        "items": [
+            {
+                "name": "Jan Kowalski",
+                "role": "CEO, TechCompany",
+                "text": "Współpraca z DKW Group to była świetna decyzja. Profesjonalne podejście i niesamowite efekty w postaci świetnych materiałów video, które pomogły nam zwiększyć sprzedaż."
+            },
+            {
+                "name": "Anna Nowak",
+                "role": "Marketing Manager, BeautyBrand",
+                "text": "Zleciliśmy im obsługę naszych kampanii reklamowych i efekty przeszły nasze najśmielsze oczekiwania. Świetny kontakt, terminowość i pełne zrozumienie naszych potrzeb."
+            },
+            {
+                "name": "Piotr Wiśniewski",
+                "role": "Właściciel, FitnessClub",
+                "text": "Dzięki ich sesjom zdjęciowym i wideo nasz klub w końcu wygląda w internecie tak samo dobrze jak na żywo. Gorąco polecam!"
+            },
+            {
+                "name": "Grzegorz Zawadzki",
+                "role": "Właściciel, E-shop",
+                "text": "Social Media Management od DKW Group to game changer. Sprzedaż wzrosła o 40% w pierwszym kwartale. Wiedzą co robią!"
+            },
+            {
+                "name": "Magdalena K.",
+                "role": "Założycielka Kliniki Estetycznej",
+                "text": "Zasięgi naszych postów wystrzeliły w górę. Profesjonalizm i dbałość o estetykę marki na najwyższym poziomie."
+            },
+            {
+                "name": "Robert Milewski",
+                "role": "Dyrektor Operacyjny, LogiTrans",
+                "text": "Filmy korporacyjne wykonane przez zespół DKW oddają ducha naszej firmy. Współpraca przebiegła sprawnie i bezproblemowo."
+            }
+        ]
+    },
+    "PrivacyPolicy": {
+        "checkbox": "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z polityką prywatności.",
+        "link": "Polityka prywatności",
+        "error": "Musisz zaakceptować politykę prywatności, aby wysłać wiadomość."
+    },
+    "Common": {
+        "portfolio": "Portfolio",
+        "contact": "Kontakt",
+        "services": "Usługi"
     }
 }

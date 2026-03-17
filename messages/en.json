@@ -1,4 +1,15 @@
 {
+    "StatsSection": {
+        "stat_1_value": "+10M",
+        "stat_1_title": "organic views",
+        "stat_1_desc": "generated in 6 months from the launch of the Kokpit Kamila channel",
+        "stat_2_value": "+450,000",
+        "stat_2_title": "subscribers",
+        "stat_2_desc": "during 5 years of channel management",
+        "stat_3_value": "Hundreds",
+        "stat_3_title": "of people",
+        "stat_3_desc": "registered to participate in the financial metamorphosis educational contest"
+    },
     "Hero": {
         "title_1": "Video,",
         "title_2": "Social Media",
@@ -160,7 +171,17 @@
         "stat1_value": "100%",
         "stat1_label": "Commitment",
         "stat2_value": "ROI",
-        "stat2_label": "Complex made simple"
+        "stat2_label": "Complex made simple",
+        "stat_sales_title": "We take the responsibility of content creation off your shoulders",
+        "stat_sales_desc": "Your business grows, and we take care of the rest – from planning, through recordings, to ready-to-use content that genuinely supports sales and lifts the burden off your shoulders."
+    },
+    "AboutInvestment": {
+        "heading_1": "Investment",
+        "heading_2": "based on relationships",
+        "paragraph_1": "We are not just a subcontractor. We become your business partner, for whom your success is just as important as our own.",
+        "paragraph_2": "Working with us saves your most precious resource – time. You focus on scaling your business, and we take full responsibility for the creation, production and distribution of video and content marketing.",
+        "highlight_title": "You gain peace of mind and confidence",
+        "highlight_desc": "We create materials that work for you 24/7. We build your image, engage the community and convert viewers into loyal customers."
     },
     "AlternativeTeam": {
         "heading_1": "Meet",
@@ -429,6 +450,9 @@
     },
     "ServicesPageGrid": {
         "learnMore": "Learn more",
+        "category_1": "Video & Audio",
+        "category_2": "Marketing & Web",
+        "category_3": "Packages & Pricing",
         "items": {
             "0": {
                 "title": "Film and Video Production",
@@ -453,6 +477,14 @@
             "6": {
                 "title": "Websites and SEO",
                 "description": "We design modern websites and conduct SEO audits and positioning, so your brand is even more visible on Google."
+            },
+            "7": {
+                "title": "One Day Pack",
+                "description": "Professional content production for local businesses. Up to 15 video materials shot in 1 working day."
+            },
+            "8": {
+                "title": "Short Form Content Pack",
+                "description": "Systematic creation of Reels, TikToks, and Shorts in an attractive subscription system for brands."
             }
         }
     },
@@ -1154,14 +1186,47 @@
         "hero_title_2": "into a sales machine",
         "hero_description": "Most agencies just post content. We dive deep into your business, understand your brand, and create content that doesn't just look good, but primarily generates revenue. We provide full support, building real value and community.",
         "hero_cta": "I want to scale my business",
+        "problem_badge": "Common problem",
         "problem_title": "Why isn't your social media working?",
         "problem_desc": "If you feel like your posts are disappearing into a void and the agencies you've worked with didn't understand your vision - you're not alone. We're not 'just about posts'.",
-        "agencies_problem": "What do other agencies do? They post anything just to tick off a box. Zero strategy, zero brand understanding, zero results.",
-        "our_approach": "Our approach: We are part of your team. We analyze, test, and optimize every element so your brand becomes a leader in its industry.",
+        "agencies_title": "Other agencies",
+        "agencies_problem": "They post anything just to tick off a box. Zero strategy, zero brand understanding, zero results. No consistency in communication and 'just getting it done' approach.",
+        "agencies_tags": {
+            "0": "No strategy",
+            "1": "Generic content",
+            "2": "Zero results"
+        },
+        "our_approach": "We are part of your team. We analyze, test, and optimize every element so your brand becomes a leader in its industry. We dive deep into the business and build real results.",
+        "dkw_tags": {
+            "0": "Strategy",
+            "1": "Analytics",
+            "2": "Real results"
+        },
+        "approach_badge": "Our approach",
+        "approach_title": "How do we work day-to-day?",
+        "approach_desc": "We don't post random content. Every element of our actions is thought through and aimed at real results for your brand.",
+        "approach_items": {
+            "0": {
+                "title": "Precise targeting",
+                "desc": "We reach exactly where your customers are. We analyze data and optimize campaigns to avoid wasting budget."
+            },
+            "1": {
+                "title": "Benefit language",
+                "desc": "We write to build desire for your product or service. Every word works towards sales."
+            },
+            "2": {
+                "title": "Content strategy",
+                "desc": "We develop a cohesive publication plan where every post achieves a specific business goal for your brand."
+            },
+            "3": {
+                "title": "Analytics & optimization",
+                "desc": "We monitor results in real-time and make changes to continuously increase the effectiveness of activities."
+            }
+        },
         "numbers_title": "Results that speak for themselves",
         "stats": [
             {
-                "value": "+k",
+                "value": "+$300k",
                 "label": "Additional revenue in 3 months",
                 "desc": "Fitness industry - supplement company"
             },
@@ -1182,6 +1247,7 @@
             }
         ],
         "benefits_title": "What do you gain by working with us?",
+        "benefits_cta": "Let's start generating results",
         "benefits": [
             "Full commitment and understanding of your brand",
             "Content based on benefit language and sales psychology",
@@ -1190,5 +1256,230 @@
             "Creative support at every stage",
             "Scalability and predictability of results"
         ]
+    },
+    "KokpitKamilaCaseStudy": {
+        "back": "Back to all Case Studies",
+        "industry": "Aviation",
+        "title_main": "YouTube Channel Management",
+        "title_sub": "for an Aviation Expert",
+        "client": "Kamil Matyja - \"Kokpit Kamila\"",
+        "summary_title": "Project Summary",
+        "summary_desc": "For Kamil Matyja, we created a professional YouTube channel \"Kokpit Kamila\", which quickly became the leading educational platform about helicopter aviation in Poland. Thanks to high-quality production and an effective marketing strategy, the channel reached millions of views, increasing personal brand recognition and building an engaged community of aviation enthusiasts.",
+        "intro_title": "Introduction and Project Goal",
+        "intro_p1": "Kamil Matyja, an experienced helicopter pilot and owner of MK Helicopters specializing in premium helicopter transport, needed a comprehensive strategy for building his personal brand online. In Poland, expert knowledge in the field of helicopter aviation constitutes a niche with huge potential that remained untapped.",
+        "strategy_title": "Strategy",
+        "strategy_desc": "Our strategy was based on creating a professional YouTube channel \"Kokpit Kamila\" with high-quality educational content that:",
+        "strategy_items": {
+            "0": "Presents specialized knowledge about helicopters and aviation",
+            "1": "Builds an expert image in the aviation field",
+            "2": "Reaches interested audiences through multi-platform distribution",
+            "3": "Stands out from the competition with advanced film production"
+        },
+        "realization_title": "Realization",
+        "realization_desc": "We provided comprehensive channel management, which included:",
+        "realization_items": [
+            "Regular recording of substantive materials about flying helicopters",
+            "Production of educational content regarding aviation mechanics and technology",
+            "Advanced editing using multiple perspectives (cockpit, drone shots, ground cameras)",
+            "Creating engaging shorts for social platforms",
+            "Strategic marketing activities increasing reach and engagement"
+        ],
+        "realization_highlight": "The standout feature of our production was the exceptional visual quality achieved by filming from multiple perspectives, which significantly increased the educational value of the materials.",
+        "results_title": "RESULTS",
+        "results_subtitle": "The effects of our collaboration exceeded expectations:",
+        "results_items": {
+            "0": {
+                "value": "Over 5 million views",
+                "desc": "Materials on the YouTube channel reached this result in a short time"
+            },
+            "1": {
+                "value": "1.3 million views",
+                "desc": "The first reel published on Instagram"
+            },
+            "2": "Kamil Matyja's personal brand recognition in the aviation industry increased significantly",
+            "3": "Successfully captured the aviation education niche on the Polish internet",
+            "4": "Built an engaged community of aviation enthusiasts"
+        },
+        "conclusions_title": "Conclusions",
+        "conclusions_desc": "The \"Kokpit Kamila\" project allowed us to develop skills in:",
+        "conclusions_items": [
+            "Producing specialized content from a technically demanding area",
+            "Filming in difficult conditions (helicopter cockpit, aerial shots)",
+            "Creating engaging educational content from complex technical topics",
+            "Building a multi-platform strategy for specialized content"
+        ],
+        "conclusions_highlight": "Our collaboration with MK Helicopters proved that even in narrow, specialized niches, it is possible to build a strong online presence using professional video production and a well-thought-out marketing strategy.",
+        "gallery_title": "Photo Gallery",
+        "cta_title": "Need a similar solution?",
+        "cta_desc": "Contact us to discuss your project and learn about our capabilities.",
+        "cta_button": "Contact us"
+    },
+    "InvestmentPartnersCaseStudy": {
+        "back": "Back to all Case Studies",
+        "industry": "Finance",
+        "title_main": "Advertising Campaign",
+        "title_sub": "For Investment Partners",
+        "summary_title": "Project Summary",
+        "summary_desc": "For Investment Partners, we created an effective promotional campaign for the \"Metamorfoza Finansowa\" project - a free educational platform. We prepared an engaging commercial spot that increased reach and attracted hundreds of participants. The campaign contributed to increasing brand recognition and strengthening its position as an expert in financial education.",
+        "intro_title": "Introduction and Project Goal",
+        "intro_p1": "Investment Partners – a renowned financial consulting firm – entrusted us with the implementation of an advertising campaign for the nationwide project \"Metamorfoza Finansowa\". The goal was to effectively promote the free educational platform and the contest, running from September 2023 to March 2024. The key task was to reach a wide audience and encourage them to take part in an initiative supporting conscious management of personal finances.",
+        "realization_title": "Realization Process",
+        "realization_items": {
+            "0": {
+                "title": "1. Marketing Strategy Development",
+                "desc": "Our marketing strategy was based on creating an engaging commercial spot that presented the benefits of participating in the project in an accessible way. Key stages of the process included:",
+                "list": [
+                    "Developing a script highlighting the educational value of the \"Metamorfoza Finansowa\" project",
+                    "Creating a professional voice-over text",
+                    "Comprehensive film production, including recordings with actors and set organization",
+                    "Final editing and preparation of materials for distribution",
+                    "Distribution of the spot within an advertising campaign on social media and YouTube"
+                ]
+            },
+            "1": {
+                "title": "2. Film Production",
+                "desc": "We implemented a complete commercial spot that attractively presented:",
+                "list": [
+                    "A four-module financial course",
+                    "The Metamorfoza Finansowa Journal",
+                    "Home budget management guides",
+                    "Individual consultations with a financial planner",
+                    "Live meetings with financial experts"
+                ]
+            }
+        },
+        "results_title": "CAMPAIGN RESULTS",
+        "results_subtitle": "The advertising campaign for the \"Metamorfoza Finansowa\" project brought measurable results:",
+        "results_items": {
+            "0": {
+                "value": "Over 30,000 views",
+                "desc": "The commercial spot published on the \"Grzegorz Kusz Agent Specjalny\" YouTube channel gathered an impressive audience."
+            },
+            "1": {
+                "desc": "Hundreds of people registered to participate in the educational contest"
+            },
+            "2": {
+                "desc": "Significantly increased Investment Partners brand recognition in the financial industry"
+            },
+            "3": {
+                "desc": "Strengthened the company's image as an expert in financial education and internet marketing"
+            }
+        },
+        "conclusions_title": "Conclusions",
+        "conclusions_desc": "Implementing the \"Metamorfoza Finansowa\" project allowed us to:",
+        "conclusions_items": [
+            "Improve the film production process focused on specific business goals",
+            "Optimize communication on set and coordination of work with actors",
+            "Effectively organize the shooting space for advertising campaigns",
+            "Develop competencies in internet marketing and promotion of educational services"
+        ],
+        "final_summary_title": "Summary",
+        "final_summary_desc": "Effective collaboration with Investment Partners resulted in an advertising campaign that not only attracted hundreds of participants to the \"Metamorfoza Finansowa\" project but also contributed to building financial awareness among Poles. Our experience in film production, internet marketing, and social media promotion confirms the effectiveness of the advertising campaigns we implement for the financial industry.",
+        "gallery_title": "Photo Gallery",
+        "cta_title": "Need a similar solution?",
+        "cta_desc": "Contact us to discuss your project and learn about our capabilities.",
+        "cta_button": "Contact us"
+    },
+    "GrzegorzKuszCaseStudy": {
+        "back": "Back to all Case Studies",
+        "industry": "Health & Finance",
+        "title_main": "Grzegorz Kusz Channel Management",
+        "title_sub": "- Special Agent",
+        "summary_title": "Project Summary",
+        "summary_desc": "Comprehensive channel management – from recordings to publication. We handled video production and post-production, publication planning, and the creation of thumbnails and graphics, ensuring consistency and maximum content reach. 🚀",
+        "intro_title": "Introduction and Project Goal",
+        "intro_p1": "For over 5 years, we have been providing comprehensive management for our client's YouTube channel, which has already gathered over 450,000 subscribers. Thanks to our experience and effective strategies, the channel is dynamically developing, and the creator can fully focus on delivering valuable content to their community.",
+        "realization_title": "Realization Process",
+        "realization_items": {
+            "1": {
+                "title": "1. Professional Video Recordings",
+                "desc": "We ensure the realization of recordings using high-end equipment, taking care of optimal lighting, clear sound, and dynamic shots. Thanks to this, every material stands out in quality and attracts viewers' attention."
+            },
+            "2": {
+                "title": "2. Post-production and Video Editing",
+                "desc": "We are responsible for comprehensive post-production: editing, color correction, adding visual and sound effects. Our actions make the videos attractive, consistent, and professional, which translates into higher audience engagement."
+            },
+            "3": {
+                "title": "3. Publication Planning and Strategy",
+                "desc": "We create a publication strategy tailored to YouTube algorithms, which allows achieving maximum reach and maintaining content regularity. We analyze trends and the best publication hours to increase channel visibility."
+            },
+            "4": {
+                "title": "4. Thumbnail and Graphic Creation",
+                "desc": "We design attention-grabbing thumbnails and graphics optimized for CTR (Click-Through Rate). Thanks to this, videos generate more clicks and views, and the channel gains recognition."
+            },
+            "5": {
+                "title": "5. Content Optimization for SEO",
+                "desc": "We take care of appropriate titles, descriptions, tags, and hashtags that support video positioning in the YouTube search engine and platform recommendations. Our SEO optimization translates into a steady increase in the number of subscribers and views."
+            }
+        },
+        "results_title": "CAMPAIGN RESULTS",
+        "results_items": {
+            "0": {
+                "value": "Over 450,000 subscribers",
+                "desc": "during 5 years of channel management"
+            },
+            "1": {
+                "desc": "Regular growth in the number of views and community engagement"
+            },
+            "2": {
+                "desc": "Professional image of the creator and brand recognition in the industry"
+            }
+        },
+        "view_channel": "See channel on YouTube",
+        "conclusions_title": "Conclusions",
+        "conclusions_p1": "Many years of comprehensive YouTube channel management confirmed that video marketing success requires a consistent strategy, high-quality production, and continuous SEO optimization.",
+        "conclusions_p2": "Thanks to systematic publication planning, attractive thumbnails, and effective content optimization, the channel achieved impressive growth in subscriptions and engagement. Our experience shows that professional video production and a well-thought-out publication strategy are key to building a strong brand and long-term development in social media.",
+        "final_summary_title": "Summary",
+        "final_summary_desc": "Thanks to comprehensive YouTube channel management, our client can fully concentrate on creating valuable content, while we take care of every technical, creative, and promotional aspect. Our experience in video production, SEO optimization, and publication strategy guarantees the effective development of the channel and increased reach in social media.",
+        "cta_title": "Need a similar solution?",
+        "cta_desc": "Contact us to discuss your project and learn about our capabilities.",
+        "cta_button": "Contact us"
+    },
+    "Testimonials": {
+        "heading_1": "Client",
+        "heading_2": "Testimonials",
+        "description": "Check what the clients we have had the pleasure to work with say about us.",
+        "items": [
+            {
+                "name": "John Smith",
+                "role": "CEO, TechCompany",
+                "text": "Working with DKW Group was a great decision. Professional approach and amazing results in the form of great video materials that helped us increase sales."
+            },
+            {
+                "name": "Anna Newman",
+                "role": "Marketing Manager, BeautyBrand",
+                "text": "We commissioned them to handle our advertising campaigns and the results exceeded our wildest expectations. Great contact, timeliness, and full understanding of our needs."
+            },
+            {
+                "name": "Peter West",
+                "role": "Owner, FitnessClub",
+                "text": "Thanks to their photo and video sessions, our club finally looks as good online as it does in person. I highly recommend them!"
+            },
+            {
+                "name": "George Miller",
+                "role": "Owner, E-shop",
+                "text": "Social Media Management from DKW Group is a game changer. Sales increased by 40% in the first quarter. They know what they are doing!"
+            },
+            {
+                "name": "Magdalene K.",
+                "role": "Founder, Aesthetic Clinic",
+                "text": "Our post reach rocketed. Professionalism and attention to brand aesthetics at the highest level."
+            },
+            {
+                "name": "Robert Winston",
+                "role": "Operations Director, LogiTrans",
+                "text": "Corporate films made by the DKW team capture the spirit of our company. The collaboration went smoothly and without problems."
+            }
+        ]
+    },
+    "PrivacyPolicy": {
+        "checkbox": "I agree to the processing of my personal data in accordance with the privacy policy.",
+        "link": "Privacy policy",
+        "error": "You must accept the privacy policy to send a message."
+    },
+    "Common": {
+        "portfolio": "Portfolio",
+        "contact": "Contact",
+        "services": "Services"
     }
 }

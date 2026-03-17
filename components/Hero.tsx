@@ -7,7 +7,7 @@ export default function Hero() {
     const t = useTranslations("Hero");
 
     return (
-        <section id="hero" className="relative min-h-[75vh] flex items-center bg-[#050505] overflow-hidden border-b border-[#333] pt-[16vh] pb-[12vh]">
+        <section id="hero" className="relative min-h-[75vh] flex items-center bg-[#050505] overflow-hidden border-b border-[#333] pt-[16vh] pb-[12vh] scroll-mt-20">
             {/* Background Video */}
             <video
                 src="/videos/film na strone podcast.mp4"
@@ -42,7 +42,7 @@ export default function Hero() {
                         </Link>
 
                         <Link
-                            href="/projekty"
+                            href="/portfolio"
                             className="inline-flex items-center justify-center px-8 py-4 bg-black/50 backdrop-blur-sm border-2 border-[#333] text-white font-bold uppercase tracking-wider hover:border-[var(--color-brand-orange)] hover:text-[var(--color-brand-orange)] hover:bg-black/80 transition-all brutal-shadow text-sm md:text-base"
                         >
                             {t("cta_projects")}

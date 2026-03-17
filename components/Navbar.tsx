@@ -112,13 +112,13 @@ export default function Navbar() {
                 <div className="flex justify-between items-center h-20">
                     {/* Logo Area */}
                     <div className="flex-shrink-0 flex items-center">
-                        <Link href="/" className="flex items-center shrink-0">
+                        <Link href="/" className="flex items-center shrink-0 relative z-20">
                             <Image
                                 src="/logo/DKW inverted.png"
                                 alt="DKW Group Logo"
                                 width={300}
                                 height={200}
-                                className="h-10 md:h-16 w-auto object-contain"
+                                className="h-12 md:h-16 w-auto object-contain"
                                 style={{ width: 'auto' }}
                                 priority
                             />

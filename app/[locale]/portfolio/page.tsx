@@ -114,8 +114,7 @@ export default function PortfolioPage() {
 
             {/* Filter Bar */}
             <section className="py-6 bg-[#050505] border-b border-[#333] sticky top-20 z-40">
-                <AnimatedSection animation="fade-up">
-                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center gap-4 font-mono text-sm">
                         <Filter className="w-4 h-4 text-gray-500" />
                         {(["all", "video", "photo"] as const).map((cat) => (
@@ -132,12 +131,11 @@ export default function PortfolioPage() {
                         ))}
                     </div>
                 </div>
-                </AnimatedSection>
             </section>
 
             {/* Portfolio Grid */}
             <section className="py-12 bg-[#0a0a0a]">
-                <AnimatedSection animation="fade-up" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
                         {filteredItems.slice(0, visibleCount).map((item, index) => {
                             return (
@@ -165,7 +163,8 @@ export default function PortfolioPage() {
                                                     fill
                                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                                     className="object-cover"
-                                                    loading="lazy"
+                                                    priority={index < 6}
+                                                    loading={index < 6 ? undefined : "lazy"}
                                                 />
                                             )}
                                         </div>
@@ -197,7 +196,7 @@ export default function PortfolioPage() {
                             </p>
                         </div>
                     )}
-                </AnimatedSection>
+                </div>
             </section>
 
             {/* CTA */}

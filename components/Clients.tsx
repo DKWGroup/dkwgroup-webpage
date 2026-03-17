@@ -34,13 +34,13 @@ export default function Clients() {
                     {SCROLLING_LOGOS.map((client, index) => (
                         <div
                             key={index}
-                            className="flex items-center justify-center shrink-0 opacity-40 hover:opacity-100 grayscale hover:grayscale-0 transition-all duration-500 h-4 md:h-6 lg:h-8"
+                            className="flex items-center justify-center shrink-0 opacity-60 hover:opacity-100 grayscale hover:grayscale-0 transition-all duration-500 h-6 md:h-10 lg:h-12"
                         >
                             <Image
                                 src={client.src}
                                 alt={client.name}
                                 width={400}
-                                height={150}
+                                height={200}
                                 className="object-contain w-auto h-full mix-blend-lighten"
                                 style={{ width: 'auto' }}
                                 unoptimized={client.src.endsWith('.svg')}

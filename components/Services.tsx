@@ -46,11 +46,20 @@ export default function Services() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {SERVICE_ICONS.map((icon, index) => {
+                    {SERVICE_ICONS.slice(0, 6).map((icon, index) => {
+                        const hrefs = [
+                            "/uslugi/produkcja-wideo",
+                            "/uslugi/nagrania-dronem",
+                            "/uslugi/podcasty",
+                            "/uslugi/live-streaming",
+                            "/uslugi/strony-internetowe",
+                            "/uslugi/social-media-management"
+                        ];
+
                         return (
                             <Link
                                 key={index}
-                                href="/uslugi"
+                                href={hrefs[index] || "/uslugi"}
                                 className="bg-[#0a0a0a] border-2 border-[#333] p-6 brutal-shadow flex flex-col h-full group transition-all duration-300 hover:border-[var(--color-brand-orange)] hover:-translate-y-2 relative overflow-hidden block"
                             >
                                 {/* Abstract decorative shape */}

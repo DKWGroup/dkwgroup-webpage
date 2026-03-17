@@ -3,16 +3,22 @@
 import { useState } from "react";
 import { Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/src/i18n/routing";
 import SuccessPopup from "./SuccessPopup";
 
 export default function Contact() {
     const t = useTranslations("Contact");
+    const tPrivacy = useTranslations("PrivacyPolicy");
 
-    const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+    const [formData, setFormData] = useState({ name: "", email: "", message: "", acceptedPrivacy: false });
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        if (!formData.acceptedPrivacy) {
+            setStatus("error");
+            return;
+        }
         setStatus("loading");
 
         try {
@@ -24,14 +30,14 @@ export default function Contact() {
 
             if (!res.ok) throw new Error("Failed to send");
             setStatus("success");
-            setFormData({ name: "", email: "", message: "" });
+            setFormData({ name: "", email: "", message: "", acceptedPrivacy: false });
         } catch {
             setStatus("error");
         }
     };
 
     return (
-        <section id="kontakt" className="py-16 bg-[#0a0a0a]">
+        <section id="kontakt" className="py-16 bg-[#0a0a0a] scroll-mt-24">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
@@ -137,11 +143,28 @@ export default function Contact() {
                                 ></textarea>
                             </div>
 
+                            <div className="flex items-start gap-3">
+                                <input
+                                    type="checkbox"
+                                    id="privacy-policy"
+                                    checked={formData.acceptedPrivacy}
+                                    onChange={(e) => setFormData({ ...formData, acceptedPrivacy: e.target.checked })}
+                                    className="mt-1 w-4 h-4 bg-[#111] border border-[#333] text-[var(--color-brand-orange)] focus:ring-[var(--color-brand-orange)] focus:ring-offset-0 rounded-none cursor-pointer"
+                                    required
+                                />
+                                <label htmlFor="privacy-policy" className="text-gray-400 line-height-relaxed select-none cursor-pointer">
+                                    {tPrivacy("checkbox")}{" "}
+                                    <Link href="/polityka-prywatnosci" className="text-[var(--color-brand-orange)] hover:underline">
+                                        {tPrivacy("link")}
+                                    </Link>
+                                </label>
+                            </div>
+
                             {/* Error Message */}
                             {status === "error" && (
-                                <div className="flex items-center gap-2 text-red-400 font-mono text-sm">
+                                <div className="flex items-center gap-2 text-red-400 font-mono text-sm tracking-tight leading-tight">
                                     <AlertCircle className="w-4 h-4 flex-shrink-0" />
-                                    <span>{t("error_message")}</span>
+                                    <span>{!formData.acceptedPrivacy ? tPrivacy("error") : t("error_message")}</span>
                                 </div>
                             )}
 

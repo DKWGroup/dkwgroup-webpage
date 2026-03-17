@@ -21,52 +21,64 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '../../src/i18n/routing';
 
-export const metadata: Metadata = {
-  title: "DKW Group | Agencja Kreatywna | Wideo, Marketing, Social Media",
-  description: "Eksperci od kreatywnego marketingu, wideofilmowania, obsługi social media i tworzenia nowoczesnych stron internetowych. Pomagamy firmom rosnąć i budować zaufanie online.",
-  keywords: ["agencja kreatywna", "agencja marketingowa", "marketing", "AI", "AI ADS", "produkcja wideo", "strony internetowe", "social media", "podcasty", "nagrania dronem", "live streaming", "marketing content", "Katowice", "Polska"],
-  authors: [{ name: "DKW Group Team" }],
-  creator: "DKW Group",
-  publisher: "DKW Group",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  openGraph: {
-    title: "DKW Group | Zyskaj z Nami Przewagę w Internecie",
-    description: "Profesjonalna produkcja wideo, zarządzanie social mediami, nowoczesne strony WWW. Wszystko, czego potrzebuje Twoja firma do sukcesu online.",
-    url: "https://dkwgroup.pl",
-    siteName: "DKW Group",
-    images: [
-      {
-        url: "/photos/IMG_3148.webp", // Obrazek z portfolio lub specjalny Open Graph
-        width: 1200,
-        height: 630,
-        alt: "Logo i Siedziba DKW Group - profesjonalne wsparcie wizerunkowe dla biznesu",
-      }
-    ],
-    locale: "pl_PL",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "DKW Group | Wideo, Marketing, Strony Internetowe",
-    description: "Kompleksowo wspieramy rozwój firm w sieci. Profesjonalne wideo, social media marketing i niezawodne strony www.",
-    images: ["/photos/IMG_3148.webp"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const baseUrl = "https://dkwgroup.net";
+  const isEn = locale === "en";
+
+  const title = isEn 
+    ? "DKW Group | Creative Agency | Video, Marketing, Social Media"
+    : "DKW Group | Agencja Kreatywna | Wideo, Marketing, Social Media";
+  
+  const description = isEn
+    ? "Experts in creative marketing, video production, social media management, and modern website creation. Helping businesses grow and build trust online."
+    : "Eksperci od kreatywnego marketingu, wideofilmowania, obsługi social media i tworzenia nowoczesnych stron internetowych. Pomagamy firmom rosnąć i budować zaufanie online.";
+
+  return {
+    title,
+    description,
+    metadataBase: new URL(baseUrl),
+    alternates: {
+      canonical: "/",
+      languages: {
+        pl: "/pl",
+        en: "/en",
+      },
+    },
+    keywords: isEn 
+      ? ["creative agency", "marketing agency", "video production", "websites", "social media", "podcasts", "drone filming", "live streaming"]
+      : ["agencja kreatywna", "agencja marketingowa", "marketing", "AI", "produkcja wideo", "strony internetowe", "social media", "podcasty", "nagrania dronem"],
+    authors: [{ name: "DKW Group Team" }],
+    creator: "DKW Group",
+    publisher: "DKW Group",
+    openGraph: {
+      title,
+      description,
+      url: baseUrl,
+      siteName: "DKW Group",
+      images: [
+        {
+          url: "/photos/IMG_3148.webp",
+          width: 1200,
+          height: 630,
+          alt: "DKW Group Brand",
+        }
+      ],
+      locale: isEn ? "en_US" : "pl_PL",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["/photos/IMG_3148.webp"],
+    },
+    robots: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
     },
-  },
-};
+  };
+}
 
 export default async function RootLayout({
   children,

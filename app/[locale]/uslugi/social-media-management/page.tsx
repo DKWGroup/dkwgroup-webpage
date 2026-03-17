@@ -1,5 +1,5 @@
 import { Link } from "@/src/i18n/routing";
-import { ArrowRight, TrendingUp, Users, Target, BarChart3, MessageSquare, ShieldCheck, CheckCircle2, AlertCircle } from "lucide-react";
+import { ArrowRight, TrendingUp, Users, Target, BarChart3, MessageSquare, ShieldCheck, CheckCircle2, AlertCircle, Zap, LineChart } from "lucide-react";
 import Contact from "@/components/Contact";
 import MarketingContentFaq from "@/components/MarketingContentFaq";
 import { useTranslations } from "next-intl";
@@ -13,6 +13,13 @@ export default function SocialMediaManagementPage() {
         <Users key="users" className="w-6 h-6" />,
         <BarChart3 key="barchart" className="w-6 h-6" />,
         <ShieldCheck key="shield" className="w-6 h-6" />
+    ];
+
+    const APPROACH_ICONS = [
+        <Target key="target" className="w-7 h-7 text-[var(--color-brand-orange)]" />,
+        <MessageSquare key="message" className="w-7 h-7 text-[var(--color-brand-orange)]" />,
+        <Zap key="zap" className="w-7 h-7 text-[var(--color-brand-orange)]" />,
+        <LineChart key="linechart" className="w-7 h-7 text-[var(--color-brand-orange)]" />
     ];
 
     return (
@@ -44,62 +51,104 @@ export default function SocialMediaManagementPage() {
                 </div>
             </section>
 
-            {/* Problem & Approach Section */}
-            <section className="py-24 bg-[#050505] border-b border-[#333]">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                        <AnimatedSection animation="fade-right">
-                            <h2 className="text-3xl font-bold text-white mb-6 uppercase tracking-tight">
+            {/* Section 1: Problem – Why your social media isn't working */}
+            <section className="py-24 bg-[#050505] border-b border-[#333] relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-b from-red-500/[0.02] to-transparent pointer-events-none" />
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <AnimatedSection animation="fade-up">
+                        <div className="text-center mb-16">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 border border-red-500/20 bg-red-500/5 mb-8">
+                                <AlertCircle className="w-4 h-4 text-red-500" />
+                                <span className="text-[11px] font-bold font-mono text-red-400 uppercase tracking-widest">{t("problem_badge")}</span>
+                            </div>
+                            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 uppercase tracking-tight">
                                 {t("problem_title")}
                             </h2>
-                            <p className="text-gray-400 font-mono text-sm leading-relaxed mb-8 italic">
-                                "{t("problem_desc")}"
+                            <p className="text-gray-400 font-mono text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
+                                {t("problem_desc")}
                             </p>
-                            <div className="space-y-6">
-                                <div className="p-6 bg-[#111] border-l-4 border-red-500/50">
-                                    <h3 className="text-white font-bold mb-2 uppercase flex items-center gap-2">
-                                        <AlertCircle className="w-4 h-4 text-red-500" />
-                                        Inne agencje
-                                    </h3>
-                                    <p className="text-gray-500 text-xs font-mono">{t("agencies_problem")}</p>
+                        </div>
+                    </AnimatedSection>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                        <AnimatedSection animation="fade-right">
+                            <div className="h-full p-8 md:p-10 bg-[#111] border border-red-500/20 relative group hover:border-red-500/40 transition-colors">
+                                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-500/50 to-transparent" />
+                                <div className="flex items-center gap-3 mb-6">
+                                    <div className="w-10 h-10 bg-red-500/10 flex items-center justify-center">
+                                        <AlertCircle className="w-5 h-5 text-red-500" />
+                                    </div>
+                                    <h3 className="text-white font-bold uppercase tracking-wider text-sm">{t("agencies_title")}</h3>
                                 </div>
-                                <div className="p-6 bg-[#111] border-l-4 border-[var(--color-brand-orange)]">
-                                    <h3 className="text-white font-bold mb-2 uppercase">DKW Group</h3>
-                                    <p className="text-gray-400 text-xs font-mono">{t("our_approach")}</p>
+                                <p className="text-gray-500 text-sm font-mono leading-relaxed">{t("agencies_problem")}</p>
+                                <div className="mt-6 flex flex-wrap gap-2">
+                                    {Array.from({ length: 3 }).map((_, i) => (
+                                        <span key={i} className="px-3 py-1 text-[10px] font-mono font-bold uppercase tracking-wider bg-red-500/5 text-red-400/60 border border-red-500/10">
+                                            {t(`agencies_tags.${i}`)}
+                                        </span>
+                                    ))}
                                 </div>
                             </div>
                         </AnimatedSection>
-                        <AnimatedSection animation="fade-left" className="relative">
-                            <div className="aspect-square bg-[#0a0a0a] border border-[#333] brutal-shadow p-8 flex flex-col justify-center">
-                                <div className="space-y-8">
-                                    <div className="flex items-start gap-4">
-                                        <div className="w-12 h-12 rounded-full bg-[var(--color-brand-orange)]/10 flex items-center justify-center flex-shrink-0">
-                                            <Target className="w-6 h-6 text-[var(--color-brand-orange)]" />
-                                        </div>
-                                        <div>
-                                            <h4 className="text-white font-bold uppercase text-sm mb-1">Precyzyjne targetowanie</h4>
-                                            <p className="text-gray-500 text-[10px] font-mono leading-relaxed">Docieramy dokładnie tam, gdzie są Twoi klienci. Bez przepalania budżetu.</p>
-                                        </div>
+
+                        <AnimatedSection animation="fade-left">
+                            <div className="h-full p-8 md:p-10 bg-[#111] border border-[var(--color-brand-orange)]/20 relative group hover:border-[var(--color-brand-orange)]/50 transition-colors">
+                                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[var(--color-brand-orange)] to-transparent" />
+                                <div className="flex items-center gap-3 mb-6">
+                                    <div className="w-10 h-10 bg-[var(--color-brand-orange)]/10 flex items-center justify-center">
+                                        <CheckCircle2 className="w-5 h-5 text-[var(--color-brand-orange)]" />
                                     </div>
-                                    <div className="flex items-start gap-4">
-                                        <div className="w-12 h-12 rounded-full bg-[var(--color-brand-orange)]/10 flex items-center justify-center flex-shrink-0">
-                                            <MessageSquare className="w-6 h-6 text-[var(--color-brand-orange)]" />
-                                        </div>
-                                        <div>
-                                            <h4 className="text-white font-bold uppercase text-sm mb-1">Język korzyści</h4>
-                                            <p className="text-gray-500 text-[10px] font-mono leading-relaxed">Piszemy tak, by budować pragnienie posiadania Twojego produktu lub usługi.</p>
-                                        </div>
-                                    </div>
+                                    <h3 className="text-white font-bold uppercase tracking-wider text-sm">DKW Group</h3>
+                                </div>
+                                <p className="text-gray-400 text-sm font-mono leading-relaxed">{t("our_approach")}</p>
+                                <div className="mt-6 flex flex-wrap gap-2">
+                                    {Array.from({ length: 3 }).map((_, i) => (
+                                        <span key={i} className="px-3 py-1 text-[10px] font-mono font-bold uppercase tracking-wider bg-[var(--color-brand-orange)]/5 text-[var(--color-brand-orange)]/70 border border-[var(--color-brand-orange)]/10">
+                                            {t(`dkw_tags.${i}`)}
+                                        </span>
+                                    ))}
                                 </div>
                             </div>
-                            <div className="absolute -bottom-6 -right-6 w-32 h-32 border-4 border-[var(--color-brand-orange)]/20 -z-10" />
                         </AnimatedSection>
                     </div>
                 </div>
             </section>
 
-            {/* Numbers Section */}
+            {/* Section 2: Our Approach – What makes us different */}
             <section className="py-24 bg-[#0a0a0a] border-b border-[#333]">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <AnimatedSection animation="fade-up">
+                        <div className="text-center mb-16">
+                            <p className="text-[var(--color-brand-orange)] font-mono text-xs uppercase tracking-widest mb-4 font-bold">{t("approach_badge")}</p>
+                            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 uppercase tracking-tight">
+                                {t("approach_title")}
+                            </h2>
+                            <p className="text-gray-400 font-mono text-sm leading-relaxed max-w-2xl mx-auto">
+                                {t("approach_desc")}
+                            </p>
+                            <div className="w-24 h-1 bg-[var(--color-brand-orange)] mx-auto mt-8" />
+                        </div>
+                    </AnimatedSection>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {Array.from({ length: 4 }).map((_, i) => (
+                            <AnimatedSection key={i} animation="scale" delay={i * 0.1}>
+                                <div className="h-full p-8 bg-[#111] border border-[#333] hover:border-[var(--color-brand-orange)] transition-all duration-300 group relative overflow-hidden">
+                                    <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-[var(--color-brand-orange)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                                    <div className="w-14 h-14 bg-[var(--color-brand-orange)]/10 flex items-center justify-center mb-6 group-hover:bg-[var(--color-brand-orange)]/20 transition-colors">
+                                        {APPROACH_ICONS[i]}
+                                    </div>
+                                    <h3 className="text-white font-bold uppercase text-sm tracking-wider mb-3">{t(`approach_items.${i}.title`)}</h3>
+                                    <p className="text-gray-500 text-xs font-mono leading-relaxed">{t(`approach_items.${i}.desc`)}</p>
+                                </div>
+                            </AnimatedSection>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Numbers Section */}
+            <section className="py-24 bg-[#050505] border-b border-[#333]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-bold text-white uppercase tracking-tight mb-4">{t("numbers_title")}</h2>
@@ -122,7 +171,7 @@ export default function SocialMediaManagementPage() {
             </section>
 
             {/* Benefits Section */}
-            <section className="py-24 bg-[#050505] border-b border-[#333]">
+            <section className="py-24 bg-[#0a0a0a] border-b border-[#333]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="bg-[#111] border border-[#333] p-12 md:p-20 relative overflow-hidden">
                         <div className="absolute top-0 right-0 p-8 opacity-5">
@@ -147,7 +196,7 @@ export default function SocialMediaManagementPage() {
                                     href="#kontakt"
                                     className="inline-flex items-center justify-center px-10 py-5 bg-[var(--color-brand-orange)] text-black font-bold uppercase tracking-wider hover:bg-white transition-all text-sm font-mono brutal-shadow group"
                                 >
-                                    Zacznijmy generować wyniki
+                                    {t("benefits_cta")}
                                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                 </Link>
                             </div>

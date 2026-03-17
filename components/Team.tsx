@@ -39,13 +39,13 @@ export default function Team() {
 
                                     {/* Main image container */}
                                     <div className="relative h-[350px] bg-[#0a0a0a] border-2 border-[#333] z-10 flex items-center justify-center transition-all duration-300 overflow-hidden">
-                                        <Image
-                                            src={photos[index]}
-                                            alt={t(`members.${index}.name`)}
-                                            fill
-                                            className="object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-500"
-                                            sizes="(max-width: 768px) 100vw, 33vw"
-                                        />
+                                            <Image
+                                                src={photos[index]}
+                                                alt={t(`members.${index}.name`)}
+                                                fill
+                                                className="object-cover object-top transition-all duration-500"
+                                                sizes="(max-width: 768px) 100vw, 33vw"
+                                            />
                                     </div>
                                 </div>
 

@@ -4,13 +4,33 @@ import { ConfirmationEmail } from '@/components/emails/ConfirmationEmail';
 import { NotificationEmail } from '@/components/emails/NotificationEmail';
 import { render } from '@react-email/render';
 import React from 'react';
+import { runSecurityChecks, createSecurityResponse, sanitizeInput, MAX_LENGTHS } from '@/lib/security';
+import { checkRateLimit, createRateLimitResponse, getClientIp, RATE_LIMITS } from '@/lib/rate-limit';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
     try {
+        // ── Rate Limiting ───────────────────────────────────────
+        const clientIp = getClientIp(request);
+        const rateLimitResult = checkRateLimit('contact', clientIp, RATE_LIMITS.contact);
+
+        if (!rateLimitResult.allowed) {
+            return createRateLimitResponse(rateLimitResult);
+        }
+
         const body = await request.json();
-        const { name, email, message } = body;
+
+        // ── Anti-Bot Security Checks ────────────────────────────
+        const securityResult = runSecurityChecks(body);
+        if (!securityResult.passed) {
+            return createSecurityResponse(securityResult.reason || 'unknown');
+        }
+
+        // ── Input Sanitization ──────────────────────────────────
+        const name = sanitizeInput(body.name, MAX_LENGTHS.name);
+        const email = sanitizeInput(body.email, MAX_LENGTHS.email);
+        const message = sanitizeInput(body.message, MAX_LENGTHS.message);
 
         // Validate required fields
         if (!name || !email || !message) {

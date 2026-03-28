@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     : "DKW Group | Agencja Kreatywna | Wideo, Marketing, Social Media";
   
   const description = isEn
-    ? "Experts in creative marketing, video production, social media management, and modern website creation. Helping businesses grow and build trust online."
+    ? "Experts in creative marketing, video production, social media management, and modern website creation. Helping businesses grow, build trust online, and stand out."
     : "Eksperci od kreatywnego marketingu, wideofilmowania, obsługi social media i tworzenia nowoczesnych stron internetowych. Pomagamy firmom rosnąć i budować zaufanie online.";
 
   return {

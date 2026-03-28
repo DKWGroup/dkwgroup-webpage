@@ -4,12 +4,33 @@ import { Resend } from 'resend';
 import { render } from '@react-email/render';
 import React from 'react';
 import VerificationEmail from '@/components/emails/VerificationEmail';
+import { runSecurityChecks, createSecurityResponse, sanitizeInput, MAX_LENGTHS } from '@/lib/security';
+import { checkRateLimit, createRateLimitResponse, getClientIp, RATE_LIMITS } from '@/lib/rate-limit';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
     try {
-        const { email, name, source } = await request.json();
+        // ── Rate Limiting ───────────────────────────────────────
+        const clientIp = getClientIp(request);
+        const rateLimitResult = checkRateLimit('newsletter', clientIp, RATE_LIMITS.newsletter);
+
+        if (!rateLimitResult.allowed) {
+            return createRateLimitResponse(rateLimitResult);
+        }
+
+        const body = await request.json();
+
+        // ── Anti-Bot Security Checks ────────────────────────────
+        const securityResult = runSecurityChecks(body);
+        if (!securityResult.passed) {
+            return createSecurityResponse(securityResult.reason || 'unknown');
+        }
+
+        // ── Input Sanitization ──────────────────────────────────
+        const email = sanitizeInput(body.email, MAX_LENGTHS.email);
+        const name = body.name ? sanitizeInput(body.name, MAX_LENGTHS.name) : undefined;
+        const source = body.source ? sanitizeInput(body.source, MAX_LENGTHS.source) : 'unknown';
 
         if (!email) {
             return NextResponse.json({ error: 'Email is required' }, { status: 400 });
@@ -33,7 +54,7 @@ export async function POST(request: NextRequest) {
                 { 
                     email, 
                     name, 
-                    source: source || 'unknown',
+                    source,
                     status: 'pending',
                     unsubscribed_at: null 
                 },

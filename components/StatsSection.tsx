@@ -1,26 +1,34 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useCallback } from "react";
 import { useTranslations } from "next-intl";
 
 export default function StatsSection() {
     const sectionRef = useRef<HTMLElement>(null);
-    const [scrollY, setScrollY] = useState(0);
+    const parallaxRef = useRef<HTMLDivElement>(null);
+    const rafRef = useRef<number | null>(null);
     const t = useTranslations("StatsSection");
+
+    const updateParallax = useCallback(() => {
+        if (!sectionRef.current || !parallaxRef.current) return;
+        const rect = sectionRef.current.getBoundingClientRect();
+        const scrollPercent = (window.innerHeight - rect.top) / (window.innerHeight + rect.height);
+        parallaxRef.current.style.transform = `translateY(${(scrollPercent - 0.5) * 100}px)`;
+    }, []);
 
     useEffect(() => {
         const handleScroll = () => {
-            if (!sectionRef.current) return;
-            const rect = sectionRef.current.getBoundingClientRect();
-            // Start parallax when section starts coming into view
-            const scrollPercent = (window.innerHeight - rect.top) / (window.innerHeight + rect.height);
-            setScrollY(scrollPercent);
+            if (rafRef.current) cancelAnimationFrame(rafRef.current);
+            rafRef.current = requestAnimationFrame(updateParallax);
         };
         window.addEventListener("scroll", handleScroll, { passive: true });
-        handleScroll(); // initial call
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+        updateParallax(); // initial call
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+            if (rafRef.current) cancelAnimationFrame(rafRef.current);
+        };
+    }, [updateParallax]);
 
     return (
         <section ref={sectionRef} className="py-16 bg-[#050505] border-b border-[#333] relative overflow-hidden">
@@ -28,16 +36,16 @@ export default function StatsSection() {
             {/* Background image with parallax and darkening overlay */}
             <div className="absolute inset-0 z-0 overflow-hidden">
                 <div
+                    ref={parallaxRef}
                     className="absolute inset-0 w-full h-[150%]"
-                    style={{
-                        transform: `translateY(${(scrollY - 0.5) * 100}px)`,
-                        transition: 'transform 0.1s ease-out'
-                    }}
+                    style={{ willChange: 'transform' }}
                 >
                     <Image
                         src="/portfolio-photos/e364656d-2780-4a39-ab5d-4edddd77a4d5_rw_600.webp"
                         alt=""
                         fill
+                        sizes="100vw"
+                        quality={50}
                         className="object-cover brightness-[0.18] blur-[1px]"
                     />
                 </div>

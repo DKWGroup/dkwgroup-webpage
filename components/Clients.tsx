@@ -39,11 +39,12 @@ export default function Clients() {
                             <Image
                                 src={client.src}
                                 alt={client.name}
-                                width={400}
-                                height={200}
+                                width={160}
+                                height={48}
                                 className="object-contain w-auto h-full mix-blend-lighten"
                                 style={{ width: 'auto' }}
                                 unoptimized={client.src.endsWith('.svg')}
+                                loading="lazy"
                             />
                         </div>
                     ))}

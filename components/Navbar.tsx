@@ -116,8 +116,8 @@ export default function Navbar() {
                             <Image
                                 src="/logo/DKW inverted.png"
                                 alt="DKW Group Logo"
-                                width={300}
-                                height={200}
+                                width={120}
+                                height={80}
                                 className="h-12 md:h-16 w-auto object-contain"
                                 style={{ width: 'auto' }}
                                 priority
@@ -220,6 +220,7 @@ export default function Navbar() {
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             className="text-white hover:text-[var(--color-brand-orange)] focus:outline-none p-2 border border-[#333] hover:border-[var(--color-brand-orange)] transition-colors"
+                            aria-label={isOpen ? 'Zamknij menu' : 'Otwórz menu'}
                         >
                             {isOpen ? <X size={24} /> : <Menu size={24} />}
                         </button>

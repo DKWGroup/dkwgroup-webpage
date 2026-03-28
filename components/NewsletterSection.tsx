@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/src/i18n/routing";
 import { ArrowRight, Mail, Loader2, CheckCircle2 } from "lucide-react";
@@ -10,6 +10,12 @@ export default function NewsletterSection() {
     const t = useTranslations("Newsletter");
     const [email, setEmail] = useState("");
     const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+    const [honeypot, setHoneypot] = useState("");
+    const [formLoadedAt, setFormLoadedAt] = useState<number>(0);
+
+    useEffect(() => {
+        setFormLoadedAt(Date.now());
+    }, []);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -21,7 +27,9 @@ export default function NewsletterSection() {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     email,
-                    source: 'marketing-checklist' // Ten klucz odpowiada automatyzacji w bazie
+                    source: 'marketing-checklist',
+                    website: honeypot,
+                    _formLoadedAt: formLoadedAt,
                 }),
             });
 
@@ -75,6 +83,19 @@ export default function NewsletterSection() {
                                     </div>
                                 ) : (
                                     <form className="space-y-4" onSubmit={handleSubmit}>
+                                        {/* Honeypot field — invisible to humans, attracts bots */}
+                                        <div style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0, overflow: 'hidden' }} aria-hidden="true">
+                                            <label htmlFor="newsletter-website">Website</label>
+                                            <input
+                                                type="text"
+                                                id="newsletter-website"
+                                                name="website"
+                                                tabIndex={-1}
+                                                autoComplete="off"
+                                                value={honeypot}
+                                                onChange={(e) => setHoneypot(e.target.value)}
+                                            />
+                                        </div>
                                         <div className="relative">
                                             <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500" />
                                             <input

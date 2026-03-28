@@ -62,6 +62,12 @@ export default function ChecklistLandingPage() {
     const [formData, setFormData] = useState({ name: "", email: "", acceptedPrivacy: false });
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
     const [privacyError, setPrivacyError] = useState(false);
+    const [honeypot, setHoneypot] = useState("");
+    const [formLoadedAt, setFormLoadedAt] = useState<number>(0);
+
+    useEffect(() => {
+        setFormLoadedAt(Date.now());
+    }, []);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -82,6 +88,8 @@ export default function ChecklistLandingPage() {
                     name: formData.name,
                     email: formData.email,
                     source: "marketing-checklist",
+                    website: honeypot,
+                    _formLoadedAt: formLoadedAt,
                 }),
             });
 
@@ -385,6 +393,19 @@ export default function ChecklistLandingPage() {
                     </div>
 
                     <form onSubmit={handleSubmit} className="space-y-6">
+                        {/* Honeypot field — invisible to humans, attracts bots */}
+                        <div style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0, overflow: 'hidden' }} aria-hidden="true">
+                            <label htmlFor="checklist-website">Website</label>
+                            <input
+                                type="text"
+                                id="checklist-website"
+                                name="website"
+                                tabIndex={-1}
+                                autoComplete="off"
+                                value={honeypot}
+                                onChange={(e) => setHoneypot(e.target.value)}
+                            />
+                        </div>
                         <div>
                             <input
                                 type="text"

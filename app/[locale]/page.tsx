@@ -25,8 +25,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       ? "DKW Group | Agencja Kreatywna | Wideo, Marketing, Social Media"
       : "DKW Group | Creative Agency | Video, Marketing, Social Media",
     description: locale === 'pl'
-      ? "Skuteczny marketing, profesjonalna produkcja wideo i nowoczesne strony WWW. Poznaj DKW Group i zacznij z nami rosnąć."
-      : "Effective marketing, professional video production, and modern websites. Meet DKW Group and start growing with us.",
+      ? "Skuteczny marketing, profesjonalna produkcja wideo i nowoczesne strony WWW. Poznaj DKW Group — agencję kreatywną z Katowic i zacznij z nami rosnąć."
+      : "Effective marketing, professional video production, and modern websites. Meet DKW Group — a creative agency from Katowice, Poland. Start growing with us today.",
   };
 }
 

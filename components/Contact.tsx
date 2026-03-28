@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/src/i18n/routing";
@@ -12,6 +12,12 @@ export default function Contact() {
 
     const [formData, setFormData] = useState({ name: "", email: "", message: "", acceptedPrivacy: false });
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+    const [honeypot, setHoneypot] = useState("");
+    const [formLoadedAt, setFormLoadedAt] = useState<number>(0);
+
+    useEffect(() => {
+        setFormLoadedAt(Date.now());
+    }, []);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -25,7 +31,7 @@ export default function Contact() {
             const res = await fetch("/api/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(formData),
+                body: JSON.stringify({ ...formData, website: honeypot, _formLoadedAt: formLoadedAt }),
             });
 
             if (!res.ok) throw new Error("Failed to send");
@@ -101,6 +107,19 @@ export default function Contact() {
                         )}
 
                         <form className="space-y-6 font-mono text-xs" onSubmit={handleSubmit}>
+                            {/* Honeypot field — invisible to humans, attracts bots */}
+                            <div style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0, overflow: 'hidden' }} aria-hidden="true">
+                                <label htmlFor="contact-website">Website</label>
+                                <input
+                                    type="text"
+                                    id="contact-website"
+                                    name="website"
+                                    tabIndex={-1}
+                                    autoComplete="off"
+                                    value={honeypot}
+                                    onChange={(e) => setHoneypot(e.target.value)}
+                                />
+                            </div>
                             <div>
                                 <label htmlFor="contact-name" className="block text-gray-400 mb-2 uppercase tracking-wider">{t("nameLabel")}</label>
                                 <input

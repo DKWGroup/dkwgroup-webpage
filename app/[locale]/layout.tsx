@@ -20,6 +20,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '../../src/i18n/routing';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -111,6 +112,7 @@ export default async function RootLayout({
             <Footer />
           </HideOnPortal>
         </NextIntlClientProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
